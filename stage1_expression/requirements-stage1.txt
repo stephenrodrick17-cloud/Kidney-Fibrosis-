@@ -1,0 +1,10 @@
+numpy==2.2.6
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.6.1
+opencv-python==4.10.0.84
+Pillow==11.1.0
+matplotlib==3.10.8
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.7.1+cu118
+torchvision==0.22.1+cu118

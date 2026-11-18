@@ -1,0 +1,63 @@
+{
+  "checkpoint_hash": "674b0045ab8c5857fa056dc85d691f7e1c30a86479ffe7ba0be933351b2fbcbb",
+  "n_images": 50,
+  "n_families": 10,
+  "independent_rechecks": [
+    {
+      "stem": "1004762",
+      "expert_pct_tissue": 36.83915368944706,
+      "u_net_pct_tissue": 37.15770278415724,
+      "colour_pct_tissue": 40.709811312117075
+    },
+    {
+      "stem": "1004798",
+      "expert_pct_tissue": 33.84345954855547,
+      "u_net_pct_tissue": 33.247485615737986,
+      "colour_pct_tissue": 40.541489248050304
+    },
+    {
+      "stem": "1004788",
+      "expert_pct_tissue": 25.239860569709418,
+      "u_net_pct_tissue": 19.67181194473185,
+      "colour_pct_tissue": 20.861092763903894
+    }
+  ],
+  "command": "python -B D:\\patent\\stage_PCT\\PCT_RUN_AUDIT.py",
+  "seed": 20261118,
+  "bootstrap_resamples": 10000,
+  "environment": {
+    "python": "3.13.1",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "torch": "2.7.1+cu118",
+    "matplotlib": "3.10.8",
+    "pillow": "11.1.0"
+  },
+  "independent_three_number_recheck": {
+    "method": "Independent arithmetic recomputation from PCT_PER_IMAGE.csv",
+    "n_images": 50,
+    "numbers": {
+      "U-Net": {
+        "mean_bias_recomputed": 0.22281563410672242,
+        "mean_absolute_error_recomputed": 4.154200249646001,
+        "root_mean_square_error_recomputed": 5.8362106511953185,
+        "whole_image_sensitivity_bias": 0.22283172607421875,
+        "whole_image_sensitivity_mae": 4.153007507324219,
+        "maximum_absolute_difference": 0.0,
+        "passes_tolerance_1e-12": true
+      },
+      "Colour rule": {
+        "mean_bias_recomputed": 3.6595462000324503,
+        "mean_absolute_error_recomputed": 7.15053888298538,
+        "root_mean_square_error_recomputed": 9.281113996471344,
+        "whole_image_sensitivity_bias": 3.6622314453125,
+        "whole_image_sensitivity_mae": 7.151519775390625,
+        "maximum_absolute_difference": 0.0,
+        "passes_tolerance_1e-12": true
+      }
+    }
+  },
+  "independent_command": "python -B D:\\patent\\stage_PCT\\PCT_VERIFY_INDEPENDENT.py",
+  "independent_passed": true,
+  "independent_recheck_tolerance": 1e-12
+}

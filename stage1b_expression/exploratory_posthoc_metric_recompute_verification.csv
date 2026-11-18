@@ -1,0 +1,4 @@
+analysis_label,target_variant,model,target,participant_id,n_spots,reported_spearman,recomputed_spearman,absolute_difference,verified
+"exploratory, post-hoc",depth_residualized,elasticnet_spot,ECM_collagen,27-10157,969,-0.03163815949361561,-0.03163815949361561,0.0,True
+"exploratory, post-hoc",depth_residualized,mlp_spot,ECM_collagen,27-10157,969,0.029629916904605574,0.029629916904605574,0.0,True
+"exploratory, post-hoc",depth_residualized_neighbor_mean,mlp_image_depth,matrix_remodelling,27-10157,968,0.019694701721077672,0.019694701721077672,0.0,True

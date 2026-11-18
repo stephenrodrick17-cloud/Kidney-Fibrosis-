@@ -1,0 +1,4 @@
+﻿model,target,participant_id,reported_spearman,recomputed_spearman,absolute_difference,verified
+color_only,COL1A1,27-10157,-0.032633414124779,-0.03263341412477906,6.245004513516506e-17,True
+elasticnet_spot,COL1A1,27-10157,-0.0501278133354501,-0.05012781333545016,6.245004513516506e-17,True
+mlp_spot,ECM_collagen,27-10157,0.0615161417739373,0.0615161417739373,0.0,True

@@ -1,0 +1,7 @@
+﻿color_statistic,n_slides,spearman_rho,p_value,absolute_rho_at_least_0_7_descriptive_flag
+tissue_median_hue,33,-0.8373454162412256,1.2416197117023311e-09,True
+tissue_median_saturation,33,-0.09788345363222882,0.5878732081767271,False
+tissue_median_value,33,-0.04848688120392666,0.7887350657452288,False
+collagen_candidate_median_hue,33,-0.3176955117052612,0.07160014365161176,False
+collagen_candidate_median_saturation,33,0.38393348994072685,0.027397848989154445,False
+collagen_candidate_median_value,33,-0.08261562670655635,0.6476178868317863,False

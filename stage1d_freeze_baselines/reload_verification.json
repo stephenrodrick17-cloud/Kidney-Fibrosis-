@@ -1,0 +1,19 @@
+{
+  "fresh_process": true,
+  "original_participants": 28,
+  "original_libraries": 29,
+  "original_spots": 25104,
+  "finite_target_fit_rows": 25092,
+  "predictions_recomputed_for_all_original_spots": true,
+  "models": {
+    "depth_only_ridge": {
+      "max_absolute_difference": 0.0,
+      "bitwise_identical": true
+    },
+    "color_only_ridge": {
+      "max_absolute_difference": 0.0,
+      "bitwise_identical": true
+    }
+  },
+  "performance_evaluation_performed": false
+}

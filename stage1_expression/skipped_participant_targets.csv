@@ -1,0 +1,5 @@
+﻿target_variant,target,participant_id,n_spots,n_detected_spots,skip_reason
+raw,TGFB1,31-10013,720,7,fewer_than_10_detected_spots
+raw,CCN2,31-10013,720,8,fewer_than_10_detected_spots
+residualized,TGFB1,31-10013,720,7,fewer_than_10_detected_spots
+residualized,CCN2,31-10013,720,8,fewer_than_10_detected_spots

@@ -1,0 +1,13 @@
+{
+  "fresh_process": true,
+  "participant_count": 28,
+  "library_count": 29,
+  "spot_count": 25104,
+  "prediction_shape": [
+    25104,
+    12
+  ],
+  "max_absolute_difference": 0.0,
+  "bitwise_identical": true,
+  "performance_evaluation_performed": false
+}

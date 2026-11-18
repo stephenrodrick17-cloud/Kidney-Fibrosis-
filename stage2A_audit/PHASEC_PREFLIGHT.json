@@ -1,0 +1,17 @@
+{
+  "timestamp_utc": "2026-11-16T15:48:45.184328+00:00",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "phase_a_elapsed_seconds": 1215.39,
+  "phase_a_epochs": 90,
+  "phase_a_seconds_per_epoch": 13.504333333333335,
+  "max_epochs": 100,
+  "unet_preflight_step_seconds": 0.08859625001787208,
+  "deeplab_preflight_step_seconds": 0.5294904000038514,
+  "unet_projected_seconds": 1350.4333333333334,
+  "deeplab_projected_seconds": 8070.787259065246,
+  "preflight_updates_saved_weights": false,
+  "runtime_budget_seconds": 7200,
+  "all_runs_within_budget": false,
+  "checkpoint_sha256": "674b0045ab8c5857fa056dc85d691f7e1c30a86479ffe7ba0be933351b2fbcbb"
+}

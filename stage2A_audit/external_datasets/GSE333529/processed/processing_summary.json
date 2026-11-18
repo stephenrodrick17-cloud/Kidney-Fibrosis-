@@ -1,0 +1,78 @@
+{
+  "accession": "GSE333529",
+  "archive": "GSE333529_RAW.tar",
+  "archive_size_bytes": 80558080,
+  "archive_sha256": "41cd3def3408b043fe0918708ce9df5850bc3115d1578bb88c21c4e67b3bacb6",
+  "samples": [
+    {
+      "sample": "P1",
+      "features": 18085,
+      "matrix_shape": [
+        18085,
+        769
+      ],
+      "in_tissue_spots": 769,
+      "image_size_pixels": [
+        1589,
+        2000
+      ],
+      "high_resolution_scale_factor": 0.113940634
+    },
+    {
+      "sample": "P2",
+      "features": 18085,
+      "matrix_shape": [
+        18085,
+        955
+      ],
+      "in_tissue_spots": 955,
+      "image_size_pixels": [
+        2000,
+        1894
+      ],
+      "high_resolution_scale_factor": 0.154464
+    },
+    {
+      "sample": "P3",
+      "features": 18085,
+      "matrix_shape": [
+        18085,
+        900
+      ],
+      "in_tissue_spots": 900,
+      "image_size_pixels": [
+        1725,
+        2000
+      ],
+      "high_resolution_scale_factor": 0.12367054
+    },
+    {
+      "sample": "P4",
+      "features": 18085,
+      "matrix_shape": [
+        18085,
+        830
+      ],
+      "in_tissue_spots": 830,
+      "image_size_pixels": [
+        2000,
+        1791
+      ],
+      "high_resolution_scale_factor": 0.08730575
+    }
+  ],
+  "genes_visualized": [
+    "COL1A1",
+    "COL3A1",
+    "FN1"
+  ],
+  "viewer_images": [
+    "GSE333529_P1_tissue_hires.png",
+    "GSE333529_P2_tissue_hires.png",
+    "GSE333529_P3_tissue_hires.png",
+    "GSE333529_P4_tissue_hires.png"
+  ],
+  "normalization": "log1p(raw gene count / spot total counts * 10000)",
+  "coordinate_check": "All matrix barcodes matched in-tissue position rows; scaled coordinates were within the supplied high-resolution images.",
+  "interpretation_limit": "Exploratory spatial expression visualization only; not fibrosis ground truth, a fibrosis grade, or validation of the RENFAST model."
+}

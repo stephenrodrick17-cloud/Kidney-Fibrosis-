@@ -1,0 +1,40 @@
+{
+  "pixel_count": 13107200,
+  "mean_pixel_entropy": 0.09345778569579125,
+  "pixel_entropy_quantiles_50_95": [
+    0.006476011127233505,
+    0.5943822264671326
+  ],
+  "mean_pixel_probability_variance": 0.002727951523847878,
+  "pixel_variance_quantiles_50_95": [
+    2.1954471662866126e-07,
+    0.016782826092094052
+  ],
+  "brier_score": 0.04663174521178007,
+  "ece_10_bins": 0.025908610767219217,
+  "reliability_plot": "PHASEC_reliability_plot.svg",
+  "uncertainty_dice_family_spearman": {
+    "family_spearman": 0.1515151515151515,
+    "family_bootstrap_95_ci": [
+      -0.5471698113207548,
+      0.691358024691358
+    ],
+    "valid_bootstrap_replicates": 10000,
+    "families": 10
+  },
+  "image_level_spearman": 0.18809123649459786,
+  "ood_flag_count": 0,
+  "ood_test_images": 50,
+  "ensemble_dice_by_ood_flag": {
+    "flagged": {
+      "n_images": 0,
+      "mean_dice": null
+    },
+    "not_flagged": {
+      "n_images": 50,
+      "mean_dice": 0.912206643448136
+    }
+  },
+  "test_families_are_verified_patients": false,
+  "test_family_count": 10
+}

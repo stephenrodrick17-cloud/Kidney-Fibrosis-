@@ -1,0 +1,2 @@
+participant_id,specimen_id,slide_id,descriptor_name,descriptor_value,descriptor_unit,fibrosis_relevance,scoring_method,pathologist_information,WSI_match_status,evidence_source,verification_status
+NOT VERIFIED,NOT VERIFIED,NOT VERIFIED,NOT VERIFIED,NOT VERIFIED,NOT VERIFIED,NOT VERIFIED,NOT VERIFIED,NOT VERIFIED,NOT VERIFIED,Official KPMP repository metadata and official download endpoint,WORKBOOK RETRIEVAL FAILED; no workbook content inspected

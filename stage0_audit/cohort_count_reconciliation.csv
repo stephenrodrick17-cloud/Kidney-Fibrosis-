@@ -1,0 +1,4 @@
+﻿source,participants,samples,in_tissue_spots,rows_or_unique_keys,status
+plan_a_patient_summary.csv,28,29,25104,28,expected cohort reconciliation
+plan_b_spot_expression_long.csv,28,29,25104,25104,sample_id field has 28 participant/sample values; 25031 keys if sample_id is used
+plan_b_tile_manifest.csv,28,29,25104,25104,sample_id field has 28 participant/sample values; 25031 keys if sample_id is used

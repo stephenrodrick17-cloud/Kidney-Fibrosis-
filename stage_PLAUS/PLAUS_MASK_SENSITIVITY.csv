@@ -1,0 +1,9 @@
+setting,status,mean_effect,ci95_low,ci95_high,reason
+threshold 0.3,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,saved probability map absent
+threshold 0.5 saved mask,available,0.12493395564397017,0.08135907215889013,0.17081526870180228,
+threshold 0.7,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,saved probability map absent
+erosion 2 pixels,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,mask morphology inputs not saved
+dilation 2 pixels,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,mask morphology inputs not saved
+footprint 0.75 standard,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,spot rescoring inputs not saved
+footprint 1.25 standard,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,spot rescoring inputs not saved
+quartile groups,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,NOT AVAILABLE,spot coordinates and mask rescoring not available for a full sensitivity run

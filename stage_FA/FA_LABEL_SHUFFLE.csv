@@ -1,0 +1,3 @@
+analysis_label,mask_status,asset_status,mask,target,observed_mean_effect,shuffle_p_two_sided,shuffle_resamples,shuffle_seed,permutation_unit
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,unet,collagen_module,0.19314853059677484,0.00015024038461538462,10000,20261817,"spots permuted within each library, within participant"
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,colour,collagen_module,0.14602243092636236,0.000745489786789921,10000,20261818,"spots permuted within each library, within participant"

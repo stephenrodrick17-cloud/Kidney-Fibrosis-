@@ -1,0 +1,9 @@
+﻿label,participants_with_value,participants_blank,participants_with_value_ids,source_files,source_columns
+reference_vs_ckd,0,28,,,
+diagnosis,0,28,,,
+ifta_score,0,28,,,
+interstitial_fibrosis_score,0,28,,,
+tubular_atrophy,0,28,,,
+egfr,0,28,,,
+age,0,28,,,
+sex,0,28,,,

@@ -1,0 +1,4 @@
+﻿participant_id,slide_id,status,existing_proxy,recomputed_proxy,absolute_difference,source_file,source_column
+29-10422,S-2107-015180,PASS,0.48508347232930193,0.48508347232930193,0.0,data\29-10422\wsi\47d67899-8e0d-426e-9235-09816e2ea23b_S-2107-015180_TRI_2of2.svs,raw WSI pixels at recorded OpenSlide level
+32-10205,S-2006-001852,PASS,0.5297064902322011,0.5297064902322011,0.0,data\32-10205\wsi\09d79760-32e4-4cd6-8915-040e007f103a_S-2006-001852_TRI_2of2.svs,raw WSI pixels at recorded OpenSlide level
+934-10003,S-2301-008575,PASS,0.2932011160727737,0.2932011160727737,0.0,data\934-10003\wsi\6111fe1d-1810-4f7c-a99a-fcc46b4cc3a9_S-2301-008575_TRI_1of2.svs,raw WSI pixels at recorded OpenSlide level

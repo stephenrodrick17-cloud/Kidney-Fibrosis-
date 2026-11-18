@@ -1,0 +1,9 @@
+analysis_label,mask_status,asset_status,mask,image_colour_quartile,libraries,participants,mean_fibrosis_percent_tissue,sd_fibrosis_percent_tissue,group_definition,verified_stain_label
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,unet,Q1,11,10,6.291341160659145,7.020118562000148,equal-frequency quartile of library median tissue hue; ties by library ID,False
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,unet,Q2,10,10,9.218450498742426,10.753328924641668,equal-frequency quartile of library median tissue hue; ties by library ID,False
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,unet,Q3,10,10,7.197905066047075,4.954415173298733,equal-frequency quartile of library median tissue hue; ties by library ID,False
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,unet,Q4,10,10,12.213975150044975,9.671662495436797,equal-frequency quartile of library median tissue hue; ties by library ID,False
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,colour,Q1,11,10,14.478131805736894,5.764643903233573,equal-frequency quartile of library median tissue hue; ties by library ID,False
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,colour,Q2,10,10,29.572993135907545,24.06096580797881,equal-frequency quartile of library median tissue hue; ties by library ID,False
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,colour,Q3,10,10,46.92950814804189,16.06757585681761,equal-frequency quartile of library median tissue hue; ties by library ID,False
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,colour,Q4,10,10,55.57131857357549,31.678576661384646,equal-frequency quartile of library median tissue hue; ties by library ID,False

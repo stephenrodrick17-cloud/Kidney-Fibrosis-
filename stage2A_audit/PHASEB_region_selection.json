@@ -1,0 +1,22 @@
+{
+  "status": "regions_selected_before_model_inference",
+  "seed": 20261118,
+  "requested_regions": 40,
+  "selected_regions": 40,
+  "regions_per_colour_stratum": {
+    "1": 10,
+    "2": 10,
+    "3": 10,
+    "4": 10
+  },
+  "eligible_open_local_tri_slides": 32,
+  "participants_in_eligible_slides": 28,
+  "participants_selected": 25,
+  "maximum_regions_per_slide": 3,
+  "tissue_fraction_minimum": 0.5,
+  "target_mpp": 4.1,
+  "region_size_pixels": 512,
+  "model_inference_performed": false,
+  "region_selection_used_model_outputs": false,
+  "input_image_hash": "SHA-256 of decoded 512x512 RGB pixel bytes"
+}

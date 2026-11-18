@@ -1,0 +1,39 @@
+{
+  "contact_sheet_dimensions_pixels": [
+    800,
+    7312
+  ],
+  "derived_region_pngs_recomputed": 160,
+  "maximum_regions_per_slide_recomputed": 3,
+  "objective_flag_counts_recomputed_from_saved_pixels": {
+    "extreme_predicted_area": 27,
+    "highly_saturated_predicted_pixels": 1,
+    "low_focus_heuristic": 25,
+    "prediction_outside_tissue": 0,
+    "very_pale_predicted_pixels": 0
+  },
+  "participants_recomputed": 25,
+  "reference_based_metrics": "not applicable; no independent aligned reference",
+  "regions_per_colour_stratum_recomputed": {
+    "1": 10,
+    "2": 10,
+    "3": 10,
+    "4": 10
+  },
+  "regions_reconciled": 40,
+  "review_form_rows_blank": 40,
+  "slides_recomputed": 26,
+  "status": "verified",
+  "top10_disagreement_order_recomputed_from_saved_masks": [
+    "PHASEB_REGION_040",
+    "PHASEB_REGION_036",
+    "PHASEB_REGION_034",
+    "PHASEB_REGION_016",
+    "PHASEB_REGION_010",
+    "PHASEB_REGION_035",
+    "PHASEB_REGION_031",
+    "PHASEB_REGION_039",
+    "PHASEB_REGION_028",
+    "PHASEB_REGION_005"
+  ]
+}

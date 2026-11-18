@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "model_kind": "unet",
+  "seed": 20261123,
+  "device": "cuda",
+  "epochs_completed": 91,
+  "best_epoch": 79,
+  "best_validation_dice": 0.9376785108409749,
+  "selected_threshold": 0.5,
+  "threshold_grid": [
+    0.5
+  ],
+  "checkpoint": "PHASEC_UNET_seed_20261123_checkpoint.pt",
+  "checkpoint_sha256": "0b54a0d6e77c2bb9b8aa9bc616cc761fd27556ce3a42c8086d5bfba9d62a1b38",
+  "elapsed_seconds": 1149.94,
+  "train_pairs": 105,
+  "validation_pairs": 18,
+  "train_families": [
+    "1004772",
+    "1004776",
+    "1004778",
+    "1004786",
+    "1004792",
+    "1004794"
+  ],
+  "validation_families": [
+    "1004770"
+  ],
+  "training_recipe": "Phase A AdamW lr=1e-3 weight_decay=1e-4, batch=1, BCE/Dice weighted 0.5 each, Phase A flips/rotations",
+  "patience": 12,
+  "max_epochs": 100
+}

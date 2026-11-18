@@ -1,0 +1,2 @@
+﻿analysis_label,asset_status,control,n_paired_participants,image_minus_best_baseline_mean_spearman,participant_bootstrap_ci95_low,participant_bootstrap_ci95_high,sanity_failure
+"EXPLORATORY, NOT CONFIRMATORY",RESEARCH-ONLY,within-participant primary-label shuffle,40,-0.006582305680984701,-0.03814059793373252,0.02637901405291025,False

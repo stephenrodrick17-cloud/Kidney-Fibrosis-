@@ -1,0 +1,30 @@
+﻿participant_id,tier,sample_id,expression_source,local_metadata_file,sequencing_platform,sequencer_model,sequencer_software_version,sequencing_center,total_raw_reads,q30_score,cellranger_platform,cellranger_version,repository_platform,metadata_availability
+27-10157,A,V13L17-316_XY02_25-0224,data\27-10157\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+27-10201,A,V13U21-399_XY04_24-0214,data\27-10201\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+27-10206,A,V13U21-400_XY01_24-0215,data\27-10206\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+27-10207,C,V13U21-399_XY03_24-0213,data\27-10207\visium\outs\filtered_feature_bc_matrix.h5,data\27-10207\metadata\METADATA_Transcriptomics_Spatial_v3.xlsx,Illumina,NovaSeq 6000,Nova_X_10B_102 lane 6,IU Genomics Core,234700661,0.96489953156791,Cell Ranger,2.0.0,10x Genomics Visium Spatial Gene Expression,local sample metadata found
+27-10228,A,V13L17-318_XY02_25-0235,data\27-10228\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+27-10262,B,V13L17-318_XY01_25-0233,data\27-10262\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+27-10371,A,V13U21-357_XY04_25-0240,data\27-10371\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+28-12265,B,28-12265-C,data\28-12265\visium\cf0c92b2-2808-403a-8612-e59d5d195913_space_ranger_outs_28-12265-C_extracted\nfs\corenfs\pathology-kpmp\PROD_INBOX\f02e6164-8bb9-4a3b-bd61-5839b9f99243\outs\filtered_feature_bc_matrix,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+28-12265,B,28-12265-M,data\28-12265\visium\01e4bee9-72ce-4538-a086-3adc593e2181_space_ranger_outs_28-12265-M_extracted\nfs\corenfs\pathology-kpmp\PROD_INBOX\e3674410-aca1-42cf-88a7-daebccee1968\outs\filtered_feature_bc_matrix,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+28-12557,A,V14B09-279_XY02_25-0275,data\28-12557\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+28-12626,A,V13L19-321_XY04_25_0248,data\28-12626\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+29-10394,B,V14Y20-296_XY04_24-0182,data\29-10394\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+29-10400,A,V14S09-326_XY02_24-0191,data\29-10400\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+29-10422,C,V12U21-007_XY03_22-0093,data\29-10422\visium\9c8bd648-43f0-4b0d-94c7-be03ead43386_spatial_V12U21-007_XY03_22-0093_extracted\V12U21-007_XY03_22-0093\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+29-10439,B,V13U21-356_XY02_25-0232,data\29-10439\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+30-10125,A,30-10125-library-01,data\30-10125\visium\a858efbd-c119-40bf-9080-17227e2564ce_space_ranger_outs_30-10125_extracted\nfs\corenfs\pathology-kpmp\PROD_INBOX\e8efde0d-cf06-46b5-8fb3-a264b1730f19\outs\filtered_feature_bc_matrix,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+30-11084,A,V12U06-350_XY03_22-0097,data\30-11084\visium\599babf2-a4a0-4d53-9cb8-26563ed35dce_spatial_V12U06-350_XY03_22-0097_extracted\V12U06-350_XY03_22-0097\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+30-11141,B,V14Y20-298_XY03_24-0196,data\30-11141\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+30-11192,A,V13L17-315_XY02_24-0220,data\30-11192\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+30-11197,A,V13U21-356_XY01_25-0242,data\30-11197\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+31-10013,B,V13F08-020_XY01_23-0118,data\31-10013\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+31-10078,B,V14Y20-295_XY02_24-0172,data\31-10078\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+31-10340,C,V14B09-280_XY03_25-0280,data\31-10340\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+32-10205,A,V12N14-057_XY02_23-0116,data\32-10205\visium\876dab9e-d4a0-4855-bd03-32587ca842a2_spatial_V12N14-057_XY02_23-0116_extracted\V12N14-057_XY02_23-0116\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+33-10005,B,V12N14-057_XY01_20-0042,data\33-10005\visium\e33dc3ae-a248-403e-95f4-7f6f2c693787_spatial_V12N14-057_XY01_20-0042_extracted\V12N14-057_XY01_20-0042\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+34-11066,A,V13U21-400_XY03_24-0217,data\34-11066\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+934-10003,A,V13L19-376_XY02_25-0262,data\934-10003\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+934-10007,A,V13L19-330_XY02_25_0258,data\934-10007\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available
+936-10217,A,V13U21-357_XY03_25-0239,data\936-10217\visium\outs\filtered_feature_bc_matrix.h5,,,,,,,,,,10x Genomics Visium Spatial Gene Expression,not locally available

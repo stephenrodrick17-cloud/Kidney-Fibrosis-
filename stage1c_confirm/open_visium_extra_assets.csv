@@ -1,0 +1,30 @@
+participant_id,asset_type,file_name,catalog_size,estimated_bytes_from_rounded_catalog_size,access,data_format,data_category,workflow,experimental_strategy,doi
+164-10,open_expression_matrix,b3444b1a-f7f0-42c6-a3fd-6794920b329c_expression_matrix.zip,2.59 MB,2590000,open,tsv mtx,Molecular,Expression Matrix,Spatial Transcriptomics Visium,
+164-10,spatial_bundle,4d750d76-a6bb-478b-99c5-929831ee79cd_spatial_V14B09-279_XY04_25-0277.tar.gz,7.07 MB,7070000,open,h5 jpg csv png json,Molecular,Spatial Imaging Data,Spatial Transcriptomics Visium,
+164-22,open_expression_matrix,8c12e227-a959-4009-9879-fe131bfa87ab_expression_matrix.zip,14.7 MB,14700000,open,tsv mtx,Molecular,Expression Matrix,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+164-22,spatial_bundle,38b3728e-2369-47aa-b4b6-fc809ccaf03b_spatial_V13Y22-309_XY01_23-0158.tar.gz,14.3 MB,14300000,open,h5 jpg csv png json,Molecular,Spatial Imaging Data,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+27-10123,open_expression_matrix,5f4d81bf-8f28-4e3c-b3f4-ec46f141b4fc_expression_matrix.zip,6.86 MB,6860000,open,tsv mtx,Molecular,Expression Matrix,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+27-10123,spatial_bundle,003bc7fd-f40c-4783-a8d2-fc2ae8fa3f52_spatial_V13M27-060_XY01_23-0142.tar.gz,10.2 MB,10200000,open,h5 jpg csv png json,Molecular,Spatial Imaging Data,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+27-10123,standalone_visium_tif_image_role_unverified,0f26f7b9-d744-4594-b177-b3c421fee9f5_V13M27-060_XY01_23-0142.tif,1.28 GB,1280000000,open,tif,Molecular,,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+27-10166,open_expression_matrix,e01e6294-dbe5-4de7-95dd-4e93c6bc41d5_expression_matrix.zip,3.03 MB,3030000,open,tsv mtx,Molecular,Expression Matrix,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+27-10166,spatial_bundle,53f19705-f8b2-4b5a-96d0-a71597c0195e_spatial_V14Y20-275_XY04_24-0189_fl.tar.gz,8.31 MB,8310000,open,h5 jpg csv png json,Molecular,Spatial Imaging Data,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+27-10229,open_expression_matrix,313e6afc-c7da-4309-821c-42b649878c34_expression_matrix.zip,9.6 MB,9600000,open,tsv mtx,Molecular,Expression Matrix,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+27-10229,spatial_bundle,ff7c69e4-5b78-42be-bcab-b0f42845c48e_spatial_V14S09-326_XY04_24-0195.tar.gz,10.2 MB,10200000,open,h5 jpg csv png json,Molecular,Spatial Imaging Data,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+29-10277,open_expression_matrix,2a30da95-47c8-47f5-9ed7-8f5feb9266df_expression_matrix.zip,8.64 MB,8640000,open,tsv mtx,Molecular,Expression Matrix,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+29-10277,spatial_bundle,f9ca163d-c9f4-4163-9e59-e143fbc64303_spatial_V13J17-332_XY01_23-0119.zip,9.82 MB,9820000,open,h5 jpg csv png json,Molecular,Spatial Imaging Data,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+29-10277,standalone_visium_tif_image_role_unverified,5c595c55-fd30-4e86-8f51-f582f541a5ec_V13J17-332_XY01_23-0119.tif,355 MB,355000000,open,tif,Molecular,,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+29-10282,open_expression_matrix,deb3c13e-b49f-4812-9932-3760a3f20dd8_expression_matrix.zip,8.31 MB,8310000,open,tsv mtx,Molecular,Expression Matrix,Spatial Transcriptomics Visium,"10.48698/16dd-vj20,10.48698/3z31-8924"
+29-10282,spatial_bundle,db0c2b08-f356-4847-9e47-99adcd3eae6a_space_ranger_outs_29-10282.zip,286 MB,286000000,open,h5 jpg csv png json,Molecular,Spatial Imaging Data,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+30-11081,open_expression_matrix,78815e28-7ece-4bc3-a908-83df225678de_expression_matrix.zip,10.4 MB,10400000,open,tsv mtx,Molecular,Expression Matrix,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+30-11081,spatial_bundle,0cdf9bf2-83e9-4c16-a3e6-7bfa4b4962bb_spatial_V12U21-009_XY03_22-0089.zip,12.4 MB,12400000,open,h5 jpg csv png json,Molecular,Spatial Imaging Data,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+30-11081,standalone_visium_tif_image_role_unverified,f1b51328-529b-4e6f-be9b-861a7ac588f0_V12U21-009_XY03_22-0089.tif,1.27 GB,1270000000,open,tif,Molecular,,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+34-11042,open_expression_matrix,52dfa91b-54e4-4aa7-9452-22ff0cd3a547_expression_matrix.zip,4.22 MB,4220000,open,tsv mtx,Molecular,Expression Matrix,Spatial Transcriptomics Visium,
+34-11042,spatial_bundle,acbaa880-3c57-431a-9c1d-45e892205240_spatial_V13L19-321_XY02_25_0245.tar.gz,8.91 MB,8910000,open,h5 jpg csv png json,Molecular,Spatial Imaging Data,Spatial Transcriptomics Visium,
+34-11048,open_expression_matrix,b3264217-69e5-43f0-9d8e-35b4e9db76ae_expression_matrix.zip,5.59 MB,5590000,open,tsv mtx,Molecular,Expression Matrix,Spatial Transcriptomics Visium,
+34-11048,spatial_bundle,83baad2a-864e-4047-93d4-b1f6fe8b7fa0_spatial_V13L19-321_XY01_25_0244.tar.gz,8.78 MB,8780000,open,h5 jpg csv png json,Molecular,Spatial Imaging Data,Spatial Transcriptomics Visium,
+933-10271,open_expression_matrix,f9991c00-fa12-4c53-b1f5-0207b6ac0dcf_expression_matrix.zip,7.04 MB,7040000,open,tsv mtx,Molecular,Expression Matrix,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+933-10271,spatial_bundle,3067a14f-73c6-4f0f-a9cc-7f2e25cf6cc4_spatial_V14Y20-295_XY04_24-0174_fl.tar.gz,9.47 MB,9470000,open,h5 jpg csv png json,Molecular,Spatial Imaging Data,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+933-10271,standalone_visium_tif_image_role_unverified,eee229e5-4e0d-4016-b9c5-5ff04ed1e8e1_V14Y20-295_XY04_24-0174_fl.tif,1.34 GB,1340000000,open,tif,Molecular,,Spatial Transcriptomics Visium,10.48698/16dd-vj20
+933-11258,open_expression_matrix,28560640-6e3d-44dd-a43d-87368e3bd6c6_expression_matrix.zip,11.3 MB,11300000,open,tsv mtx,Molecular,Expression Matrix,Spatial Transcriptomics Visium,
+933-11258,spatial_bundle,a5880135-d18a-4e75-bbc5-73f659d4f589_spatial_V14B09-278_XY03_25-0272.tar.gz,10.6 MB,10600000,open,h5 jpg csv png json,Molecular,Spatial Imaging Data,Spatial Transcriptomics Visium,
+933-11258,standalone_visium_tif_image_role_unverified,41679d29-a8d7-41a5-98d1-00e5819f348f_V14B09-278_XY03_25-0272.tif,1.36 GB,1360000000,open,tif,Molecular,,Spatial Transcriptomics Visium,

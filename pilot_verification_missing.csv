@@ -1,0 +1,21 @@
+participant_id,missing_item,detail
+27-10207,TRI .svs,No files present in D:\patent\data\27-10207
+27-10207,Seg_Masks zip,No files present in D:\patent\data\27-10207
+27-10207,Visium expression_matrix.zip,No files present in D:\patent\data\27-10207
+27-10207,Visium spatial tar.gz,No files present in D:\patent\data\27-10207
+27-10207,Visium full-res tif,No files present in D:\patent\data\27-10207
+27-10207,metadata xlsx,No files present in D:\patent\data\27-10207
+29-10422,participant directory,Directory D:\patent\data\29-10422 does not exist
+29-10422,TRI .svs,Not available because participant directory missing
+29-10422,Seg_Masks zip,Not available because participant directory missing
+29-10422,Visium expression_matrix.zip,Not available because participant directory missing
+29-10422,Visium spatial tar.gz,Not available because participant directory missing
+29-10422,Visium full-res tif,Not available because participant directory missing
+29-10422,metadata xlsx,Not available because participant directory missing
+31-10340,participant directory,Directory D:\patent\data\31-10340 does not exist
+31-10340,TRI .svs,Not available because participant directory missing
+31-10340,Seg_Masks zip,Not available because participant directory missing
+31-10340,Visium expression_matrix.zip,Not available because participant directory missing
+31-10340,Visium spatial tar.gz,Not available because participant directory missing
+31-10340,Visium full-res tif,Not available because participant directory missing
+31-10340,metadata xlsx,Not available because participant directory missing

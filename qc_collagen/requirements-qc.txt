@@ -1,0 +1,13 @@
+numpy==2.2.6
+pandas==3.0.6
+scipy==1.18.1
+opencv-contrib-python==4.10.0.84
+openslide-python==1.4.7
+openslide-bin==4.0.1.2
+scikit-learn==1.6.1
+scikit-image==0.25.2
+matplotlib==3.10.8
+Pillow==11.1.0
+tifffile==2025.10.16
+h5py==3.16.0
+openpyxl==3.1.5

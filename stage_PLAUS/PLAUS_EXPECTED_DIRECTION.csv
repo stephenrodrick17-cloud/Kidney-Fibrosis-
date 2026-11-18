@@ -1,0 +1,17 @@
+gene,n_participant_libraries,mean_effect,expected_direction,observed_direction,expected_sign_agrees
+SLC34A1,29,-0.35216912640864595,lower,lower,True
+LRP2,29,-0.4044380391194667,lower,lower,True
+UMOD,29,-0.14164171100966474,lower,lower,True
+SLC12A1,29,-0.12091797127408282,lower,lower,True
+COL4A1,29,0.09260318966196572,higher,higher,True
+COL5A1,29,0.054474171507643325,higher,higher,True
+COL6A1,29,0.07894986725382522,higher,higher,True
+FAP,29,0.01621737795222247,higher,higher,True
+POSTN,29,0.12435860331692256,higher,higher,True
+PDGFRB,29,0.1845260196746233,higher,higher,True
+VIM,29,0.2884986504133666,higher,higher,True
+PTPRC,29,0.06081190879522755,higher,higher,True
+C1QA,29,0.16050936523567097,higher,higher,True
+C1QB,29,0.10726601889342838,higher,higher,True
+C1QC,29,0.15970850014459262,higher,higher,True
+CD68,29,0.015608990558090546,higher,higher,True

@@ -1,0 +1,7 @@
+﻿comparison,n_participants,spearman_rho,p_value
+original participant proxy vs permissive_proxy,28,0.9025725232621784,5.1954802279844053e-11
+original participant proxy vs strict_proxy,28,0.8336070060207991,3.6347504798106454e-08
+original participant proxy vs percentile_normalized_proxy,28,0.88232074438971,5.37593061731475e-10
+permissive_proxy vs strict_proxy,28,0.6201423097974823,0.00043140872965975833
+permissive_proxy vs percentile_normalized_proxy,28,0.9020251778872468,5.570212495940413e-11
+strict_proxy vs percentile_normalized_proxy,28,0.6748768472906403,8.174550950400834e-05

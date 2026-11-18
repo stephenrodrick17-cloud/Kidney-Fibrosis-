@@ -1,0 +1,27 @@
+{
+  "independent_method": "Arithmetic recomputation from PCT_PER_IMAGE.csv",
+  "n_images": 50,
+  "three_headline_numbers": {
+    "mean_absolute_error_difference": -2.9963386333393784,
+    "u_net_better_image_count": 38,
+    "mean_paired_squared_error_difference": -52.07772225037059
+  },
+  "maximum_absolute_difference": 0.0,
+  "per_number_absolute_difference": {
+    "mean_absolute_error_difference": 0.0,
+    "u_net_better_image_count": 0,
+    "mean_paired_squared_error_difference": 0.0
+  },
+  "tolerance": 1e-12,
+  "passed": true,
+  "checkpoint_sha256": "674b0045ab8c5857fa056dc85d691f7e1c30a86479ffe7ba0be933351b2fbcbb",
+  "pct_input_sha256": "b8208239d427f618ad2d19b8f816b95ab001d484bfdfd5bfd055076302f55855",
+  "seed": 20261118,
+  "bootstrap_resamples": 10000,
+  "command": "python -B D:\\patent\\stage_PXY\\PXY_PAIRED_COMPARISON.py",
+  "independent_command": "python -B D:\\patent\\stage_PXY\\PXY_VERIFY_INDEPENDENT.py",
+  "environment": {
+    "python": "3.13.1",
+    "numpy": "2.2.6"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "analysis_label": "EXPLORATORY, NOT CONFIRMATORY",
+  "mask_status": "UNVALIDATED MASKS",
+  "asset_status": "RESEARCH-ONLY",
+  "verification_status": "PASS",
+  "checks": 22,
+  "checks_passed": 22,
+  "participants": 40,
+  "libraries": 41,
+  "matched_spots": 34735,
+  "python": "3.13.1",
+  "numpy": "2.2.6",
+  "scipy": "1.18.1",
+  "command": "python -B D:\\patent\\stage_FA\\FA_VERIFY.py",
+  "started_at_utc": "2026-11-17T10:50:39.913000+00:00",
+  "runtime_seconds": 1.501,
+  "inputs_checked": 96,
+  "checkpoint_sha256": "674b0045ab8c5857fa056dc85d691f7e1c30a86479ffe7ba0be933351b2fbcbb",
+  "fold_membership": "NOT APPLICABLE; no cross-validation folds in Stage FA"
+}

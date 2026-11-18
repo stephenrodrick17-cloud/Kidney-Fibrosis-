@@ -1,0 +1,3 @@
+﻿target,metric,comparison,baseline,n_eligible_participants,mean_delta,ci95_low,ci95_high,bootstrap_replicates,bootstrap_seed
+myofibroblast_pro-fibrotic,paired participant-level Spearman delta,mlp_spot - color_only_ridge,color_only_ridge,12,0.10125893178206548,-0.01233946706430897,0.2184909867634889,10000,20261114
+myofibroblast_pro-fibrotic,paired participant-level Spearman delta,mlp_spot - depth_only_ridge,depth_only_ridge,12,0.11093098603442968,0.0024544909747183873,0.22563033688476553,10000,20261114

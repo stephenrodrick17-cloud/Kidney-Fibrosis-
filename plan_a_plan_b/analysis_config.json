@@ -1,0 +1,27 @@
+{
+  "random_seed": 20261110,
+  "targets": [
+    "COL1A1",
+    "COL3A1",
+    "FN1",
+    "TGFB1",
+    "ACTA2"
+  ],
+  "tile_size_px": 224,
+  "spot_mapping": "full-resolution pixel coordinates multiplied by tissue_hires_scalef",
+  "gene_normalization": "raw counts / all-gene spot library size * 10000",
+  "enough_spots_threshold": 0.1,
+  "sparse_threshold_interpretation": "exploratory detection prevalence screen only",
+  "cohort_participants": 28,
+  "participants_with_paired_spatial_expression": 28,
+  "package_versions": {
+    "numpy": "2.2.6",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "opencv": "4.10.0",
+    "h5py": "3.16.0",
+    "tifffile": "2025.10.16",
+    "pillow": "11.1.0"
+  },
+  "registration_or_training_run": false
+}

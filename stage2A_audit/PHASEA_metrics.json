@@ -1,0 +1,538 @@
+{
+  "status": "completed",
+  "scope": "Phase A only; no new model training; Phase B not started",
+  "timestamp": "2026-11-16",
+  "data_grouping_unit": "Filename families, not verified patient or slide IDs.",
+  "split_counts": {
+    "training_pairs": 105,
+    "training_families": [
+      "1004772",
+      "1004776",
+      "1004778",
+      "1004786",
+      "1004792",
+      "1004794"
+    ],
+    "validation_pairs": 18,
+    "validation_families": [
+      "1004770"
+    ],
+    "test_pairs": 50,
+    "test_families": [
+      "1004762",
+      "1004764",
+      "1004766",
+      "1004768",
+      "1004774",
+      "1004780",
+      "1004784",
+      "1004788",
+      "1004790",
+      "1004798"
+    ],
+    "excluded_unique_training_pairs": 127,
+    "duplicate_training_entries_not_used": 250,
+    "families_overlap_between_active_splits": false
+  },
+  "hashes": {
+    "archive_sha256": "f796f0fa585701d66bd8f6b0ed096bb30f4376eff3359cb32ccbf1fd64d08a4e",
+    "checkpoint_sha256": "674b0045ab8c5857fa056dc85d691f7e1c30a86479ffe7ba0be933351b2fbcbb"
+  },
+  "reproduced_unet_dice": {
+    "saved_full_precision": 0.9153306335833998,
+    "recomputed_full_precision": 0.9153306335833998,
+    "difference_from_saved_full_precision": 0.0,
+    "difference_from_reported_rounded_0_9153": 3.063358339983058e-05,
+    "rounded_to_four_decimals": 0.9153,
+    "per_image_dice_iou_recall_match_saved_within_1e_12": true
+  },
+  "colour_threshold": {
+    "rule": "Predict fibrosis where uint8 B minus R is greater than or equal to t.",
+    "selected_t": 2,
+    "candidate_values": {
+      "minimum": -255,
+      "maximum": 255,
+      "step": 1
+    },
+    "selection_metric": "equal-family-weighted mean per-image Dice on 105 training pairs",
+    "training_equal_family_mean_dice": 0.8385260566364456,
+    "training_family_mean_dice_at_selected_t": {
+      "1004772": 0.8745186228298114,
+      "1004776": 0.8669812538734883,
+      "1004778": 0.8592494175698828,
+      "1004786": 0.8244011138501929,
+      "1004792": 0.8157492030677389,
+      "1004794": 0.7902567286275594
+    },
+    "test_data_used_for_tuning": false
+  },
+  "test_estimates": {
+    "unet": {
+      "dice": {
+        "image_macro_mean": 0.9153306335833998,
+        "equal_family_macro_mean": 0.9119221709930561,
+        "family_bootstrap_95_ci": [
+          0.8872443729453038,
+          0.9340497987561561
+        ],
+        "within_family_image_bootstrap_95_ci": [
+          0.9119221709930561,
+          0.9119221709930561
+        ]
+      },
+      "iou": {
+        "image_macro_mean": 0.8484173067065782,
+        "equal_family_macro_mean": 0.8425865364383514,
+        "family_bootstrap_95_ci": [
+          0.8031840172289404,
+          0.8783522806932251
+        ],
+        "within_family_image_bootstrap_95_ci": [
+          0.8425865364383514,
+          0.8425865364383514
+        ]
+      },
+      "precision": {
+        "image_macro_mean": 0.9298397785448145,
+        "equal_family_macro_mean": 0.9459572199005368,
+        "family_bootstrap_95_ci": [
+          0.9255775659344087,
+          0.9640410127697217
+        ],
+        "within_family_image_bootstrap_95_ci": [
+          0.9459572199005368,
+          0.9459572199005368
+        ]
+      },
+      "recall": {
+        "image_macro_mean": 0.9138991282706682,
+        "equal_family_macro_mean": 0.8911280987663487,
+        "family_bootstrap_95_ci": [
+          0.8435059478896895,
+          0.9336090722236453
+        ],
+        "within_family_image_bootstrap_95_ci": [
+          0.8911280987663487,
+          0.8911280987663487
+        ]
+      }
+    },
+    "colour_threshold": {
+      "dice": {
+        "image_macro_mean": 0.8417142123880947,
+        "equal_family_macro_mean": 0.824923731160496,
+        "family_bootstrap_95_ci": [
+          0.79265735096275,
+          0.8550585550910383
+        ],
+        "within_family_image_bootstrap_95_ci": [
+          0.824923731160496,
+          0.824923731160496
+        ]
+      },
+      "iou": {
+        "image_macro_mean": 0.7346856588587296,
+        "equal_family_macro_mean": 0.7094853976975414,
+        "family_bootstrap_95_ci": [
+          0.6651366896931149,
+          0.751638540595113
+        ],
+        "within_family_image_bootstrap_95_ci": [
+          0.7094853976975414,
+          0.7094853976975414
+        ]
+      },
+      "precision": {
+        "image_macro_mean": 0.8245420934120662,
+        "equal_family_macro_mean": 0.8290850926004147,
+        "family_bootstrap_95_ci": [
+          0.810513666761985,
+          0.848723348517997
+        ],
+        "within_family_image_bootstrap_95_ci": [
+          0.8290850926004147,
+          0.8290850926004147
+        ]
+      },
+      "recall": {
+        "image_macro_mean": 0.8793571862359024,
+        "equal_family_macro_mean": 0.8389207108435063,
+        "family_bootstrap_95_ci": [
+          0.7760083016621925,
+          0.9011566993219196
+        ],
+        "within_family_image_bootstrap_95_ci": [
+          0.8389207108435063,
+          0.8389207108435063
+        ]
+      }
+    },
+    "all_background": {
+      "dice": {
+        "image_macro_mean": 0.0,
+        "equal_family_macro_mean": 0.0,
+        "family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "within_family_image_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "iou": {
+        "image_macro_mean": 0.0,
+        "equal_family_macro_mean": 0.0,
+        "family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "within_family_image_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "precision": {
+        "image_macro_mean": null,
+        "equal_family_macro_mean": null,
+        "family_bootstrap_95_ci": null,
+        "within_family_image_bootstrap_95_ci": null
+      },
+      "recall": {
+        "image_macro_mean": 0.0,
+        "equal_family_macro_mean": 0.0,
+        "family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "within_family_image_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "test_group_level_metrics": {
+    "unet": {
+      "dice": [
+        0.8842467265272838,
+        0.9196961279668673,
+        0.9427521080098851,
+        0.9468381777599101,
+        0.9298185045788656,
+        0.9088872086166001,
+        0.9276567346240634,
+        0.8680143495928048,
+        0.8317235101978638,
+        0.9595882620564149
+      ],
+      "iou": [
+        0.8019184301553628,
+        0.8537047830213794,
+        0.8923685375525292,
+        0.8991838884291917,
+        0.8709711512519729,
+        0.8361059150798258,
+        0.8651521116505207,
+        0.7668068489035746,
+        0.7173378237094842,
+        0.9223158746296721
+      ],
+      "precision": [
+        0.9587823382401954,
+        0.9556945236407794,
+        0.9671331809943734,
+        0.9495235441949268,
+        0.883665634737602,
+        0.8955964850053328,
+        0.9351810630931497,
+        0.990858806404658,
+        0.9549478667985977,
+        0.9681887558957528
+      ],
+      "recall": [
+        0.834399092518478,
+        0.8901670605118449,
+        0.9214319983883229,
+        0.945816266943128,
+        0.9853175077090419,
+        0.933561837405431,
+        0.9203447188925207,
+        0.772270038875191,
+        0.7568332458921393,
+        0.9511392205273898
+      ]
+    },
+    "colour_threshold": {
+      "dice": [
+        0.7853120555094167,
+        0.8331258767522671,
+        0.8813378050860242,
+        0.8898962857116864,
+        0.8801251758270308,
+        0.8184338298512909,
+        0.8202237174282703,
+        0.7620798145388309,
+        0.7268355118289147,
+        0.8518672390712274
+      ],
+      "iou": [
+        0.6607718934374924,
+        0.7250395018505479,
+        0.788496232549033,
+        0.8022297908892879,
+        0.788476167479904,
+        0.695282598292671,
+        0.6952597845845845,
+        0.6156130447577517,
+        0.5817261339286091,
+        0.7419588292055324
+      ],
+      "precision": [
+        0.8192779701157302,
+        0.8916356005170268,
+        0.8326931165737511,
+        0.8517776408691695,
+        0.7992169493341217,
+        0.793856802317832,
+        0.8526859068311713,
+        0.841799125679062,
+        0.8264443165046941,
+        0.7814634972615888
+      ],
+      "recall": [
+        0.7723338423532028,
+        0.7918625556601452,
+        0.9398906317630107,
+        0.9347755672374125,
+        0.9859082861606787,
+        0.8676854404470127,
+        0.7923287363874001,
+        0.6961533225430728,
+        0.6720560563529077,
+        0.9362126695302195
+      ]
+    },
+    "all_background": {
+      "dice": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "iou": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "precision": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "recall": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "test_image_distributions": {
+    "unet": {
+      "dice": {
+        "minimum": 0.7342428684180855,
+        "median": 0.9380561083862329,
+        "maximum": 0.9743464057556926
+      },
+      "iou": {
+        "minimum": 0.5800819526100125,
+        "median": 0.8833389729998236,
+        "maximum": 0.9499761042358387
+      },
+      "precision": {
+        "minimum": 0.6948394531128345,
+        "median": 0.9484742240929223,
+        "maximum": 0.993149437844235
+      },
+      "recall": {
+        "minimum": 0.5830619257070588,
+        "median": 0.9490184841534332,
+        "maximum": 0.9994112931509594
+      }
+    },
+    "colour_threshold": {
+      "dice": {
+        "minimum": 0.5816264207719466,
+        "median": 0.8689276137543922,
+        "maximum": 0.9460551134011133
+      },
+      "iou": {
+        "minimum": 0.4100657466338984,
+        "median": 0.7682500555761721,
+        "maximum": 0.8976324335649684
+      },
+      "precision": {
+        "minimum": 0.5810656714870679,
+        "median": 0.8374848105979892,
+        "maximum": 0.931272268310961
+      },
+      "recall": {
+        "minimum": 0.4706251054699742,
+        "median": 0.9282448491825466,
+        "maximum": 1.0
+      }
+    },
+    "all_background": {
+      "dice": {
+        "minimum": 0.0,
+        "median": 0.0,
+        "maximum": 0.0
+      },
+      "iou": {
+        "minimum": 0.0,
+        "median": 0.0,
+        "maximum": 0.0
+      },
+      "precision": {
+        "minimum": null,
+        "median": null,
+        "maximum": null
+      },
+      "recall": {
+        "minimum": 0.0,
+        "median": 0.0,
+        "maximum": 0.0
+      }
+    }
+  },
+  "paired_unet_minus_colour_threshold_dice": {
+    "equal_family_macro_difference": 0.08699843983256006,
+    "primary_test_family_bootstrap_95_ci": [
+      0.07315876056020197,
+      0.09962074456605957
+    ],
+    "secondary_within_family_image_bootstrap_95_ci": [
+      0.07856573117382186,
+      0.09553955260064735
+    ],
+    "primary_lower_bound_above_zero": true
+  },
+  "success_rule": {
+    "criterion": "U-Net equal-family macro Dice exceeds the colour-threshold baseline with paired test-family bootstrap 95% CI lower bound > 0.",
+    "outcome": "PASS"
+  },
+  "bootstrap": {
+    "primary": "10,000 paired resamples of the 10 test filename families, equal weight per family.",
+    "primary_seed": 20261117,
+    "secondary": "10,000 stratified resamples of images within each of the 10 fixed test filename families, then equal weight per family.",
+    "secondary_seed": 20261118,
+    "test_family_count_limits_precision": true
+  },
+  "metric_conventions": {
+    "positive_class": "Manual fibrosis mask.",
+    "recall": "TP / (TP + FN), same quantity as sensitivity.",
+    "precision": "TP / (TP + FP); NA if no pixels are predicted positive.",
+    "dice_iou": "1 only if both prediction and target are empty; otherwise standard binary formulas."
+  },
+  "failure_gallery": {
+    "lowest_unet_dice_test_images": [
+      {
+        "stem": "1004790_3",
+        "family_id": "1004790",
+        "unet_dice": 0.7342428684180855
+      },
+      {
+        "stem": "1004762_18",
+        "family_id": "1004762",
+        "unet_dice": 0.7402665626031879
+      },
+      {
+        "stem": "1004790_6",
+        "family_id": "1004790",
+        "unet_dice": 0.790115901576948
+      },
+      {
+        "stem": "1004790_7",
+        "family_id": "1004790",
+        "unet_dice": 0.8010498315304132
+      },
+      {
+        "stem": "1004780",
+        "family_id": "1004780",
+        "unet_dice": 0.8182871813680542
+      },
+      {
+        "stem": "1004774_6",
+        "family_id": "1004774",
+        "unet_dice": 0.8371831931715046
+      },
+      {
+        "stem": "1004790_4",
+        "family_id": "1004790",
+        "unet_dice": 0.8408171257016055
+      },
+      {
+        "stem": "1004774_8",
+        "family_id": "1004774",
+        "unet_dice": 0.8543628920879421
+      },
+      {
+        "stem": "1004764_4",
+        "family_id": "1004764",
+        "unet_dice": 0.8672995073455475
+      },
+      {
+        "stem": "1004788",
+        "family_id": "1004788",
+        "unet_dice": 0.8680143495928048
+      },
+      {
+        "stem": "1004790_2",
+        "family_id": "1004790",
+        "unet_dice": 0.896528183247249
+      },
+      {
+        "stem": "1004766_18",
+        "family_id": "1004766",
+        "unet_dice": 0.9060296241751394
+      }
+    ],
+    "file": "PHASEA_failure_gallery.png"
+  },
+  "software": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.2.6",
+    "pillow": "11.1.0",
+    "torch": "2.7.1+cu118",
+    "device": "cuda",
+    "cuda_available": true
+  }
+}

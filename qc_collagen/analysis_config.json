@@ -1,0 +1,42 @@
+{
+  "random_seed": 20261111,
+  "bootstrap_seed": 20261112,
+  "bootstrap_replicates": 5000,
+  "participant_unit_for_statistics": true,
+  "spot_qc_percentile": 10.0,
+  "umi_threshold": 1194.3000000000002,
+  "genes_detected_threshold": 799.3000000000002,
+  "spot_expression_transform": "log1p(raw target counts / total spot UMI * 10000)",
+  "pseudobulk_transform": "log1p(summed feature counts / summed participant UMI * 1000000)",
+  "module_scoring": "simple mean of member log1p(CP10K); no control genes",
+  "trichrome_collagen_proxy_method": "Otsu saturation tissue mask; per-slide white-reference balance; fixed OpenCV HSV blue/green hue 75-140, saturation >=35",
+  "trichrome_target_mpp_um": 3.0,
+  "trichrome_grid_um": 256,
+  "random_verification_slide_seed": 20261210,
+  "counts": {
+    "participants": 28,
+    "samples": 29,
+    "spots": 25104
+  },
+  "slide_files_discovered": 33,
+  "slides_successfully_processed": 33,
+  "slide_processing_errors": 0,
+  "software_versions": {
+    "python": "3.13.1",
+    "numpy": "2.2.6",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "opencv": "4.10.0",
+    "openslide_python": "1.4.7",
+    "openslide_library": "4.0.1",
+    "scikit_learn": "1.6.1",
+    "scikit_image": "0.25.2",
+    "matplotlib": "3.10.8",
+    "pillow": "11.1.0",
+    "tifffile": "2025.10.16"
+  },
+  "registration_run": false,
+  "model_training_run": false,
+  "batch_correction_run": false,
+  "spot_level_collagen_assignment": false
+}

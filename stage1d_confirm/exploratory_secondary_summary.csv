@@ -1,0 +1,121 @@
+﻿label,target_variant,target,model,n_eligible_participants,mean_participant_spearman,ci95_low,ci95_high,bootstrap_replicates,bootstrap_seed
+"exploratory, post-hoc",depth_residualized_neighbor_mean,ECM_collagen,mlp_spot,12,0.12078651902704694,0.04876609858679954,0.19978742043939257,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,ECM_collagen,color_only_ridge,12,0.04411020773991262,-0.03565470153667001,0.1300090221530085,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,ECM_collagen,depth_only_ridge,12,-0.0512809899188611,-0.1308720334655482,0.03628693824933402,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,ECM_collagen,mlp_spot - color_only_ridge,12,0.07667631128713433,0.005413092138518264,0.15143814567421002,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,ECM_collagen,mlp_spot - depth_only_ridge,12,0.17206750894590805,0.03685647953485198,0.29609931221424973,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,myofibroblast_pro-fibrotic,mlp_spot,12,0.11721295231107363,0.046609802636151505,0.1908737723054711,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,myofibroblast_pro-fibrotic,color_only_ridge,12,0.015954020529008132,-0.07448332103076548,0.11727761726418294,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,myofibroblast_pro-fibrotic,depth_only_ridge,12,0.006281966276643946,-0.06454923946489635,0.07261404753239822,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,myofibroblast_pro-fibrotic,mlp_spot - color_only_ridge,12,0.10125893178206548,-0.012216869245098327,0.2196600829957987,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,myofibroblast_pro-fibrotic,mlp_spot - depth_only_ridge,12,0.11093098603442968,0.006359809286898978,0.22862994384723334,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,matrix_remodelling,mlp_spot,12,0.045184268910441305,-0.04244577869946728,0.15308066111516236,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,matrix_remodelling,color_only_ridge,12,0.002047694119918365,-0.08905322769725005,0.1227909241956084,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,matrix_remodelling,depth_only_ridge,12,-0.01673202018893505,-0.08926134863136664,0.06503495524403262,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,matrix_remodelling,mlp_spot - color_only_ridge,12,0.04313657479052294,-0.05613019112211572,0.1346458421371968,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,matrix_remodelling,mlp_spot - depth_only_ridge,12,0.06191628909937633,-0.08281990794987776,0.2084527832908632,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL1A1,mlp_spot,12,0.062457099117944635,0.008020779798626114,0.1305096618761338,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL1A1,color_only_ridge,12,-0.03804065888860413,-0.12784179602104898,0.04570780555893183,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL1A1,depth_only_ridge,12,0.06852962948167318,-0.012063650442612378,0.14390826462401618,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL1A1,mlp_spot - color_only_ridge,12,0.1004977580065488,-0.01651797235136277,0.24447420646142023,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL1A1,mlp_spot - depth_only_ridge,12,-0.006072530363728554,-0.09047501255146824,0.08341094966421367,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL1A2,mlp_spot,12,0.052270378638042486,-0.018459425277828515,0.1363198397329429,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL1A2,color_only_ridge,12,0.12703869365258805,0.029394678203736244,0.21465156312131553,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL1A2,depth_only_ridge,12,0.06339644217659933,-0.008122079857352681,0.1330146348582965,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL1A2,mlp_spot - color_only_ridge,12,-0.07476831501454557,-0.14875974321137803,0.007550167667500425,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL1A2,mlp_spot - depth_only_ridge,12,-0.01112606353855685,-0.09519325191153444,0.07187274383448178,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL3A1,mlp_spot,12,0.03904799111057997,0.000534029633688385,0.08269395839032598,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL3A1,color_only_ridge,12,0.06628622848313713,0.0006392414184995792,0.12783489096743675,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL3A1,depth_only_ridge,12,-0.04269528684028056,-0.11139544463909488,0.02486577055961146,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL3A1,mlp_spot - color_only_ridge,12,-0.02723823737255716,-0.08223816645975719,0.03730991422102416,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,COL3A1,mlp_spot - depth_only_ridge,12,0.08174327795086052,-0.0038375735940995763,0.16430982935915195,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,FN1,mlp_spot,12,0.12095556371847194,0.06034291140002553,0.19364929647396822,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,FN1,color_only_ridge,12,-0.05702329660146375,-0.13317513631911307,0.03127870128298223,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,FN1,depth_only_ridge,12,0.03271497233616114,-0.0263454230862783,0.08602020435026206,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,FN1,mlp_spot - color_only_ridge,12,0.17797886031993568,0.08285726473542981,0.27068376725288157,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,FN1,mlp_spot - depth_only_ridge,12,0.08824059138231082,0.018594263077160417,0.15805158029666586,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,TGFB1,mlp_spot,12,0.012894838115640983,-0.03943911368529207,0.06280109155225107,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,TGFB1,color_only_ridge,12,0.017763234137841765,-0.05678549771464844,0.10649923053018898,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,TGFB1,depth_only_ridge,12,-0.03877151218480777,-0.11209357769585036,0.030269846772046107,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,TGFB1,mlp_spot - color_only_ridge,12,-0.004868396022200784,-0.10029653181485174,0.08401904326867939,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,TGFB1,mlp_spot - depth_only_ridge,12,0.05166635030044875,-0.03850416819413642,0.14319963197786106,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,CCN2,mlp_spot,12,0.12239070367073172,0.07554412425633568,0.16824518284891624,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,CCN2,color_only_ridge,12,0.0632827683853525,-0.007610209184767424,0.14675549303993116,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,CCN2,depth_only_ridge,12,-0.00288735323242557,-0.0505455505458344,0.044928814863491776,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,CCN2,mlp_spot - color_only_ridge,12,0.05910793528537922,-0.004788555651716427,0.12866627118357407,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,CCN2,mlp_spot - depth_only_ridge,12,0.1252780569031573,0.052476210284214134,0.20115864021813945,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,ACTA2,mlp_spot,12,0.10173663742013495,0.02653120942340077,0.18068192927526916,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,ACTA2,color_only_ridge,12,0.021711874246491025,-0.08350813227625584,0.14393683276173,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,ACTA2,depth_only_ridge,12,0.01397301659558872,-0.05741899004686173,0.08368603902951621,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,ACTA2,mlp_spot - color_only_ridge,12,0.08002476317364392,-0.013802579782703338,0.18261151329751404,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,ACTA2,mlp_spot - depth_only_ridge,12,0.08776362082454621,-0.00792033565405627,0.1918731358524816,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,MMP2,mlp_spot,12,0.04899729810308919,0.013841898320657171,0.0920422230376048,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,MMP2,color_only_ridge,12,-0.07558509529670913,-0.14174773122321122,-0.008152692077973776,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,MMP2,depth_only_ridge,12,-0.03990357207635324,-0.09557026351666467,0.02623212145251888,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,MMP2,mlp_spot - color_only_ridge,12,0.12458239339979832,0.05472088487694344,0.1959207520782987,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,MMP2,mlp_spot - depth_only_ridge,12,0.08890087017944244,0.009900219033261826,0.16083715555319045,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,TIMP1,mlp_spot,12,0.054086169813530253,-0.02725400105814632,0.15783289075267778,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,TIMP1,color_only_ridge,12,-0.004234491262830004,-0.09589934120093327,0.11677771323027228,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,TIMP1,depth_only_ridge,12,-0.019117299567436633,-0.09413794222324105,0.07186815276659744,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,TIMP1,mlp_spot - color_only_ridge,12,0.058320661076360254,0.001780015251023623,0.12080369797119592,10000,20261114
+"exploratory, post-hoc",depth_residualized_neighbor_mean,TIMP1,mlp_spot - depth_only_ridge,12,0.07320346938096689,-0.06776505118918245,0.2264930549467546,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,ECM_collagen,mlp_spot,12,0.09305715542088966,0.04043790617383142,0.1564426038888299,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,ECM_collagen,color_only_ridge,12,0.03425656471202676,-0.02475471500277352,0.10137330770748551,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,ECM_collagen,depth_only_ridge,12,-0.1282856436127835,-0.23340446164608772,-0.02199097125977882,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,ECM_collagen,mlp_spot - color_only_ridge,12,0.0588005907088629,0.007373365370064781,0.11372927965019897,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,ECM_collagen,mlp_spot - depth_only_ridge,12,0.22134279903367324,0.0766572761632356,0.357574393382065,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,myofibroblast_pro-fibrotic,mlp_spot,12,0.0683823699426828,0.02528475380948538,0.11951465600658893,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,myofibroblast_pro-fibrotic,color_only_ridge,12,0.0040022341472264545,-0.04809781326305318,0.06575241184541022,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,myofibroblast_pro-fibrotic,depth_only_ridge,12,-0.06700309784768124,-0.14149977974025704,0.010550312463046654,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,myofibroblast_pro-fibrotic,mlp_spot - color_only_ridge,12,0.06438013579545636,0.005144255804720169,0.12666490190893398,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,myofibroblast_pro-fibrotic,mlp_spot - depth_only_ridge,12,0.13538546779036406,0.040609044924563104,0.24263772363388764,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,matrix_remodelling,mlp_spot,12,0.04831081779413712,-0.01046270459428169,0.12078137547883203,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,matrix_remodelling,color_only_ridge,12,-0.007246978317447361,-0.07421671202269779,0.07555641253008503,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,matrix_remodelling,depth_only_ridge,12,-0.11637616722037375,-0.21776958396974322,-0.021333359942677318,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,matrix_remodelling,mlp_spot - color_only_ridge,12,0.05555779611158448,-0.004417340931262233,0.11639022990181298,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,matrix_remodelling,mlp_spot - depth_only_ridge,12,0.16468698501451087,0.041630881336031246,0.28790799686280694,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL1A1,mlp_spot,12,0.046616471023264106,0.0012492084387938872,0.09950263480804036,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL1A1,color_only_ridge,12,0.001076457795880716,-0.06036802298526202,0.057790547782409656,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL1A1,depth_only_ridge,12,0.33571531498910806,0.17276318108724933,0.5086160827299827,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL1A1,mlp_spot - color_only_ridge,12,0.04554001322738338,-0.032620363486027995,0.144670973442658,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL1A1,mlp_spot - depth_only_ridge,12,-0.289098843965844,-0.46573860063504074,-0.12363409537843689,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL1A2,mlp_spot,12,0.05053221621773837,-0.008179267701085078,0.11476215312091777,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL1A2,color_only_ridge,12,0.07152308809068288,0.005319402444905353,0.13214421619442457,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL1A2,depth_only_ridge,12,0.2271709669839793,0.1415200353124409,0.32724686572193307,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL1A2,mlp_spot - color_only_ridge,12,-0.02099087187294453,-0.07394230419182057,0.04401944980193716,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL1A2,mlp_spot - depth_only_ridge,12,-0.17663875076624092,-0.2728029652776368,-0.09153986964033047,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL3A1,mlp_spot,12,0.03303033324780562,0.003438277375851966,0.06939230857998252,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL3A1,color_only_ridge,12,0.047615321833023104,-0.003926806675663494,0.09485053936421255,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL3A1,depth_only_ridge,12,-0.2702481248627571,-0.4221567517179582,-0.13851123628889092,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL3A1,mlp_spot - color_only_ridge,12,-0.014584988585217479,-0.05648536610041766,0.029132844449500508,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,COL3A1,mlp_spot - depth_only_ridge,12,0.3032784581105627,0.1748101494469752,0.4473823176447109,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,FN1,mlp_spot,12,0.06638127638198688,0.01598042144254725,0.12664876179521617,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,FN1,color_only_ridge,12,-0.030591419663991603,-0.08162484464364995,0.02745811311485413,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,FN1,depth_only_ridge,12,0.27937198155934645,0.16990571907071444,0.40745083974510027,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,FN1,mlp_spot - color_only_ridge,12,0.09697269604597847,0.04055317413780208,0.1568674276236565,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,FN1,mlp_spot - depth_only_ridge,12,-0.2129907051773596,-0.3675035666823092,-0.07824355822914857,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,TGFB1,mlp_spot,12,0.010029499345244561,-0.02998417225087217,0.049309642182222696,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,TGFB1,color_only_ridge,12,0.014424663143954172,-0.031696796226326436,0.0658756281246634,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,TGFB1,depth_only_ridge,12,-0.46822818906276104,-0.6200987110763151,-0.31367881324422753,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,TGFB1,mlp_spot - color_only_ridge,12,-0.004395163798709614,-0.07158383043631292,0.0609555284152739,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,TGFB1,mlp_spot - depth_only_ridge,12,0.4782576884080056,0.3185404329621587,0.6396985007133277,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,CCN2,mlp_spot,12,0.05037986005207614,0.024396599011309056,0.07571368733870303,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,CCN2,color_only_ridge,12,0.019158544513965568,-0.01906181168995157,0.06117133791335058,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,CCN2,depth_only_ridge,12,-0.177158275450751,-0.23500085141987237,-0.1187969795575734,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,CCN2,mlp_spot - color_only_ridge,12,0.03122131553811057,0.00031225153814658035,0.06451470938551622,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,CCN2,mlp_spot - depth_only_ridge,12,0.22753813550282717,0.1719424136961354,0.28125304068475854,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,ACTA2,mlp_spot,12,0.06567223457175907,0.022744033285108878,0.12039729240766094,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,ACTA2,color_only_ridge,12,0.00015216475591902737,-0.07700352947159321,0.09356965728620235,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,ACTA2,depth_only_ridge,12,0.18610073257546123,0.1034121363526839,0.28630209660807754,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,ACTA2,mlp_spot - color_only_ridge,12,0.06552006981584002,0.010354932392600668,0.12267995532937288,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,ACTA2,mlp_spot - depth_only_ridge,12,-0.12042849800370219,-0.22777796414894647,-0.03190894521938512,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,MMP2,mlp_spot,12,0.029997855090633598,0.0043518521825998075,0.06006323696982799,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,MMP2,color_only_ridge,12,-0.031596618252573004,-0.07085361152656781,0.011044604307652419,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,MMP2,depth_only_ridge,12,-0.3273890709677371,-0.4697511880585177,-0.19324712100098873,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,MMP2,mlp_spot - color_only_ridge,12,0.061594473343206606,0.017111087479257475,0.10152096466318414,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,MMP2,mlp_spot - depth_only_ridge,12,0.35738692605837064,0.23594399733807664,0.4840381593861651,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,TIMP1,mlp_spot,12,0.06378437743563074,0.006022206954391271,0.13888795190541958,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,TIMP1,color_only_ridge,12,-0.008400406402693765,-0.07918143239533883,0.07957172886215068,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,TIMP1,depth_only_ridge,12,-0.18888256465293551,-0.3014844352581018,-0.09123070432976915,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,TIMP1,mlp_spot - color_only_ridge,12,0.0721847838383245,0.023953734577944683,0.12992872480020726,10000,20261114
+"exploratory, post-hoc",depth_residualized_unsmoothed,TIMP1,mlp_spot - depth_only_ridge,12,0.25266694208856627,0.11972544625892476,0.4051948474367767,10000,20261114

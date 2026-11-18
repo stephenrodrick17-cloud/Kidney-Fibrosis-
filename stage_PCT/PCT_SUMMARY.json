@@ -1,0 +1,192 @@
+{
+  "timestamp_utc": "2026-11-18T04:39:46.324279+00:00",
+  "checkpoint_sha256": "674b0045ab8c5857fa056dc85d691f7e1c30a86479ffe7ba0be933351b2fbcbb",
+  "n_images": 50,
+  "n_families": 10,
+  "family_resampling": "filename family",
+  "bootstrap_seed": 20261118,
+  "bootstrap_resamples": 10000,
+  "tissue_rule": "RGB channel mean < 245",
+  "colour_rule": {
+    "mean_bias": 3.6595462000324503,
+    "mean_absolute_error": 7.15053888298538,
+    "root_mean_square_error": 9.281113996471344,
+    "pearson": 0.8718592774844809,
+    "spearman": 0.8129171668667466,
+    "lin_concordance": 0.7408845264491135,
+    "bland_altman_bias": 3.6595462000324503,
+    "bland_altman_sd": 8.615766197425408,
+    "bland_altman_loa_low": -13.22735554692135,
+    "bland_altman_loa_high": 20.54644794698625,
+    "error_slope": 0.4422669280931309,
+    "error_slope_ci_low": 0.24566660013401437,
+    "error_slope_ci_high": 0.9167210299722781,
+    "bootstrap_ci": {
+      "mean_bias": [
+        -1.5326764891403262,
+        7.1065457715410325
+      ],
+      "mean_absolute_error": [
+        4.9891070832699445,
+        8.839966439296942
+      ],
+      "root_mean_square_error": [
+        6.540459560027335,
+        10.97791969725427
+      ],
+      "pearson": [
+        0.7715212358340472,
+        0.9353543405916768
+      ],
+      "spearman": [
+        0.7620983155029316,
+        0.8935063769082532
+      ],
+      "lin_concordance": [
+        0.5466951529119651,
+        0.8270843166064747
+      ],
+      "bland_altman_bias": [
+        -1.5326764891403262,
+        7.1065457715410325
+      ],
+      "bland_altman_loa_low": [
+        -19.195736996196853,
+        -6.43534797051015
+      ],
+      "bland_altman_loa_high": [
+        13.141612911484689,
+        24.02168881590635
+      ],
+      "slope": [
+        0.24566660013401437,
+        0.9167210299722781
+      ]
+    }
+  },
+  "u_net": {
+    "mean_bias": 0.22281563410672242,
+    "mean_absolute_error": 4.154200249646001,
+    "root_mean_square_error": 5.8362106511953185,
+    "pearson": 0.9046899927266048,
+    "spearman": 0.8646818727490996,
+    "lin_concordance": 0.8614069344838969,
+    "bland_altman_bias": 0.22281563410672242,
+    "bland_altman_sd": 5.891164948231264,
+    "bland_altman_loa_low": -11.323867664426556,
+    "bland_altman_loa_high": 11.76949893264,
+    "error_slope": 0.23970123920941178,
+    "error_slope_ci_low": 0.1010175043070777,
+    "error_slope_ci_high": 0.5504404762367409,
+    "bootstrap_ci": {
+      "mean_bias": [
+        -3.2913037830392806,
+        2.7300129525119923
+      ],
+      "mean_absolute_error": [
+        2.516288104569239,
+        5.656738726061684
+      ],
+      "root_mean_square_error": [
+        3.9041160303535842,
+        7.40996644897534
+      ],
+      "pearson": [
+        0.8203624789491191,
+        0.9601799021876573
+      ],
+      "spearman": [
+        0.8151086433945985,
+        0.9507652006758613
+      ],
+      "lin_concordance": [
+        0.6492438660984076,
+        0.9323545579113838
+      ],
+      "bland_altman_bias": [
+        -3.2913037830392806,
+        2.7300129525119923
+      ],
+      "bland_altman_loa_low": [
+        -16.093496857497804,
+        -6.237740498363982
+      ],
+      "bland_altman_loa_high": [
+        5.797265663725423,
+        14.41042986908365
+      ],
+      "slope": [
+        0.1010175043070777,
+        0.5504404762367409
+      ]
+    }
+  },
+  "smallest_expert_pct_tissue": 25.239860569709418,
+  "smallest_expert_image": {
+    "stem": "1004788",
+    "family_id": "1004788",
+    "expert_pct_tissue": 25.239860569709418,
+    "unet_pct_tissue": 19.67181194473185,
+    "colour_pct_tissue": 20.861092763903894
+  },
+  "three_worst_u_net": [
+    {
+      "stem": "1004780",
+      "family_id": "1004780",
+      "expert_pct_tissue": 42.77102687854104,
+      "predicted_pct_tissue": 61.25216993189752,
+      "signed_error": 18.481143053356476,
+      "absolute_error": 18.481143053356476
+    },
+    {
+      "stem": "1004790_3",
+      "family_id": "1004790",
+      "expert_pct_tissue": 34.084198640431524,
+      "predicted_pct_tissue": 20.048294435840116,
+      "signed_error": -14.035904204591407,
+      "absolute_error": 14.035904204591407
+    },
+    {
+      "stem": "1004762_18",
+      "family_id": "1004762",
+      "expert_pct_tissue": 31.65087213294877,
+      "predicted_pct_tissue": 19.186161852004457,
+      "signed_error": -12.464710280944313,
+      "absolute_error": 12.464710280944313
+    }
+  ],
+  "three_worst_colour": [
+    {
+      "stem": "1004780",
+      "family_id": "1004780",
+      "expert_pct_tissue": 42.77102687854104,
+      "predicted_pct_tissue": 73.6033269109708,
+      "signed_error": 30.83230003242975,
+      "absolute_error": 30.83230003242975
+    },
+    {
+      "stem": "1004774_6",
+      "family_id": "1004774",
+      "expert_pct_tissue": 30.459664865854776,
+      "predicted_pct_tissue": 48.12097488020022,
+      "signed_error": 17.661310014345446,
+      "absolute_error": 17.661310014345446
+    },
+    {
+      "stem": "1004774",
+      "family_id": "1004774",
+      "expert_pct_tissue": 46.72957176146999,
+      "predicted_pct_tissue": 63.03930931733965,
+      "signed_error": 16.30973755586966,
+      "absolute_error": 16.30973755586966
+    }
+  ],
+  "environment": {
+    "python": "3.13.1",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "torch": "2.7.1+cu118",
+    "matplotlib": "3.10.8",
+    "pillow": "11.1.0"
+  }
+}

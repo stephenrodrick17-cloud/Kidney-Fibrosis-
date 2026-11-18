@@ -1,0 +1,9 @@
+analysis_label,mask_status,asset_status,pathology_or_clinical_variable,participants_with_confirmed_local_value,result,reason
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,IFTA percentage or grade,0,NOT TESTABLE,No value was identified in the allowed local records; Stage 1d metadata coverage is incomplete.
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,interstitial fibrosis score,0,NOT TESTABLE,No value was identified in the allowed local records; Stage 1d metadata coverage is incomplete.
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,tubular atrophy,0,NOT TESTABLE,No value was identified in the allowed local records; Stage 1d metadata coverage is incomplete.
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,eGFR,0,NOT TESTABLE,No value was identified in the allowed local records; Stage 1d metadata coverage is incomplete.
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,serum creatinine,0,NOT TESTABLE,No value was identified in the allowed local records; Stage 1d metadata coverage is incomplete.
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,diagnosis,0,NOT TESTABLE,No value was identified in the allowed local records; Stage 1d metadata coverage is incomplete.
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,age,0,NOT TESTABLE,No value was identified in the allowed local records; Stage 1d metadata coverage is incomplete.
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,sex,0,NOT TESTABLE,No value was identified in the allowed local records; Stage 1d metadata coverage is incomplete.

@@ -1,0 +1,4226 @@
+{
+  "timestamp_utc": "2026-11-16T16:27:53.426219+00:00",
+  "python": "3.13.1",
+  "torch": "2.7.1+cu118",
+  "torchvision": "0.22.1+cu118",
+  "numpy": "2.2.6",
+  "pillow": "11.1.0",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "seeds": {
+    "unet_ensemble": [
+      20261122,
+      20261123
+    ],
+    "deeplab": "not run; projected duration exceeded 7200 seconds",
+    "bootstrap": 20261125
+  },
+  "split_counts": {
+    "training": 105,
+    "validation": 18,
+    "test": 50
+  },
+  "split_families": {
+    "training": [
+      "1004772",
+      "1004776",
+      "1004778",
+      "1004786",
+      "1004792",
+      "1004794"
+    ],
+    "validation": [
+      "1004770"
+    ],
+    "test": [
+      "1004762",
+      "1004764",
+      "1004766",
+      "1004768",
+      "1004774",
+      "1004780",
+      "1004784",
+      "1004788",
+      "1004790",
+      "1004798"
+    ]
+  },
+  "test_pixels_decoded_after_training_frozen": true,
+  "results_summary": {
+    "comparison_rows": [
+      {
+        "model": "frozen_unet",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9153306335833998,
+        "dice_family_macro": 0.9119221709930561,
+        "dice_family_bootstrap_95_ci": [
+          0.8875951361229354,
+          0.9341902189786933
+        ],
+        "iou_image_macro": 0.8484173067065782,
+        "iou_family_macro": 0.8425865364383514,
+        "iou_family_bootstrap_95_ci": [
+          0.803819560042506,
+          0.8783778452810466
+        ],
+        "precision_image_macro": 0.9298397785448145,
+        "precision_family_macro": 0.9459572199005368,
+        "precision_family_bootstrap_95_ci": [
+          0.9249455178217202,
+          0.9635214252062049
+        ],
+        "recall_image_macro": 0.9138991282706682,
+        "recall_family_macro": 0.8911280987663487,
+        "recall_family_bootstrap_95_ci": [
+          0.8444968414758107,
+          0.9351190336255208
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8417142123880947,
+        "dice_family_macro": 0.824923731160496,
+        "dice_family_bootstrap_95_ci": [
+          0.7924400477282565,
+          0.8563880421099435
+        ],
+        "iou_image_macro": 0.7346856588587296,
+        "iou_family_macro": 0.7094853976975414,
+        "iou_family_bootstrap_95_ci": [
+          0.6652932180574763,
+          0.753313315362408
+        ],
+        "precision_image_macro": 0.8245420934120662,
+        "precision_family_macro": 0.8290850926004147,
+        "precision_family_bootstrap_95_ci": [
+          0.8102303013407081,
+          0.8486882250346878
+        ],
+        "recall_image_macro": 0.8793571862359024,
+        "recall_family_macro": 0.8389207108435063,
+        "recall_family_bootstrap_95_ci": [
+          0.7753407047630981,
+          0.9043592553734098
+        ]
+      },
+      {
+        "model": "ensemble",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.912206643448136,
+        "dice_family_macro": 0.9098267858658874,
+        "dice_family_bootstrap_95_ci": [
+          0.8827439091286595,
+          0.9344695940259529
+        ],
+        "iou_image_macro": 0.8439529482397364,
+        "iou_family_macro": 0.840069756318211,
+        "iou_family_bootstrap_95_ci": [
+          0.7967480610196643,
+          0.8797777706036888
+        ],
+        "precision_image_macro": 0.9219553287458057,
+        "precision_family_macro": 0.9418189251942246,
+        "precision_family_bootstrap_95_ci": [
+          0.9173778657936663,
+          0.961815454744932
+        ],
+        "recall_image_macro": 0.9180517751841764,
+        "recall_family_macro": 0.8935055309702914,
+        "recall_family_bootstrap_95_ci": [
+          0.8406366551074334,
+          0.9421963032224941
+        ]
+      },
+      {
+        "model": "ensemble_minus_frozen_unet",
+        "dice_delta_family_macro": -0.002095385127168344,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.006197419129399386,
+          0.0014647453917352813
+        ]
+      },
+      {
+        "model": "deeplab_v3_resnet50",
+        "status": "BLOCKED_BEFORE_TRAINING",
+        "reason": "Registered runtime preflight projected this run above the 2-hour cap.",
+        "projected_seconds": 8070.787259065246
+      }
+    ],
+    "robustness_rows": [
+      {
+        "model": "frozen_unet",
+        "condition": "clean",
+        "condition_type": "clean",
+        "level": "0",
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9153306335833998,
+        "dice_family_macro": 0.9119221709930561,
+        "dice_family_bootstrap_95_ci": [
+          0.8875951361229354,
+          0.9341902189786933
+        ],
+        "dice_delta_family_macro": 0.0,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "iou_image_macro": 0.8484173067065782,
+        "iou_family_macro": 0.8425865364383514,
+        "iou_family_bootstrap_95_ci": [
+          0.803819560042506,
+          0.8783778452810466
+        ],
+        "iou_delta_family_macro": 0.0,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "precision_image_macro": 0.9298397785448145,
+        "precision_family_macro": 0.9459572199005368,
+        "precision_family_bootstrap_95_ci": [
+          0.9249455178217202,
+          0.9635214252062049
+        ],
+        "precision_delta_family_macro": 0.0,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_image_macro": 0.9138991282706682,
+        "recall_family_macro": 0.8911280987663487,
+        "recall_family_bootstrap_95_ci": [
+          0.8444968414758107,
+          0.9351190336255208
+        ],
+        "recall_delta_family_macro": 0.0,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "clean",
+        "condition_type": "clean",
+        "level": "0",
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8417142123880947,
+        "dice_family_macro": 0.824923731160496,
+        "dice_family_bootstrap_95_ci": [
+          0.7924400477282565,
+          0.8563880421099435
+        ],
+        "dice_delta_family_macro": 0.0,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "iou_image_macro": 0.7346856588587296,
+        "iou_family_macro": 0.7094853976975414,
+        "iou_family_bootstrap_95_ci": [
+          0.6652932180574763,
+          0.753313315362408
+        ],
+        "iou_delta_family_macro": 0.0,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "precision_image_macro": 0.8245420934120662,
+        "precision_family_macro": 0.8290850926004147,
+        "precision_family_bootstrap_95_ci": [
+          0.8102303013407081,
+          0.8486882250346878
+        ],
+        "precision_delta_family_macro": 0.0,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_image_macro": 0.8793571862359024,
+        "recall_family_macro": 0.8389207108435063,
+        "recall_family_bootstrap_95_ci": [
+          0.7753407047630981,
+          0.9043592553734098
+        ],
+        "recall_delta_family_macro": 0.0,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "hue_level_1",
+        "condition_type": "hue",
+        "level": 1,
+        "direction": "-1",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.9152894153477878,
+        "dice_family_macro": 0.9118044613627033,
+        "dice_family_bootstrap_95_ci": [
+          0.8874914655776924,
+          0.9339951966619965
+        ],
+        "dice_delta_family_macro": -0.0015197065791085099,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0028160956522287413,
+          -0.00020783513004682855
+        ],
+        "iou_image_macro": 0.8483309610630334,
+        "iou_family_macro": 0.8423746850447852,
+        "iou_family_bootstrap_95_ci": [
+          0.8037838101357726,
+          0.8779898153960876
+        ],
+        "iou_delta_family_macro": -0.0015197065791085099,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0028160956522287413,
+          -0.00020783513004682855
+        ],
+        "precision_image_macro": 0.9300107265222058,
+        "precision_family_macro": 0.9461075328439683,
+        "precision_family_bootstrap_95_ci": [
+          0.9250652152071445,
+          0.9637396701923228
+        ],
+        "precision_delta_family_macro": -0.0015197065791085099,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0028160956522287413,
+          -0.00020783513004682855
+        ],
+        "recall_image_macro": 0.9136775004888854,
+        "recall_family_macro": 0.8908233079011291,
+        "recall_family_bootstrap_95_ci": [
+          0.8442687671164976,
+          0.9347309482059257
+        ],
+        "recall_delta_family_macro": -0.0015197065791085099,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0028160956522287413,
+          -0.00020783513004682855
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "hue_level_1",
+        "condition_type": "hue",
+        "level": 1,
+        "direction": "-1",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.8419167423373822,
+        "dice_family_macro": 0.8252525551543357,
+        "dice_family_bootstrap_95_ci": [
+          0.7929895308530097,
+          0.8564952316733175
+        ],
+        "dice_delta_family_macro": -0.002886433146560563,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.005575234666070861,
+          -8.191815941540924e-06
+        ],
+        "iou_image_macro": 0.734969296081593,
+        "iou_family_macro": 0.7099470870193019,
+        "iou_family_bootstrap_95_ci": [
+          0.6659142072360995,
+          0.753677207038101
+        ],
+        "iou_delta_family_macro": -0.002886433146560563,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.005575234666070861,
+          -8.191815941540924e-06
+        ],
+        "precision_image_macro": 0.8248597368822117,
+        "precision_family_macro": 0.8296043474960074,
+        "precision_family_bootstrap_95_ci": [
+          0.810638090522541,
+          0.8492016950408974
+        ],
+        "precision_delta_family_macro": -0.002886433146560563,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.005575234666070861,
+          -8.191815941540924e-06
+        ],
+        "recall_image_macro": 0.87964824411161,
+        "recall_family_macro": 0.8392981072386512,
+        "recall_family_bootstrap_95_ci": [
+          0.7757585126975178,
+          0.9045521845829664
+        ],
+        "recall_delta_family_macro": -0.002886433146560563,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.005575234666070861,
+          -8.191815941540924e-06
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "hue_level_1_mean",
+        "condition_type": "hue",
+        "level": 1,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9152894153477878,
+        "dice_family_macro": 0.9118044613627033,
+        "dice_family_bootstrap_95_ci": [
+          0.8874914655776922,
+          0.9339951966619963
+        ],
+        "dice_delta_family_macro": -0.00011770963035254706,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.00048738560456817515,
+          0.00021409632247518522
+        ],
+        "iou_image_macro": 0.8483309610630333,
+        "iou_family_macro": 0.8423746850447851,
+        "iou_family_bootstrap_95_ci": [
+          0.8037838101357726,
+          0.8779898153960876
+        ],
+        "iou_delta_family_macro": -0.00011770963035254706,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.00048738560456817515,
+          0.00021409632247518522
+        ],
+        "precision_image_macro": 0.9300107265222058,
+        "precision_family_macro": 0.9461075328439683,
+        "precision_family_bootstrap_95_ci": [
+          0.9250652152071445,
+          0.9637396701923228
+        ],
+        "precision_delta_family_macro": -0.00011770963035254706,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.00048738560456817515,
+          0.00021409632247518522
+        ],
+        "recall_image_macro": 0.9136775004888853,
+        "recall_family_macro": 0.8908233079011291,
+        "recall_family_bootstrap_95_ci": [
+          0.8442687671164976,
+          0.9347309482059257
+        ],
+        "recall_delta_family_macro": -0.00011770963035254706,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.00048738560456817515,
+          0.00021409632247518522
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "hue_level_1_mean",
+        "condition_type": "hue",
+        "level": 1,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8419167423373822,
+        "dice_family_macro": 0.8252525551543357,
+        "dice_family_bootstrap_95_ci": [
+          0.7929895308530097,
+          0.8564952316733175
+        ],
+        "dice_delta_family_macro": 0.000328823993839739,
+        "dice_delta_family_bootstrap_95_ci": [
+          3.320655971675636e-05,
+          0.0006099809601992095
+        ],
+        "iou_image_macro": 0.7349692960815932,
+        "iou_family_macro": 0.7099470870193021,
+        "iou_family_bootstrap_95_ci": [
+          0.6659142072360995,
+          0.753677207038101
+        ],
+        "iou_delta_family_macro": 0.000328823993839739,
+        "iou_delta_family_bootstrap_95_ci": [
+          3.320655971675636e-05,
+          0.0006099809601992095
+        ],
+        "precision_image_macro": 0.8248597368822117,
+        "precision_family_macro": 0.8296043474960074,
+        "precision_family_bootstrap_95_ci": [
+          0.810638090522541,
+          0.8492016950408974
+        ],
+        "precision_delta_family_macro": 0.000328823993839739,
+        "precision_delta_family_bootstrap_95_ci": [
+          3.320655971675636e-05,
+          0.0006099809601992095
+        ],
+        "recall_image_macro": 0.8796482441116101,
+        "recall_family_macro": 0.8392981072386512,
+        "recall_family_bootstrap_95_ci": [
+          0.7757585126975178,
+          0.9045521845829664
+        ],
+        "recall_delta_family_macro": 0.000328823993839739,
+        "recall_delta_family_bootstrap_95_ci": [
+          3.320655971675636e-05,
+          0.0006099809601992095
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "hue_level_2",
+        "condition_type": "hue",
+        "level": 2,
+        "direction": "-1",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.9147691408725462,
+        "dice_family_macro": 0.9110782471722899,
+        "dice_family_bootstrap_95_ci": [
+          0.8867639703006499,
+          0.9333975957869391
+        ],
+        "dice_delta_family_macro": -0.003705018416827713,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0060434382204934065,
+          -0.0013005046650400895
+        ],
+        "iou_image_macro": 0.8474920425475141,
+        "iou_family_macro": 0.8411950543934547,
+        "iou_family_bootstrap_95_ci": [
+          0.8024850318447152,
+          0.8768889129210161
+        ],
+        "iou_delta_family_macro": -0.003705018416827713,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0060434382204934065,
+          -0.0013005046650400895
+        ],
+        "precision_image_macro": 0.9297986807887665,
+        "precision_family_macro": 0.9460119984684789,
+        "precision_family_bootstrap_95_ci": [
+          0.9250230580257809,
+          0.9636004551901668
+        ],
+        "precision_delta_family_macro": -0.003705018416827713,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0060434382204934065,
+          -0.0013005046650400895
+        ],
+        "recall_image_macro": 0.9130218117722773,
+        "recall_family_macro": 0.8897174024537705,
+        "recall_family_bootstrap_95_ci": [
+          0.8428088381711669,
+          0.9338952854320873
+        ],
+        "recall_delta_family_macro": -0.003705018416827713,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0060434382204934065,
+          -0.0013005046650400895
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "hue_level_2",
+        "condition_type": "hue",
+        "level": 2,
+        "direction": "-1",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.8415588245421481,
+        "dice_family_macro": 0.8251006638237717,
+        "dice_family_bootstrap_95_ci": [
+          0.7931844924721951,
+          0.8559896773935324
+        ],
+        "dice_delta_family_macro": -0.004847063292009063,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.009391986051991347,
+          -7.954586833036288e-05
+        ],
+        "iou_image_macro": 0.7344210981515318,
+        "iou_family_macro": 0.7096992842593951,
+        "iou_family_bootstrap_95_ci": [
+          0.6662088328170409,
+          0.7527720327987167
+        ],
+        "iou_delta_family_macro": -0.004847063292009063,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.009391986051991347,
+          -7.954586833036288e-05
+        ],
+        "precision_image_macro": 0.8238119149084616,
+        "precision_family_macro": 0.8286870737285653,
+        "precision_family_bootstrap_95_ci": [
+          0.8094109879055862,
+          0.8484990213172814
+        ],
+        "precision_delta_family_macro": -0.004847063292009063,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.009391986051991347,
+          -7.954586833036288e-05
+        ],
+        "recall_image_macro": 0.8803768381026713,
+        "recall_family_macro": 0.8403014529065453,
+        "recall_family_bootstrap_95_ci": [
+          0.7773235952665969,
+          0.9049955744931008
+        ],
+        "recall_delta_family_macro": -0.004847063292009063,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.009391986051991347,
+          -7.954586833036288e-05
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "hue_level_2_mean",
+        "condition_type": "hue",
+        "level": 2,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9147691408725462,
+        "dice_family_macro": 0.9110782471722899,
+        "dice_family_bootstrap_95_ci": [
+          0.8867639703006499,
+          0.9333975957869391
+        ],
+        "dice_delta_family_macro": -0.000843923820765771,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0016265435724989717,
+          -0.00022464230291726012
+        ],
+        "iou_image_macro": 0.8474920425475141,
+        "iou_family_macro": 0.8411950543934547,
+        "iou_family_bootstrap_95_ci": [
+          0.8024850318447152,
+          0.8768889129210161
+        ],
+        "iou_delta_family_macro": -0.000843923820765771,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0016265435724989717,
+          -0.00022464230291726012
+        ],
+        "precision_image_macro": 0.9297986807887668,
+        "precision_family_macro": 0.9460119984684789,
+        "precision_family_bootstrap_95_ci": [
+          0.9250230580257809,
+          0.9636004551901668
+        ],
+        "precision_delta_family_macro": -0.000843923820765771,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0016265435724989717,
+          -0.00022464230291726012
+        ],
+        "recall_image_macro": 0.913021811772277,
+        "recall_family_macro": 0.8897174024537705,
+        "recall_family_bootstrap_95_ci": [
+          0.8428088381711669,
+          0.9338952854320874
+        ],
+        "recall_delta_family_macro": -0.000843923820765771,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0016265435724989717,
+          -0.00022464230291726012
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "hue_level_2_mean",
+        "condition_type": "hue",
+        "level": 2,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8415588245421484,
+        "dice_family_macro": 0.8251006638237717,
+        "dice_family_bootstrap_95_ci": [
+          0.7931844924721951,
+          0.8559896773935324
+        ],
+        "dice_delta_family_macro": 0.0001769326632759003,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0007495637229006022,
+          0.0009335761771082022
+        ],
+        "iou_image_macro": 0.7344210981515318,
+        "iou_family_macro": 0.7096992842593951,
+        "iou_family_bootstrap_95_ci": [
+          0.6662088328170409,
+          0.7527720327987167
+        ],
+        "iou_delta_family_macro": 0.0001769326632759003,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0007495637229006022,
+          0.0009335761771082022
+        ],
+        "precision_image_macro": 0.8238119149084617,
+        "precision_family_macro": 0.8286870737285653,
+        "precision_family_bootstrap_95_ci": [
+          0.8094109879055862,
+          0.8484990213172814
+        ],
+        "precision_delta_family_macro": 0.0001769326632759003,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0007495637229006022,
+          0.0009335761771082022
+        ],
+        "recall_image_macro": 0.8803768381026711,
+        "recall_family_macro": 0.8403014529065453,
+        "recall_family_bootstrap_95_ci": [
+          0.7773235952665969,
+          0.9049955744931008
+        ],
+        "recall_delta_family_macro": 0.0001769326632759003,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0007495637229006022,
+          0.0009335761771082022
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "hue_level_3",
+        "condition_type": "hue",
+        "level": 3,
+        "direction": "-1",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.9118215040434197,
+        "dice_family_macro": 0.9067367283618989,
+        "dice_family_bootstrap_95_ci": [
+          0.8814006697386387,
+          0.9299690619071566
+        ],
+        "dice_delta_family_macro": -0.013078224132123645,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.01941093468520524,
+          -0.006285047434838098
+        ],
+        "iou_image_macro": 0.8429764658356822,
+        "iou_family_macro": 0.8343953835775316,
+        "iou_family_bootstrap_95_ci": [
+          0.7940849932054918,
+          0.8712456276800813
+        ],
+        "iou_delta_family_macro": -0.013078224132123645,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.01941093468520524,
+          -0.006285047434838098
+        ],
+        "precision_image_macro": 0.9296811220968709,
+        "precision_family_macro": 0.9459489517048082,
+        "precision_family_bootstrap_95_ci": [
+          0.9248235229512404,
+          0.96349739475859
+        ],
+        "precision_delta_family_macro": -0.013078224132123645,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.01941093468520524,
+          -0.006285047434838098
+        ],
+        "recall_image_macro": 0.9086287596213681,
+        "recall_family_macro": 0.8830553260233394,
+        "recall_family_bootstrap_95_ci": [
+          0.83374975161352,
+          0.9292705482716107
+        ],
+        "recall_delta_family_macro": -0.013078224132123645,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.01941093468520524,
+          -0.006285047434838098
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "hue_level_3",
+        "condition_type": "hue",
+        "level": 3,
+        "direction": "-1",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.837804251351319,
+        "dice_family_macro": 0.8212265008679,
+        "dice_family_bootstrap_95_ci": [
+          0.7906973682808516,
+          0.8508415873625912
+        ],
+        "dice_delta_family_macro": -0.015035331242781965,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.024934825255783256,
+          -0.0045390309044043425
+        ],
+        "iou_image_macro": 0.7290703164791396,
+        "iou_family_macro": 0.7042273485344713,
+        "iou_family_bootstrap_95_ci": [
+          0.662891107623229,
+          0.7453839750838385
+        ],
+        "iou_delta_family_macro": -0.015035331242781965,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.024934825255783256,
+          -0.0045390309044043425
+        ],
+        "precision_image_macro": 0.8186929247365237,
+        "precision_family_macro": 0.8231145298515102,
+        "precision_family_bootstrap_95_ci": [
+          0.8026030984164609,
+          0.8436873678505746
+        ],
+        "precision_delta_family_macro": -0.015035331242781965,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.024934825255783256,
+          -0.0045390309044043425
+        ],
+        "recall_image_macro": 0.8802782701835754,
+        "recall_family_macro": 0.8406154281879343,
+        "recall_family_bootstrap_95_ci": [
+          0.7793338927830313,
+          0.903442627654648
+        ],
+        "recall_delta_family_macro": -0.015035331242781965,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.024934825255783256,
+          -0.0045390309044043425
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "hue_level_3_mean",
+        "condition_type": "hue",
+        "level": 3,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9118215040434197,
+        "dice_family_macro": 0.9067367283618989,
+        "dice_family_bootstrap_95_ci": [
+          0.8814006697386387,
+          0.9299690619071566
+        ],
+        "dice_delta_family_macro": -0.005185442631156948,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.008309847712038016,
+          -0.0028373025558899854
+        ],
+        "iou_image_macro": 0.8429764658356824,
+        "iou_family_macro": 0.8343953835775316,
+        "iou_family_bootstrap_95_ci": [
+          0.7940849932054918,
+          0.8712456276800813
+        ],
+        "iou_delta_family_macro": -0.005185442631156948,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.008309847712038016,
+          -0.0028373025558899854
+        ],
+        "precision_image_macro": 0.9296811220968714,
+        "precision_family_macro": 0.9459489517048082,
+        "precision_family_bootstrap_95_ci": [
+          0.9248235229512404,
+          0.96349739475859
+        ],
+        "precision_delta_family_macro": -0.005185442631156948,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.008309847712038016,
+          -0.0028373025558899854
+        ],
+        "recall_image_macro": 0.9086287596213678,
+        "recall_family_macro": 0.8830553260233394,
+        "recall_family_bootstrap_95_ci": [
+          0.83374975161352,
+          0.9292705482716107
+        ],
+        "recall_delta_family_macro": -0.005185442631156948,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.008309847712038016,
+          -0.0028373025558899854
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "hue_level_3_mean",
+        "condition_type": "hue",
+        "level": 3,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8378042513513193,
+        "dice_family_macro": 0.8212265008679,
+        "dice_family_bootstrap_95_ci": [
+          0.7906973682808516,
+          0.8508415873625911
+        ],
+        "dice_delta_family_macro": -0.00369723029259605,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.007516064328562353,
+          -0.0008883514803018112
+        ],
+        "iou_image_macro": 0.7290703164791394,
+        "iou_family_macro": 0.7042273485344713,
+        "iou_family_bootstrap_95_ci": [
+          0.662891107623229,
+          0.7453839750838386
+        ],
+        "iou_delta_family_macro": -0.00369723029259605,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.007516064328562353,
+          -0.0008883514803018112
+        ],
+        "precision_image_macro": 0.8186929247365237,
+        "precision_family_macro": 0.8231145298515102,
+        "precision_family_bootstrap_95_ci": [
+          0.802603098416461,
+          0.8436873678505746
+        ],
+        "precision_delta_family_macro": -0.00369723029259605,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.007516064328562353,
+          -0.0008883514803018112
+        ],
+        "recall_image_macro": 0.8802782701835754,
+        "recall_family_macro": 0.8406154281879346,
+        "recall_family_bootstrap_95_ci": [
+          0.7793338927830313,
+          0.9034426276546483
+        ],
+        "recall_delta_family_macro": -0.00369723029259605,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.007516064328562353,
+          -0.0008883514803018112
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "saturation_level_1",
+        "condition_type": "saturation",
+        "level": 1,
+        "direction": "mult_0.80",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.9141102659603688,
+        "dice_family_macro": 0.9105685307948381,
+        "dice_family_bootstrap_95_ci": [
+          0.8861775968099839,
+          0.9328275977846585
+        ],
+        "dice_delta_family_macro": -0.0020046743396101006,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.00478820971862348,
+          0.0018379104704883624
+        ],
+        "iou_image_macro": 0.8462839748172633,
+        "iou_family_macro": 0.8403777012375482,
+        "iou_family_bootstrap_95_ci": [
+          0.801142114289317,
+          0.8760593050846051
+        ],
+        "iou_delta_family_macro": -0.0020046743396101006,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.00478820971862348,
+          0.0018379104704883624
+        ],
+        "precision_image_macro": 0.9279154916955318,
+        "precision_family_macro": 0.9441277563760948,
+        "precision_family_bootstrap_95_ci": [
+          0.9229542863946506,
+          0.9616671807370528
+        ],
+        "precision_delta_family_macro": -0.0020046743396101006,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.00478820971862348,
+          0.0018379104704883624
+        ],
+        "recall_image_macro": 0.9135080221089001,
+        "recall_family_macro": 0.8905352583833839,
+        "recall_family_bootstrap_95_ci": [
+          0.843226332990277,
+          0.9347823558481251
+        ],
+        "recall_delta_family_macro": -0.0020046743396101006,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.00478820971862348,
+          0.0018379104704883624
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "saturation_level_1",
+        "condition_type": "saturation",
+        "level": 1,
+        "direction": "mult_0.80",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.8417407411104577,
+        "dice_family_macro": 0.8246943276972921,
+        "dice_family_bootstrap_95_ci": [
+          0.7919929563171342,
+          0.8564986983115441
+        ],
+        "dice_delta_family_macro": -0.0024842576398453903,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0032776828713251423,
+          -0.0016710330620823572
+        ],
+        "iou_image_macro": 0.7348388970836788,
+        "iou_family_macro": 0.7092492128771543,
+        "iou_family_bootstrap_95_ci": [
+          0.6647057312843074,
+          0.7535362097292485
+        ],
+        "iou_delta_family_macro": -0.0024842576398453903,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0032776828713251423,
+          -0.0016710330620823572
+        ],
+        "precision_image_macro": 0.8258837423216856,
+        "precision_family_macro": 0.8303392586752475,
+        "precision_family_bootstrap_95_ci": [
+          0.8117556187946797,
+          0.8495728266398155
+        ],
+        "precision_delta_family_macro": -0.0024842576398453903,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0032776828713251423,
+          -0.0016710330620823572
+        ],
+        "recall_image_macro": 0.878130723344663,
+        "recall_family_macro": 0.8373997747271055,
+        "recall_family_bootstrap_95_ci": [
+          0.7736311397689808,
+          0.9032357603018195
+        ],
+        "recall_delta_family_macro": -0.0024842576398453903,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0032776828713251423,
+          -0.0016710330620823572
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "saturation_level_1_mean",
+        "condition_type": "saturation",
+        "level": 1,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9141102659603689,
+        "dice_family_macro": 0.9105685307948381,
+        "dice_family_bootstrap_95_ci": [
+          0.8861775968099836,
+          0.9328275977846585
+        ],
+        "dice_delta_family_macro": -0.0013536401982177921,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0030395584273547474,
+          -2.346133495076785e-05
+        ],
+        "iou_image_macro": 0.8462839748172634,
+        "iou_family_macro": 0.8403777012375482,
+        "iou_family_bootstrap_95_ci": [
+          0.801142114289317,
+          0.8760593050846051
+        ],
+        "iou_delta_family_macro": -0.0013536401982177921,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0030395584273547474,
+          -2.346133495076785e-05
+        ],
+        "precision_image_macro": 0.9279154916955318,
+        "precision_family_macro": 0.9441277563760948,
+        "precision_family_bootstrap_95_ci": [
+          0.9229542863946506,
+          0.9616671807370528
+        ],
+        "precision_delta_family_macro": -0.0013536401982177921,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0030395584273547474,
+          -2.346133495076785e-05
+        ],
+        "recall_image_macro": 0.9135080221089003,
+        "recall_family_macro": 0.8905352583833839,
+        "recall_family_bootstrap_95_ci": [
+          0.843226332990277,
+          0.9347823558481249
+        ],
+        "recall_delta_family_macro": -0.0013536401982177921,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0030395584273547474,
+          -2.346133495076785e-05
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "saturation_level_1_mean",
+        "condition_type": "saturation",
+        "level": 1,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8417407411104577,
+        "dice_family_macro": 0.8246943276972921,
+        "dice_family_bootstrap_95_ci": [
+          0.7919929563171342,
+          0.8564986983115441
+        ],
+        "dice_delta_family_macro": -0.00022940346320378667,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0007543653873950023,
+          0.00026645046512970027
+        ],
+        "iou_image_macro": 0.7348388970836788,
+        "iou_family_macro": 0.7092492128771543,
+        "iou_family_bootstrap_95_ci": [
+          0.6647057312843074,
+          0.7535362097292486
+        ],
+        "iou_delta_family_macro": -0.00022940346320378667,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0007543653873950023,
+          0.00026645046512970027
+        ],
+        "precision_image_macro": 0.8258837423216857,
+        "precision_family_macro": 0.8303392586752475,
+        "precision_family_bootstrap_95_ci": [
+          0.8117556187946797,
+          0.8495728266398155
+        ],
+        "precision_delta_family_macro": -0.00022940346320378667,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0007543653873950023,
+          0.00026645046512970027
+        ],
+        "recall_image_macro": 0.8781307233446631,
+        "recall_family_macro": 0.8373997747271055,
+        "recall_family_bootstrap_95_ci": [
+          0.7736311397689807,
+          0.9032357603018195
+        ],
+        "recall_delta_family_macro": -0.00022940346320378667,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0007543653873950023,
+          0.00026645046512970027
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "saturation_level_2",
+        "condition_type": "saturation",
+        "level": 2,
+        "direction": "mult_0.60",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.9097894936967507,
+        "dice_family_macro": 0.9059471276333875,
+        "dice_family_bootstrap_95_ci": [
+          0.8805659447482671,
+          0.9287297339841246
+        ],
+        "dice_delta_family_macro": -0.005079380853947023,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.009233776528742918,
+          0.0005968532886322013
+        ],
+        "iou_image_macro": 0.8389021659563726,
+        "iou_family_macro": 0.8329304322322283,
+        "iou_family_bootstrap_95_ci": [
+          0.7928587315888042,
+          0.8688842831552275
+        ],
+        "iou_delta_family_macro": -0.005079380853947023,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.009233776528742918,
+          0.0005968532886322013
+        ],
+        "precision_image_macro": 0.9214492398666407,
+        "precision_family_macro": 0.9380516030575998,
+        "precision_family_bootstrap_95_ci": [
+          0.9165360150158213,
+          0.9554181034749287
+        ],
+        "precision_delta_family_macro": -0.005079380853947023,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.009233776528742918,
+          0.0005968532886322013
+        ],
+        "recall_image_macro": 0.9117788696305392,
+        "recall_family_macro": 0.8883201212432631,
+        "recall_family_bootstrap_95_ci": [
+          0.8388880466925877,
+          0.9337935468359594
+        ],
+        "recall_delta_family_macro": -0.005079380853947023,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.009233776528742918,
+          0.0005968532886322013
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "saturation_level_2",
+        "condition_type": "saturation",
+        "level": 2,
+        "direction": "mult_0.60",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.841912714181279,
+        "dice_family_macro": 0.8245317079296702,
+        "dice_family_bootstrap_95_ci": [
+          0.7913322328344456,
+          0.8566990935186886
+        ],
+        "dice_delta_family_macro": -0.0030597358550529885,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.004201251270876237,
+          -0.0018812595413259686
+        ],
+        "iou_image_macro": 0.7352768877309596,
+        "iou_family_macro": 0.7091654192549738,
+        "iou_family_bootstrap_95_ci": [
+          0.6642179905165363,
+          0.7539009926480281
+        ],
+        "iou_delta_family_macro": -0.0030597358550529885,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.004201251270876237,
+          -0.0018812595413259686
+        ],
+        "precision_image_macro": 0.828231520419287,
+        "precision_family_macro": 0.8327305397522556,
+        "precision_family_bootstrap_95_ci": [
+          0.8144241279096203,
+          0.8517821163775532
+        ],
+        "precision_delta_family_macro": -0.0030597358550529885,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.004201251270876237,
+          -0.0018812595413259686
+        ],
+        "recall_image_macro": 0.8762693040205872,
+        "recall_family_macro": 0.8350589295170587,
+        "recall_family_bootstrap_95_ci": [
+          0.7707840351372577,
+          0.9013698737195777
+        ],
+        "recall_delta_family_macro": -0.0030597358550529885,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.004201251270876237,
+          -0.0018812595413259686
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "saturation_level_2_mean",
+        "condition_type": "saturation",
+        "level": 2,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9097894936967507,
+        "dice_family_macro": 0.9059471276333875,
+        "dice_family_bootstrap_95_ci": [
+          0.8805659447482671,
+          0.9287297339841246
+        ],
+        "dice_delta_family_macro": -0.0059750433596683136,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.011936190668714748,
+          -0.0010750029668792319
+        ],
+        "iou_image_macro": 0.8389021659563727,
+        "iou_family_macro": 0.8329304322322283,
+        "iou_family_bootstrap_95_ci": [
+          0.7928587315888042,
+          0.8688842831552275
+        ],
+        "iou_delta_family_macro": -0.0059750433596683136,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.011936190668714748,
+          -0.0010750029668792319
+        ],
+        "precision_image_macro": 0.9214492398666407,
+        "precision_family_macro": 0.9380516030575998,
+        "precision_family_bootstrap_95_ci": [
+          0.9165360150158213,
+          0.9554181034749285
+        ],
+        "precision_delta_family_macro": -0.0059750433596683136,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.011936190668714748,
+          -0.0010750029668792319
+        ],
+        "recall_image_macro": 0.9117788696305392,
+        "recall_family_macro": 0.8883201212432631,
+        "recall_family_bootstrap_95_ci": [
+          0.8388880466925877,
+          0.9337935468359594
+        ],
+        "recall_delta_family_macro": -0.0059750433596683136,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.011936190668714748,
+          -0.0010750029668792319
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "saturation_level_2_mean",
+        "condition_type": "saturation",
+        "level": 2,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.841912714181279,
+        "dice_family_macro": 0.8245317079296702,
+        "dice_family_bootstrap_95_ci": [
+          0.7913322328344456,
+          0.8566990935186886
+        ],
+        "dice_delta_family_macro": -0.0003920232308257868,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.001508466485352425,
+          0.000714970637257301
+        ],
+        "iou_image_macro": 0.7352768877309593,
+        "iou_family_macro": 0.7091654192549738,
+        "iou_family_bootstrap_95_ci": [
+          0.6642179905165363,
+          0.7539009926480282
+        ],
+        "iou_delta_family_macro": -0.0003920232308257868,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.001508466485352425,
+          0.000714970637257301
+        ],
+        "precision_image_macro": 0.8282315204192873,
+        "precision_family_macro": 0.8327305397522556,
+        "precision_family_bootstrap_95_ci": [
+          0.8144241279096203,
+          0.8517821163775532
+        ],
+        "precision_delta_family_macro": -0.0003920232308257868,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.001508466485352425,
+          0.000714970637257301
+        ],
+        "recall_image_macro": 0.876269304020587,
+        "recall_family_macro": 0.835058929517059,
+        "recall_family_bootstrap_95_ci": [
+          0.7707840351372577,
+          0.9013698737195777
+        ],
+        "recall_delta_family_macro": -0.0003920232308257868,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.001508466485352425,
+          0.000714970637257301
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "saturation_level_3",
+        "condition_type": "saturation",
+        "level": 3,
+        "direction": "mult_0.40",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.8975149225363163,
+        "dice_family_macro": 0.8931172935972924,
+        "dice_family_bootstrap_95_ci": [
+          0.8683849988853602,
+          0.9146993555992091
+        ],
+        "dice_delta_family_macro": -0.008484750387316792,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.013240135012949534,
+          -0.0021771190861720443
+        ],
+        "iou_image_macro": 0.8185923244129419,
+        "iou_family_macro": 0.8121772487296711,
+        "iou_family_bootstrap_95_ci": [
+          0.7743991233931187,
+          0.8452497947304737
+        ],
+        "iou_delta_family_macro": -0.008484750387316792,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.013240135012949534,
+          -0.0021771190861720443
+        ],
+        "precision_image_macro": 0.9022208022089457,
+        "precision_family_macro": 0.9185531530711737,
+        "precision_family_bootstrap_95_ci": [
+          0.8954865530416704,
+          0.9382972779287561
+        ],
+        "precision_delta_family_macro": -0.008484750387316792,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.013240135012949534,
+          -0.0021771190861720443
+        ],
+        "recall_image_macro": 0.9073611672948074,
+        "recall_family_macro": 0.8837027528752713,
+        "recall_family_bootstrap_95_ci": [
+          0.8319507307681069,
+          0.9297193899018791
+        ],
+        "recall_delta_family_macro": -0.008484750387316792,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.013240135012949534,
+          -0.0021771190861720443
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "saturation_level_3",
+        "condition_type": "saturation",
+        "level": 3,
+        "direction": "mult_0.40",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.842263871107252,
+        "dice_family_macro": 0.8240969419013225,
+        "dice_family_bootstrap_95_ci": [
+          0.7900717808731004,
+          0.8573074954898334
+        ],
+        "dice_delta_family_macro": -0.002527769869148909,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.004502901947176457,
+          -0.0004148914696924835
+        ],
+        "iou_image_macro": 0.7362087965974596,
+        "iou_family_macro": 0.7088804343579517,
+        "iou_family_bootstrap_95_ci": [
+          0.6627440617541991,
+          0.7552451556372013
+        ],
+        "iou_delta_family_macro": -0.002527769869148909,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.004502901947176457,
+          -0.0004148914696924835
+        ],
+        "precision_image_macro": 0.8339010261011504,
+        "precision_family_macro": 0.8383402905312705,
+        "precision_family_bootstrap_95_ci": [
+          0.8207977465175753,
+          0.8565478843692339
+        ],
+        "precision_delta_family_macro": -0.002527769869148909,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.004502901947176457,
+          -0.0004148914696924835
+        ],
+        "recall_image_macro": 0.8718282260119272,
+        "recall_family_macro": 0.8296882670631955,
+        "recall_family_bootstrap_95_ci": [
+          0.7646712934905848,
+          0.8967968503077062
+        ],
+        "recall_delta_family_macro": -0.002527769869148909,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.004502901947176457,
+          -0.0004148914696924835
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "saturation_level_3_mean",
+        "condition_type": "saturation",
+        "level": 3,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8975149225363163,
+        "dice_family_macro": 0.8931172935972924,
+        "dice_family_bootstrap_95_ci": [
+          0.8683849988853604,
+          0.9146993555992091
+        ],
+        "dice_delta_family_macro": -0.018804877395763246,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.03031167782535227,
+          -0.008119526283215292
+        ],
+        "iou_image_macro": 0.8185923244129419,
+        "iou_family_macro": 0.8121772487296711,
+        "iou_family_bootstrap_95_ci": [
+          0.7743991233931188,
+          0.8452497947304737
+        ],
+        "iou_delta_family_macro": -0.018804877395763246,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.03031167782535227,
+          -0.008119526283215292
+        ],
+        "precision_image_macro": 0.9022208022089455,
+        "precision_family_macro": 0.9185531530711739,
+        "precision_family_bootstrap_95_ci": [
+          0.8954865530416704,
+          0.9382972779287561
+        ],
+        "precision_delta_family_macro": -0.018804877395763246,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.03031167782535227,
+          -0.008119526283215292
+        ],
+        "recall_image_macro": 0.9073611672948075,
+        "recall_family_macro": 0.8837027528752713,
+        "recall_family_bootstrap_95_ci": [
+          0.8319507307681069,
+          0.9297193899018791
+        ],
+        "recall_delta_family_macro": -0.018804877395763246,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.03031167782535227,
+          -0.008119526283215292
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "saturation_level_3_mean",
+        "condition_type": "saturation",
+        "level": 3,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8422638711072521,
+        "dice_family_macro": 0.8240969419013225,
+        "dice_family_bootstrap_95_ci": [
+          0.7900717808731004,
+          0.8573074954898335
+        ],
+        "dice_delta_family_macro": -0.0008267892591733311,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0033754085309573114,
+          0.0016755783341374964
+        ],
+        "iou_image_macro": 0.7362087965974596,
+        "iou_family_macro": 0.7088804343579517,
+        "iou_family_bootstrap_95_ci": [
+          0.6627440617541991,
+          0.7552451556372012
+        ],
+        "iou_delta_family_macro": -0.0008267892591733311,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0033754085309573114,
+          0.0016755783341374964
+        ],
+        "precision_image_macro": 0.8339010261011504,
+        "precision_family_macro": 0.8383402905312707,
+        "precision_family_bootstrap_95_ci": [
+          0.8207977465175753,
+          0.8565478843692339
+        ],
+        "precision_delta_family_macro": -0.0008267892591733311,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0033754085309573114,
+          0.0016755783341374964
+        ],
+        "recall_image_macro": 0.8718282260119272,
+        "recall_family_macro": 0.8296882670631955,
+        "recall_family_bootstrap_95_ci": [
+          0.7646712934905848,
+          0.8967968503077062
+        ],
+        "recall_delta_family_macro": -0.0008267892591733311,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0033754085309573114,
+          0.0016755783341374964
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "brightness_level_1",
+        "condition_type": "brightness",
+        "level": 1,
+        "direction": "mult_0.90",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.9147870982189165,
+        "dice_family_macro": 0.9116086507453716,
+        "dice_family_bootstrap_95_ci": [
+          0.8874419080207625,
+          0.9336333164130428
+        ],
+        "dice_delta_family_macro": -0.0013607756023376752,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.002767409728086421,
+          0.00018752497606561882
+        ],
+        "iou_image_macro": 0.8474447347146765,
+        "iou_family_macro": 0.8419893297429683,
+        "iou_family_bootstrap_95_ci": [
+          0.8036252732198048,
+          0.8772726385705788
+        ],
+        "iou_delta_family_macro": -0.0013607756023376752,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.002767409728086421,
+          0.00018752497606561882
+        ],
+        "precision_image_macro": 0.9282495856782514,
+        "precision_family_macro": 0.9444741032829127,
+        "precision_family_bootstrap_95_ci": [
+          0.923341128980573,
+          0.9621389098625769
+        ],
+        "precision_delta_family_macro": -0.0013607756023376752,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.002767409728086421,
+          0.00018752497606561882
+        ],
+        "recall_image_macro": 0.9144241380367025,
+        "recall_family_macro": 0.8919128668760743,
+        "recall_family_bootstrap_95_ci": [
+          0.8455093511802064,
+          0.9354700861419571
+        ],
+        "recall_delta_family_macro": -0.0013607756023376752,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.002767409728086421,
+          0.00018752497606561882
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "brightness_level_1",
+        "condition_type": "brightness",
+        "level": 1,
+        "direction": "mult_0.90",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.8455168667312992,
+        "dice_family_macro": 0.829087525662319,
+        "dice_family_bootstrap_95_ci": [
+          0.7965884851614893,
+          0.8605894722850136
+        ],
+        "dice_delta_family_macro": 0.00752086702407484,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.00562483166319065,
+          0.009405519350747505
+        ],
+        "iou_image_macro": 0.740428266879443,
+        "iou_family_macro": 0.7155661675121749,
+        "iou_family_bootstrap_95_ci": [
+          0.6708880557850188,
+          0.7597062644339131
+        ],
+        "iou_delta_family_macro": 0.00752086702407484,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.00562483166319065,
+          0.009405519350747505
+        ],
+        "precision_image_macro": 0.8325782604113576,
+        "precision_family_macro": 0.8384229160132156,
+        "precision_family_bootstrap_95_ci": [
+          0.8197254204247167,
+          0.8573020107181575
+        ],
+        "precision_delta_family_macro": 0.00752086702407484,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.00562483166319065,
+          0.009405519350747505
+        ],
+        "recall_image_macro": 0.8788897992467859,
+        "recall_family_macro": 0.8383559518541823,
+        "recall_family_bootstrap_95_ci": [
+          0.7747911452707889,
+          0.9039351059319767
+        ],
+        "recall_delta_family_macro": 0.00752086702407484,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.00562483166319065,
+          0.009405519350747505
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "brightness_level_1_mean",
+        "condition_type": "brightness",
+        "level": 1,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9147870982189166,
+        "dice_family_macro": 0.9116086507453716,
+        "dice_family_bootstrap_95_ci": [
+          0.8874419080207625,
+          0.9336333164130428
+        ],
+        "dice_delta_family_macro": -0.00031352024768445337,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0006742304729607126,
+          3.6924206084706206e-05
+        ],
+        "iou_image_macro": 0.8474447347146765,
+        "iou_family_macro": 0.8419893297429683,
+        "iou_family_bootstrap_95_ci": [
+          0.8036252732198048,
+          0.8772726385705788
+        ],
+        "iou_delta_family_macro": -0.00031352024768445337,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0006742304729607126,
+          3.6924206084706206e-05
+        ],
+        "precision_image_macro": 0.9282495856782517,
+        "precision_family_macro": 0.9444741032829127,
+        "precision_family_bootstrap_95_ci": [
+          0.923341128980573,
+          0.9621389098625769
+        ],
+        "precision_delta_family_macro": -0.00031352024768445337,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0006742304729607126,
+          3.6924206084706206e-05
+        ],
+        "recall_image_macro": 0.9144241380367027,
+        "recall_family_macro": 0.8919128668760745,
+        "recall_family_bootstrap_95_ci": [
+          0.8455093511802064,
+          0.9354700861419571
+        ],
+        "recall_delta_family_macro": -0.00031352024768445337,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0006742304729607126,
+          3.6924206084706206e-05
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "brightness_level_1_mean",
+        "condition_type": "brightness",
+        "level": 1,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8455168667312992,
+        "dice_family_macro": 0.829087525662319,
+        "dice_family_bootstrap_95_ci": [
+          0.7965884851614893,
+          0.8605894722850136
+        ],
+        "dice_delta_family_macro": 0.004163794501823117,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.002903637011007121,
+          0.005409431288885437
+        ],
+        "iou_image_macro": 0.7404282668794427,
+        "iou_family_macro": 0.7155661675121749,
+        "iou_family_bootstrap_95_ci": [
+          0.6708880557850188,
+          0.7597062644339131
+        ],
+        "iou_delta_family_macro": 0.004163794501823117,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.002903637011007121,
+          0.005409431288885437
+        ],
+        "precision_image_macro": 0.8325782604113576,
+        "precision_family_macro": 0.8384229160132156,
+        "precision_family_bootstrap_95_ci": [
+          0.8197254204247167,
+          0.8573020107181575
+        ],
+        "precision_delta_family_macro": 0.004163794501823117,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.002903637011007121,
+          0.005409431288885437
+        ],
+        "recall_image_macro": 0.8788897992467858,
+        "recall_family_macro": 0.8383559518541821,
+        "recall_family_bootstrap_95_ci": [
+          0.7747911452707889,
+          0.9039351059319767
+        ],
+        "recall_delta_family_macro": 0.004163794501823117,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.002903637011007121,
+          0.005409431288885437
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "brightness_level_2",
+        "condition_type": "brightness",
+        "level": 2,
+        "direction": "mult_0.75",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.9121441687250861,
+        "dice_family_macro": 0.9097526483548751,
+        "dice_family_bootstrap_95_ci": [
+          0.8868967081320477,
+          0.9305099879008417
+        ],
+        "dice_delta_family_macro": -0.0045483054807091364,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.008147912710593196,
+          -0.000651965672232862
+        ],
+        "iou_image_macro": 0.8428043681161127,
+        "iou_family_macro": 0.838577834200723,
+        "iou_family_bootstrap_95_ci": [
+          0.8023128370798018,
+          0.8716696420490937
+        ],
+        "iou_delta_family_macro": -0.0045483054807091364,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.008147912710593196,
+          -0.000651965672232862
+        ],
+        "precision_image_macro": 0.9212277674733683,
+        "precision_family_macro": 0.9375254461713818,
+        "precision_family_bootstrap_95_ci": [
+          0.9161630726762154,
+          0.9554037482138474
+        ],
+        "precision_delta_family_macro": -0.0045483054807091364,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.008147912710593196,
+          -0.000651965672232862
+        ],
+        "recall_image_macro": 0.9164002723520217,
+        "recall_family_macro": 0.8949961313173433,
+        "recall_family_bootstrap_95_ci": [
+          0.8499098968534732,
+          0.937051733239863
+        ],
+        "recall_delta_family_macro": -0.0045483054807091364,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.008147912710593196,
+          -0.000651965672232862
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "brightness_level_2",
+        "condition_type": "brightness",
+        "level": 2,
+        "direction": "mult_0.75",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.8506645771662927,
+        "dice_family_macro": 0.8348727660349555,
+        "dice_family_bootstrap_95_ci": [
+          0.8022837620647223,
+          0.8668087658821315
+        ],
+        "dice_delta_family_macro": 0.018910027358054395,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.014501000819157811,
+          0.023289654720621486
+        ],
+        "iou_image_macro": 0.7483599812686517,
+        "iou_family_macro": 0.7242716589889098,
+        "iou_family_bootstrap_95_ci": [
+          0.6792375473795138,
+          0.7694082037494554
+        ],
+        "iou_delta_family_macro": 0.018910027358054395,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.014501000819157811,
+          0.023289654720621486
+        ],
+        "precision_image_macro": 0.8436953154199154,
+        "precision_family_macro": 0.8515593778443489,
+        "precision_family_bootstrap_95_ci": [
+          0.8328946664688074,
+          0.8698486203024574
+        ],
+        "precision_delta_family_macro": 0.018910027358054395,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.014501000819157811,
+          0.023289654720621486
+        ],
+        "recall_image_macro": 0.8781858865490486,
+        "recall_family_macro": 0.8374513239722132,
+        "recall_family_bootstrap_95_ci": [
+          0.773753275913497,
+          0.9032099152870094
+        ],
+        "recall_delta_family_macro": 0.018910027358054395,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.014501000819157811,
+          0.023289654720621486
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "brightness_level_2_mean",
+        "condition_type": "brightness",
+        "level": 2,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9121441687250861,
+        "dice_family_macro": 0.9097526483548751,
+        "dice_family_bootstrap_95_ci": [
+          0.8868967081320476,
+          0.9305099879008417
+        ],
+        "dice_delta_family_macro": -0.002169522638180662,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.00427522099230809,
+          -0.00010664024657898585
+        ],
+        "iou_image_macro": 0.8428043681161128,
+        "iou_family_macro": 0.838577834200723,
+        "iou_family_bootstrap_95_ci": [
+          0.8023128370798016,
+          0.8716696420490937
+        ],
+        "iou_delta_family_macro": -0.002169522638180662,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.00427522099230809,
+          -0.00010664024657898585
+        ],
+        "precision_image_macro": 0.9212277674733684,
+        "precision_family_macro": 0.9375254461713818,
+        "precision_family_bootstrap_95_ci": [
+          0.9161630726762154,
+          0.9554037482138473
+        ],
+        "precision_delta_family_macro": -0.002169522638180662,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.00427522099230809,
+          -0.00010664024657898585
+        ],
+        "recall_image_macro": 0.9164002723520218,
+        "recall_family_macro": 0.8949961313173433,
+        "recall_family_bootstrap_95_ci": [
+          0.8499098968534732,
+          0.9370517332398631
+        ],
+        "recall_delta_family_macro": -0.002169522638180662,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.00427522099230809,
+          -0.00010664024657898585
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "brightness_level_2_mean",
+        "condition_type": "brightness",
+        "level": 2,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8506645771662927,
+        "dice_family_macro": 0.8348727660349555,
+        "dice_family_bootstrap_95_ci": [
+          0.8022837620647223,
+          0.8668087658821317
+        ],
+        "dice_delta_family_macro": 0.009949034874459582,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.0072315924332381825,
+          0.012659171402828283
+        ],
+        "iou_image_macro": 0.7483599812686517,
+        "iou_family_macro": 0.7242716589889098,
+        "iou_family_bootstrap_95_ci": [
+          0.6792375473795138,
+          0.7694082037494554
+        ],
+        "iou_delta_family_macro": 0.009949034874459582,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.0072315924332381825,
+          0.012659171402828283
+        ],
+        "precision_image_macro": 0.8436953154199154,
+        "precision_family_macro": 0.8515593778443489,
+        "precision_family_bootstrap_95_ci": [
+          0.8328946664688074,
+          0.8698486203024574
+        ],
+        "precision_delta_family_macro": 0.009949034874459582,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.0072315924332381825,
+          0.012659171402828283
+        ],
+        "recall_image_macro": 0.8781858865490487,
+        "recall_family_macro": 0.8374513239722132,
+        "recall_family_bootstrap_95_ci": [
+          0.773753275913497,
+          0.9032099152870094
+        ],
+        "recall_delta_family_macro": 0.009949034874459582,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.0072315924332381825,
+          0.012659171402828283
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "brightness_level_3",
+        "condition_type": "brightness",
+        "level": 3,
+        "direction": "mult_0.50",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.8784355732812292,
+        "dice_family_macro": 0.8679525280846481,
+        "dice_family_bootstrap_95_ci": [
+          0.8403281802765533,
+          0.8927188341963608
+        ],
+        "dice_delta_family_macro": -0.01600110636745262,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.024896226506152447,
+          -0.006832814099504231
+        ],
+        "iou_image_macro": 0.7891939342705949,
+        "iou_family_macro": 0.7732114410837279,
+        "iou_family_bootstrap_95_ci": [
+          0.7320674804468122,
+          0.8100497644574891
+        ],
+        "iou_delta_family_macro": -0.01600110636745262,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.024896226506152447,
+          -0.006832814099504231
+        ],
+        "precision_image_macro": 0.8600480570701472,
+        "precision_family_macro": 0.8585267840813164,
+        "precision_family_bootstrap_95_ci": [
+          0.838761568262343,
+          0.8784349009493448
+        ],
+        "precision_delta_family_macro": -0.01600110636745262,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.024896226506152447,
+          -0.006832814099504231
+        ],
+        "recall_image_macro": 0.9177268007498804,
+        "recall_family_macro": 0.8999140015823033,
+        "recall_family_bootstrap_95_ci": [
+          0.8600902160086707,
+          0.9369161921431293
+        ],
+        "recall_delta_family_macro": -0.01600110636745262,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.024896226506152447,
+          -0.006832814099504231
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "brightness_level_3",
+        "condition_type": "brightness",
+        "level": 3,
+        "direction": "mult_0.50",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.859820570646048,
+        "dice_family_macro": 0.8435326822694253,
+        "dice_family_bootstrap_95_ci": [
+          0.8095246000946286,
+          0.8776289243969482
+        ],
+        "dice_delta_family_macro": 0.035851797018725914,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.028126153451553254,
+          0.043274729645727705
+        ],
+        "iou_image_macro": 0.7631865803515843,
+        "iou_family_macro": 0.7380749865467481,
+        "iou_family_bootstrap_95_ci": [
+          0.6901639711001432,
+          0.786856204420859
+        ],
+        "iou_delta_family_macro": 0.035851797018725914,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.028126153451553254,
+          0.043274729645727705
+        ],
+        "precision_image_macro": 0.8667662020892075,
+        "precision_family_macro": 0.8768553577213041,
+        "precision_family_bootstrap_95_ci": [
+          0.8567288593908394,
+          0.8959491096933642
+        ],
+        "precision_delta_family_macro": 0.035851797018725914,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.028126153451553254,
+          0.043274729645727705
+        ],
+        "recall_image_macro": 0.8741137040965671,
+        "recall_family_macro": 0.8319139266936532,
+        "recall_family_bootstrap_95_ci": [
+          0.7665958189322214,
+          0.8989932228905387
+        ],
+        "recall_delta_family_macro": 0.035851797018725914,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.028126153451553254,
+          0.043274729645727705
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "brightness_level_3_mean",
+        "condition_type": "brightness",
+        "level": 3,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8784355732812295,
+        "dice_family_macro": 0.8679525280846481,
+        "dice_family_bootstrap_95_ci": [
+          0.8403281802765533,
+          0.8927188341963608
+        ],
+        "dice_delta_family_macro": -0.04396964290840768,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.05681940963424444,
+          -0.031871913782068696
+        ],
+        "iou_image_macro": 0.7891939342705951,
+        "iou_family_macro": 0.7732114410837279,
+        "iou_family_bootstrap_95_ci": [
+          0.7320674804468124,
+          0.8100497644574891
+        ],
+        "iou_delta_family_macro": -0.04396964290840768,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.05681940963424444,
+          -0.031871913782068696
+        ],
+        "precision_image_macro": 0.8600480570701472,
+        "precision_family_macro": 0.8585267840813164,
+        "precision_family_bootstrap_95_ci": [
+          0.8387615682623433,
+          0.8784349009493447
+        ],
+        "precision_delta_family_macro": -0.04396964290840768,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.05681940963424444,
+          -0.031871913782068696
+        ],
+        "recall_image_macro": 0.9177268007498803,
+        "recall_family_macro": 0.8999140015823033,
+        "recall_family_bootstrap_95_ci": [
+          0.8600902160086707,
+          0.9369161921431293
+        ],
+        "recall_delta_family_macro": -0.04396964290840768,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.05681940963424444,
+          -0.031871913782068696
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "brightness_level_3_mean",
+        "condition_type": "brightness",
+        "level": 3,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8598205706460478,
+        "dice_family_macro": 0.8435326822694253,
+        "dice_family_bootstrap_95_ci": [
+          0.8095246000946286,
+          0.8776289243969482
+        ],
+        "dice_delta_family_macro": 0.018608951108929413,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.013169528014390192,
+          0.02401170247576321
+        ],
+        "iou_image_macro": 0.7631865803515843,
+        "iou_family_macro": 0.7380749865467481,
+        "iou_family_bootstrap_95_ci": [
+          0.6901639711001432,
+          0.786856204420859
+        ],
+        "iou_delta_family_macro": 0.018608951108929413,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.013169528014390192,
+          0.02401170247576321
+        ],
+        "precision_image_macro": 0.8667662020892074,
+        "precision_family_macro": 0.8768553577213039,
+        "precision_family_bootstrap_95_ci": [
+          0.8567288593908394,
+          0.8959491096933642
+        ],
+        "precision_delta_family_macro": 0.018608951108929413,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.013169528014390192,
+          0.02401170247576321
+        ],
+        "recall_image_macro": 0.874113704096567,
+        "recall_family_macro": 0.8319139266936532,
+        "recall_family_bootstrap_95_ci": [
+          0.7665958189322214,
+          0.8989932228905387
+        ],
+        "recall_delta_family_macro": 0.018608951108929413,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.013169528014390192,
+          0.02401170247576321
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "contrast_level_1",
+        "condition_type": "contrast",
+        "level": 1,
+        "direction": "mult_0.90",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.9147991398832193,
+        "dice_family_macro": 0.9114330881441699,
+        "dice_family_bootstrap_95_ci": [
+          0.8869609570081789,
+          0.9337602654359443
+        ],
+        "dice_delta_family_macro": -0.0005022596965307122,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0016633081290960757,
+          0.00088810314509693
+        ],
+        "iou_image_macro": 0.8475565025621498,
+        "iou_family_macro": 0.8418003688400006,
+        "iou_family_bootstrap_95_ci": [
+          0.8028994130805984,
+          0.8775502131757973
+        ],
+        "iou_delta_family_macro": -0.0005022596965307122,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0016633081290960757,
+          0.00088810314509693
+        ],
+        "precision_image_macro": 0.9291822853400257,
+        "precision_family_macro": 0.9453847320959315,
+        "precision_family_bootstrap_95_ci": [
+          0.9242594133773988,
+          0.9630591309305422
+        ],
+        "precision_delta_family_macro": -0.0005022596965307122,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0016633081290960757,
+          0.00088810314509693
+        ],
+        "recall_image_macro": 0.9136306900560567,
+        "recall_family_macro": 0.8908308431839298,
+        "recall_family_bootstrap_95_ci": [
+          0.8439565949570668,
+          0.9349025270950075
+        ],
+        "recall_delta_family_macro": -0.0005022596965307122,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0016633081290960757,
+          0.00088810314509693
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "contrast_level_1",
+        "condition_type": "contrast",
+        "level": 1,
+        "direction": "mult_0.90",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.8419913673368565,
+        "dice_family_macro": 0.8251271611503128,
+        "dice_family_bootstrap_95_ci": [
+          0.7925207490428522,
+          0.8567345454731616
+        ],
+        "dice_delta_family_macro": 0.00016153203235059425,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0003140884657276641,
+          0.0006445305664947232
+        ],
+        "iou_image_macro": 0.7351336328166781,
+        "iou_family_macro": 0.7098209029377671,
+        "iou_family_bootstrap_95_ci": [
+          0.6654235876231614,
+          0.753781200423546
+        ],
+        "iou_delta_family_macro": 0.00016153203235059425,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0003140884657276641,
+          0.0006445305664947232
+        ],
+        "precision_image_macro": 0.8255537480662918,
+        "precision_family_macro": 0.8301346125714109,
+        "precision_family_bootstrap_95_ci": [
+          0.8113450235908547,
+          0.8496577601904878
+        ],
+        "precision_delta_family_macro": 0.00016153203235059425,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0003140884657276641,
+          0.0006445305664947232
+        ],
+        "recall_image_macro": 0.8789035967636939,
+        "recall_family_macro": 0.8383519752102252,
+        "recall_family_bootstrap_95_ci": [
+          0.7747257147037833,
+          0.9039605245021674
+        ],
+        "recall_delta_family_macro": 0.00016153203235059425,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0003140884657276641,
+          0.0006445305664947232
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "contrast_level_1_mean",
+        "condition_type": "contrast",
+        "level": 1,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9147991398832194,
+        "dice_family_macro": 0.9114330881441699,
+        "dice_family_bootstrap_95_ci": [
+          0.8869609570081789,
+          0.9337602654359443
+        ],
+        "dice_delta_family_macro": -0.0004890828488858847,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0006848617623394357,
+          -0.00031231459827318946
+        ],
+        "iou_image_macro": 0.8475565025621501,
+        "iou_family_macro": 0.8418003688400006,
+        "iou_family_bootstrap_95_ci": [
+          0.8028994130805984,
+          0.8775502131757973
+        ],
+        "iou_delta_family_macro": -0.0004890828488858847,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0006848617623394357,
+          -0.00031231459827318946
+        ],
+        "precision_image_macro": 0.9291822853400258,
+        "precision_family_macro": 0.9453847320959315,
+        "precision_family_bootstrap_95_ci": [
+          0.9242594133773991,
+          0.9630591309305422
+        ],
+        "precision_delta_family_macro": -0.0004890828488858847,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0006848617623394357,
+          -0.00031231459827318946
+        ],
+        "recall_image_macro": 0.9136306900560566,
+        "recall_family_macro": 0.8908308431839298,
+        "recall_family_bootstrap_95_ci": [
+          0.8439565949570665,
+          0.9349025270950073
+        ],
+        "recall_delta_family_macro": -0.0004890828488858847,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0006848617623394357,
+          -0.00031231459827318946
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "contrast_level_1_mean",
+        "condition_type": "contrast",
+        "level": 1,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8419913673368563,
+        "dice_family_macro": 0.825127161150313,
+        "dice_family_bootstrap_95_ci": [
+          0.7925207490428523,
+          0.8567345454731616
+        ],
+        "dice_delta_family_macro": 0.00020342998981691352,
+        "dice_delta_family_bootstrap_95_ci": [
+          3.2960215470564554e-06,
+          0.000407049242315142
+        ],
+        "iou_image_macro": 0.735133632816678,
+        "iou_family_macro": 0.7098209029377671,
+        "iou_family_bootstrap_95_ci": [
+          0.6654235876231614,
+          0.753781200423546
+        ],
+        "iou_delta_family_macro": 0.00020342998981691352,
+        "iou_delta_family_bootstrap_95_ci": [
+          3.2960215470564554e-06,
+          0.000407049242315142
+        ],
+        "precision_image_macro": 0.8255537480662918,
+        "precision_family_macro": 0.8301346125714109,
+        "precision_family_bootstrap_95_ci": [
+          0.8113450235908547,
+          0.8496577601904878
+        ],
+        "precision_delta_family_macro": 0.00020342998981691352,
+        "precision_delta_family_bootstrap_95_ci": [
+          3.2960215470564554e-06,
+          0.000407049242315142
+        ],
+        "recall_image_macro": 0.878903596763694,
+        "recall_family_macro": 0.8383519752102252,
+        "recall_family_bootstrap_95_ci": [
+          0.7747257147037833,
+          0.9039605245021674
+        ],
+        "recall_delta_family_macro": 0.00020342998981691352,
+        "recall_delta_family_bootstrap_95_ci": [
+          3.2960215470564554e-06,
+          0.000407049242315142
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "contrast_level_2",
+        "condition_type": "contrast",
+        "level": 2,
+        "direction": "mult_0.75",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.912639646501375,
+        "dice_family_macro": 0.9090207161961971,
+        "dice_family_bootstrap_95_ci": [
+          0.8838909852338087,
+          0.9318868186383246
+        ],
+        "dice_delta_family_macro": -0.0026935361863432454,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.004878688988325003,
+          -0.000277401209625388
+        ],
+        "iou_image_macro": 0.8441110150047038,
+        "iou_family_macro": 0.8379514255893632,
+        "iou_family_bootstrap_95_ci": [
+          0.7981956290593375,
+          0.8743585392855199
+        ],
+        "iou_delta_family_macro": -0.0026935361863432454,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.004878688988325003,
+          -0.000277401209625388
+        ],
+        "precision_image_macro": 0.9272212287229203,
+        "precision_family_macro": 0.9432724459819646,
+        "precision_family_bootstrap_95_ci": [
+          0.9220553415540467,
+          0.9608732903272508
+        ],
+        "precision_delta_family_macro": -0.0026935361863432454,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.004878688988325003,
+          -0.000277401209625388
+        ],
+        "recall_image_macro": 0.9118736773467927,
+        "recall_family_macro": 0.888727246146102,
+        "recall_family_bootstrap_95_ci": [
+          0.8405563206371512,
+          0.9340264338608444
+        ],
+        "recall_delta_family_macro": -0.0026935361863432454,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.004878688988325003,
+          -0.000277401209625388
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "contrast_level_2",
+        "condition_type": "contrast",
+        "level": 2,
+        "direction": "mult_0.75",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.84676623885089,
+        "dice_family_macro": 0.830355768116557,
+        "dice_family_bootstrap_95_ci": [
+          0.7976726538291078,
+          0.8619697642772327
+        ],
+        "dice_delta_family_macro": 0.010145259637058656,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.008171939442937932,
+          0.012163315652871386
+        ],
+        "iou_image_macro": 0.7423640712041564,
+        "iou_family_macro": 0.7175071520615918,
+        "iou_family_bootstrap_95_ci": [
+          0.672500701976512,
+          0.7618681109130678
+        ],
+        "iou_delta_family_macro": 0.010145259637058656,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.008171939442937932,
+          0.012163315652871386
+        ],
+        "precision_image_macro": 0.8359241410018667,
+        "precision_family_macro": 0.842232065498149,
+        "precision_family_bootstrap_95_ci": [
+          0.8240105399400358,
+          0.8605952894332429
+        ],
+        "precision_delta_family_macro": 0.010145259637058656,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.008171939442937932,
+          0.012163315652871386
+        ],
+        "recall_image_macro": 0.8780835837213564,
+        "recall_family_macro": 0.8372054077295827,
+        "recall_family_bootstrap_95_ci": [
+          0.7736075816645294,
+          0.9030164489644393
+        ],
+        "recall_delta_family_macro": 0.010145259637058656,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.008171939442937932,
+          0.012163315652871386
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "contrast_level_2_mean",
+        "condition_type": "contrast",
+        "level": 2,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.912639646501375,
+        "dice_family_macro": 0.9090207161961971,
+        "dice_family_bootstrap_95_ci": [
+          0.8838909852338087,
+          0.9318868186383246
+        ],
+        "dice_delta_family_macro": -0.002901454796858758,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.00381995953052586,
+          -0.002093322278103579
+        ],
+        "iou_image_macro": 0.844111015004704,
+        "iou_family_macro": 0.8379514255893632,
+        "iou_family_bootstrap_95_ci": [
+          0.7981956290593375,
+          0.8743585392855199
+        ],
+        "iou_delta_family_macro": -0.002901454796858758,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.00381995953052586,
+          -0.002093322278103579
+        ],
+        "precision_image_macro": 0.9272212287229203,
+        "precision_family_macro": 0.9432724459819648,
+        "precision_family_bootstrap_95_ci": [
+          0.9220553415540468,
+          0.9608732903272506
+        ],
+        "precision_delta_family_macro": -0.002901454796858758,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.00381995953052586,
+          -0.002093322278103579
+        ],
+        "recall_image_macro": 0.9118736773467928,
+        "recall_family_macro": 0.888727246146102,
+        "recall_family_bootstrap_95_ci": [
+          0.8405563206371515,
+          0.9340264338608446
+        ],
+        "recall_delta_family_macro": -0.002901454796858758,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.00381995953052586,
+          -0.002093322278103579
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "contrast_level_2_mean",
+        "condition_type": "contrast",
+        "level": 2,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8467662388508902,
+        "dice_family_macro": 0.830355768116557,
+        "dice_family_bootstrap_95_ci": [
+          0.7976726538291078,
+          0.8619697642772327
+        ],
+        "dice_delta_family_macro": 0.005432036956060946,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.003990547407441371,
+          0.006837674865094694
+        ],
+        "iou_image_macro": 0.7423640712041562,
+        "iou_family_macro": 0.7175071520615918,
+        "iou_family_bootstrap_95_ci": [
+          0.6725007019765121,
+          0.7618681109130678
+        ],
+        "iou_delta_family_macro": 0.005432036956060946,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.003990547407441371,
+          0.006837674865094694
+        ],
+        "precision_image_macro": 0.8359241410018667,
+        "precision_family_macro": 0.842232065498149,
+        "precision_family_bootstrap_95_ci": [
+          0.8240105399400358,
+          0.8605952894332429
+        ],
+        "precision_delta_family_macro": 0.005432036956060946,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.003990547407441371,
+          0.006837674865094694
+        ],
+        "recall_image_macro": 0.8780835837213564,
+        "recall_family_macro": 0.8372054077295827,
+        "recall_family_bootstrap_95_ci": [
+          0.7736075816645295,
+          0.9030164489644393
+        ],
+        "recall_delta_family_macro": 0.005432036956060946,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.003990547407441371,
+          0.006837674865094694
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "contrast_level_3",
+        "condition_type": "contrast",
+        "level": 3,
+        "direction": "mult_0.50",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.905810340512166,
+        "dice_family_macro": 0.9005475768578137,
+        "dice_family_bootstrap_95_ci": [
+          0.8747879776289459,
+          0.9238628418816995
+        ],
+        "dice_delta_family_macro": -0.009121528556169708,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.014951898422664225,
+          -0.0052135222432878525
+        ],
+        "iou_image_macro": 0.8326857909065879,
+        "iou_family_macro": 0.8239748872033241,
+        "iou_family_bootstrap_95_ci": [
+          0.7831711513074264,
+          0.8607474668789412
+        ],
+        "iou_delta_family_macro": -0.009121528556169708,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.014951898422664225,
+          -0.0052135222432878525
+        ],
+        "precision_image_macro": 0.9126609514399092,
+        "precision_family_macro": 0.9273039264117291,
+        "precision_family_bootstrap_95_ci": [
+          0.9053782193549542,
+          0.9463875708568806
+        ],
+        "precision_delta_family_macro": -0.009121528556169708,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.014951898422664225,
+          -0.0052135222432878525
+        ],
+        "recall_image_macro": 0.913257252126748,
+        "recall_family_macro": 0.8884068051554195,
+        "recall_family_bootstrap_95_ci": [
+          0.8366401747138856,
+          0.9361107209125923
+        ],
+        "recall_delta_family_macro": -0.009121528556169708,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.014951898422664225,
+          -0.0052135222432878525
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "contrast_level_3",
+        "condition_type": "contrast",
+        "level": 3,
+        "direction": "mult_0.50",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.8501591473139817,
+        "dice_family_macro": 0.8326472110599683,
+        "dice_family_bootstrap_95_ci": [
+          0.7997605168885222,
+          0.865091133668858
+        ],
+        "dice_delta_family_macro": 0.01413693100361589,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.010281547318864376,
+          0.017745654299970954
+        ],
+        "iou_image_macro": 0.7479350611116514,
+        "iou_family_macro": 0.7211962188880607,
+        "iou_family_bootstrap_95_ci": [
+          0.6761000202085893,
+          0.766945108888233
+        ],
+        "iou_delta_family_macro": 0.01413693100361589,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.010281547318864376,
+          0.017745654299970954
+        ],
+        "precision_image_macro": 0.8487624820634784,
+        "precision_family_macro": 0.8564183168906816,
+        "precision_family_bootstrap_95_ci": [
+          0.8382825023059396,
+          0.8741951771256948
+        ],
+        "precision_delta_family_macro": 0.01413693100361589,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.010281547318864376,
+          0.017745654299970954
+        ],
+        "recall_image_macro": 0.8725738747995611,
+        "recall_family_macro": 0.8288618840581305,
+        "recall_family_bootstrap_95_ci": [
+          0.7652893399120051,
+          0.8945801956612974
+        ],
+        "recall_delta_family_macro": 0.01413693100361589,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.010281547318864376,
+          0.017745654299970954
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "contrast_level_3_mean",
+        "condition_type": "contrast",
+        "level": 3,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9058103405121662,
+        "dice_family_macro": 0.9005475768578138,
+        "dice_family_bootstrap_95_ci": [
+          0.8747879776289461,
+          0.9238628418816995
+        ],
+        "dice_delta_family_macro": -0.011374594135241986,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.016307365229734933,
+          -0.007401933317258215
+        ],
+        "iou_image_macro": 0.832685790906588,
+        "iou_family_macro": 0.8239748872033241,
+        "iou_family_bootstrap_95_ci": [
+          0.7831711513074264,
+          0.8607474668789412
+        ],
+        "iou_delta_family_macro": -0.011374594135241986,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.016307365229734933,
+          -0.007401933317258215
+        ],
+        "precision_image_macro": 0.9126609514399092,
+        "precision_family_macro": 0.9273039264117291,
+        "precision_family_bootstrap_95_ci": [
+          0.9053782193549542,
+          0.9463875708568806
+        ],
+        "precision_delta_family_macro": -0.011374594135241986,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.016307365229734933,
+          -0.007401933317258215
+        ],
+        "recall_image_macro": 0.9132572521267481,
+        "recall_family_macro": 0.8884068051554195,
+        "recall_family_bootstrap_95_ci": [
+          0.8366401747138856,
+          0.9361107209125921
+        ],
+        "recall_delta_family_macro": -0.011374594135241986,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.016307365229734933,
+          -0.007401933317258215
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "contrast_level_3_mean",
+        "condition_type": "contrast",
+        "level": 3,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8501591473139817,
+        "dice_family_macro": 0.8326472110599683,
+        "dice_family_bootstrap_95_ci": [
+          0.7997605168885222,
+          0.865091133668858
+        ],
+        "dice_delta_family_macro": 0.007723479899472366,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.004987906131953447,
+          0.010366799379322578
+        ],
+        "iou_image_macro": 0.7479350611116513,
+        "iou_family_macro": 0.7211962188880607,
+        "iou_family_bootstrap_95_ci": [
+          0.6761000202085893,
+          0.766945108888233
+        ],
+        "iou_delta_family_macro": 0.007723479899472366,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.004987906131953447,
+          0.010366799379322578
+        ],
+        "precision_image_macro": 0.8487624820634784,
+        "precision_family_macro": 0.8564183168906816,
+        "precision_family_bootstrap_95_ci": [
+          0.8382825023059396,
+          0.8741951771256948
+        ],
+        "precision_delta_family_macro": 0.007723479899472366,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.004987906131953447,
+          0.010366799379322578
+        ],
+        "recall_image_macro": 0.8725738747995611,
+        "recall_family_macro": 0.8288618840581305,
+        "recall_family_bootstrap_95_ci": [
+          0.7652893399120051,
+          0.8945801956612974
+        ],
+        "recall_delta_family_macro": 0.007723479899472366,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.004987906131953447,
+          0.010366799379322578
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "od_level_1",
+        "condition_type": "od",
+        "level": 1,
+        "direction": "-1",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.9150709221464239,
+        "dice_family_macro": 0.9116337820051017,
+        "dice_family_bootstrap_95_ci": [
+          0.8873596567955001,
+          0.9337795642000771
+        ],
+        "dice_delta_family_macro": -0.003825506149271052,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0061912578478858634,
+          -0.0013805066920868103
+        ],
+        "iou_image_macro": 0.8480062541465037,
+        "iou_family_macro": 0.8421169345981937,
+        "iou_family_bootstrap_95_ci": [
+          0.8035401203487401,
+          0.877544019480175
+        ],
+        "iou_delta_family_macro": -0.003825506149271052,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0061912578478858634,
+          -0.0013805066920868103
+        ],
+        "precision_image_macro": 0.9294094780580189,
+        "precision_family_macro": 0.9454713376967657,
+        "precision_family_bootstrap_95_ci": [
+          0.9244818829726135,
+          0.9630620946947198
+        ],
+        "precision_delta_family_macro": -0.003825506149271052,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0061912578478858634,
+          -0.0013805066920868103
+        ],
+        "recall_image_macro": 0.9139018829378445,
+        "recall_family_macro": 0.8911411410709015,
+        "recall_family_bootstrap_95_ci": [
+          0.844646230734514,
+          0.9349811308887505
+        ],
+        "recall_delta_family_macro": -0.003825506149271052,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0061912578478858634,
+          -0.0013805066920868103
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "od_level_1",
+        "condition_type": "od",
+        "level": 1,
+        "direction": "-1",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.8415429994999468,
+        "dice_family_macro": 0.8250446899467635,
+        "dice_family_bootstrap_95_ci": [
+          0.7929686597477769,
+          0.856140464051243
+        ],
+        "dice_delta_family_macro": -0.005064256503052386,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.008441064861166251,
+          -0.0015691652316122558
+        ],
+        "iou_image_macro": 0.7343804531716072,
+        "iou_family_macro": 0.7096211596872387,
+        "iou_family_bootstrap_95_ci": [
+          0.6658589693356839,
+          0.7529726215102338
+        ],
+        "iou_delta_family_macro": -0.005064256503052386,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.008441064861166251,
+          -0.0015691652316122558
+        ],
+        "precision_image_macro": 0.8236136119250194,
+        "precision_family_macro": 0.8283121506058165,
+        "precision_family_bootstrap_95_ci": [
+          0.8092544933292481,
+          0.8481175211972755
+        ],
+        "precision_delta_family_macro": -0.005064256503052386,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.008441064861166251,
+          -0.0015691652316122558
+        ],
+        "recall_image_macro": 0.880142897293037,
+        "recall_family_macro": 0.8400868871626532,
+        "recall_family_bootstrap_95_ci": [
+          0.7769221957053144,
+          0.9049644472880765
+        ],
+        "recall_delta_family_macro": -0.005064256503052386,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.008441064861166251,
+          -0.0015691652316122558
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "od_level_1_mean",
+        "condition_type": "od",
+        "level": 1,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9150709221464239,
+        "dice_family_macro": 0.9116337820051017,
+        "dice_family_bootstrap_95_ci": [
+          0.8873596567955001,
+          0.9337795642000771
+        ],
+        "dice_delta_family_macro": -0.00028838898795411776,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0005718799212910034,
+          -6.292387778698064e-05
+        ],
+        "iou_image_macro": 0.8480062541465037,
+        "iou_family_macro": 0.8421169345981937,
+        "iou_family_bootstrap_95_ci": [
+          0.8035401203487401,
+          0.877544019480175
+        ],
+        "iou_delta_family_macro": -0.00028838898795411776,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0005718799212910034,
+          -6.292387778698064e-05
+        ],
+        "precision_image_macro": 0.9294094780580187,
+        "precision_family_macro": 0.9454713376967657,
+        "precision_family_bootstrap_95_ci": [
+          0.9244818829726135,
+          0.9630620946947198
+        ],
+        "precision_delta_family_macro": -0.00028838898795411776,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0005718799212910034,
+          -6.292387778698064e-05
+        ],
+        "recall_image_macro": 0.9139018829378442,
+        "recall_family_macro": 0.8911411410709015,
+        "recall_family_bootstrap_95_ci": [
+          0.844646230734514,
+          0.9349811308887505
+        ],
+        "recall_delta_family_macro": -0.00028838898795411776,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0005718799212910034,
+          -6.292387778698064e-05
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "od_level_1_mean",
+        "condition_type": "od",
+        "level": 1,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8415429994999465,
+        "dice_family_macro": 0.8250446899467635,
+        "dice_family_bootstrap_95_ci": [
+          0.7929686597477769,
+          0.856140464051243
+        ],
+        "dice_delta_family_macro": 0.00012095878626759639,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.000480602486118719,
+          0.0006662379716659478
+        ],
+        "iou_image_macro": 0.7343804531716072,
+        "iou_family_macro": 0.7096211596872387,
+        "iou_family_bootstrap_95_ci": [
+          0.6658589693356839,
+          0.7529726215102339
+        ],
+        "iou_delta_family_macro": 0.00012095878626759639,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.000480602486118719,
+          0.0006662379716659478
+        ],
+        "precision_image_macro": 0.8236136119250191,
+        "precision_family_macro": 0.8283121506058165,
+        "precision_family_bootstrap_95_ci": [
+          0.8092544933292484,
+          0.8481175211972753
+        ],
+        "precision_delta_family_macro": 0.00012095878626759639,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.000480602486118719,
+          0.0006662379716659478
+        ],
+        "recall_image_macro": 0.8801428972930369,
+        "recall_family_macro": 0.8400868871626532,
+        "recall_family_bootstrap_95_ci": [
+          0.7769221957053144,
+          0.9049644472880765
+        ],
+        "recall_delta_family_macro": 0.00012095878626759639,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.000480602486118719,
+          0.0006662379716659478
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "od_level_2",
+        "condition_type": "od",
+        "level": 2,
+        "direction": "-1",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.9144755938693464,
+        "dice_family_macro": 0.9106919511767272,
+        "dice_family_bootstrap_95_ci": [
+          0.8866611264387403,
+          0.9327271953024037
+        ],
+        "dice_delta_family_macro": -0.00690585303688208,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.010777538417662543,
+          -0.002822753928601314
+        ],
+        "iou_image_macro": 0.8470589131512757,
+        "iou_family_macro": 0.8405563301333926,
+        "iou_family_bootstrap_95_ci": [
+          0.8023381291853873,
+          0.8757950789698046
+        ],
+        "iou_delta_family_macro": -0.00690585303688208,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.010777538417662543,
+          -0.002822753928601314
+        ],
+        "precision_image_macro": 0.9290166675478274,
+        "precision_family_macro": 0.944820819486156,
+        "precision_family_bootstrap_95_ci": [
+          0.924002937719638,
+          0.9623628231713718
+        ],
+        "precision_delta_family_macro": -0.00690585303688208,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.010777538417662543,
+          -0.002822753928601314
+        ],
+        "recall_image_macro": 0.9133336095582307,
+        "recall_family_macro": 0.8902351582520236,
+        "recall_family_bootstrap_95_ci": [
+          0.8437329578538104,
+          0.9341244180585095
+        ],
+        "recall_delta_family_macro": -0.00690585303688208,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.010777538417662543,
+          -0.002822753928601314
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "od_level_2",
+        "condition_type": "od",
+        "level": 2,
+        "direction": "-1",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.8404662456468941,
+        "dice_family_macro": 0.8239364786437487,
+        "dice_family_bootstrap_95_ci": [
+          0.7924149297275763,
+          0.8543787696238349
+        ],
+        "dice_delta_family_macro": -0.009158631194033078,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.014765379052551103,
+          -0.0030854907694335162
+        ],
+        "iou_image_macro": 0.7328024975415006,
+        "iou_family_macro": 0.7080235902065314,
+        "iou_family_bootstrap_95_ci": [
+          0.6650536469329595,
+          0.750403774073266
+        ],
+        "iou_delta_family_macro": -0.009158631194033078,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.014765379052551103,
+          -0.0030854907694335162
+        ],
+        "precision_image_macro": 0.8215682921804324,
+        "precision_family_macro": 0.8260933350300619,
+        "precision_family_bootstrap_95_ci": [
+          0.8064468854348521,
+          0.8462029245833853
+        ],
+        "precision_delta_family_macro": -0.009158631194033078,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.014765379052551103,
+          -0.0030854907694335162
+        ],
+        "recall_image_macro": 0.8806775601846155,
+        "recall_family_macro": 0.8407780101813825,
+        "recall_family_bootstrap_95_ci": [
+          0.778061119468632,
+          0.9051692469561105
+        ],
+        "recall_delta_family_macro": -0.009158631194033078,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.014765379052551103,
+          -0.0030854907694335162
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "od_level_2_mean",
+        "condition_type": "od",
+        "level": 2,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9144755938693465,
+        "dice_family_macro": 0.910691951176727,
+        "dice_family_bootstrap_95_ci": [
+          0.8866611264387403,
+          0.9327271953024037
+        ],
+        "dice_delta_family_macro": -0.0012302198163288143,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0021973085482390126,
+          -0.0004755304848818029
+        ],
+        "iou_image_macro": 0.847058913151276,
+        "iou_family_macro": 0.8405563301333926,
+        "iou_family_bootstrap_95_ci": [
+          0.8023381291853873,
+          0.8757950789698046
+        ],
+        "iou_delta_family_macro": -0.0012302198163288143,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0021973085482390126,
+          -0.0004755304848818029
+        ],
+        "precision_image_macro": 0.9290166675478274,
+        "precision_family_macro": 0.944820819486156,
+        "precision_family_bootstrap_95_ci": [
+          0.924002937719638,
+          0.9623628231713718
+        ],
+        "precision_delta_family_macro": -0.0012302198163288143,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0021973085482390126,
+          -0.0004755304848818029
+        ],
+        "recall_image_macro": 0.9133336095582305,
+        "recall_family_macro": 0.8902351582520236,
+        "recall_family_bootstrap_95_ci": [
+          0.8437329578538104,
+          0.9341244180585095
+        ],
+        "recall_delta_family_macro": -0.0012302198163288143,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0021973085482390126,
+          -0.0004755304848818029
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "od_level_2_mean",
+        "condition_type": "od",
+        "level": 2,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8404662456468941,
+        "dice_family_macro": 0.8239364786437487,
+        "dice_family_bootstrap_95_ci": [
+          0.7924149297275763,
+          0.8543787696238349
+        ],
+        "dice_delta_family_macro": -0.000987252516747263,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.002596305705122729,
+          0.0002818474022569751
+        ],
+        "iou_image_macro": 0.7328024975415006,
+        "iou_family_macro": 0.7080235902065314,
+        "iou_family_bootstrap_95_ci": [
+          0.6650536469329595,
+          0.7504037740732659
+        ],
+        "iou_delta_family_macro": -0.000987252516747263,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.002596305705122729,
+          0.0002818474022569751
+        ],
+        "precision_image_macro": 0.8215682921804324,
+        "precision_family_macro": 0.8260933350300619,
+        "precision_family_bootstrap_95_ci": [
+          0.8064468854348521,
+          0.8462029245833853
+        ],
+        "precision_delta_family_macro": -0.000987252516747263,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.002596305705122729,
+          0.0002818474022569751
+        ],
+        "recall_image_macro": 0.8806775601846154,
+        "recall_family_macro": 0.8407780101813825,
+        "recall_family_bootstrap_95_ci": [
+          0.778061119468632,
+          0.9051692469561105
+        ],
+        "recall_delta_family_macro": -0.000987252516747263,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.002596305705122729,
+          0.0002818474022569751
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "od_level_3",
+        "condition_type": "od",
+        "level": 3,
+        "direction": "-1",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.9132252490978238,
+        "dice_family_macro": 0.9090281698729467,
+        "dice_family_bootstrap_95_ci": [
+          0.885307407610247,
+          0.9305486311742767
+        ],
+        "dice_delta_family_macro": -0.010982687428064224,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.016759560232472152,
+          -0.004735571101641913
+        ],
+        "iou_image_macro": 0.8450758347248469,
+        "iou_family_macro": 0.8378192228001392,
+        "iou_family_bootstrap_95_ci": [
+          0.8001368305839552,
+          0.8720498074660931
+        ],
+        "iou_delta_family_macro": -0.010982687428064224,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.016759560232472152,
+          -0.004735571101641913
+        ],
+        "precision_image_macro": 0.9277146617207127,
+        "precision_family_macro": 0.943131832017364,
+        "precision_family_bootstrap_95_ci": [
+          0.9226227161170985,
+          0.9607048469061018
+        ],
+        "precision_delta_family_macro": -0.010982687428064224,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.016759560232472152,
+          -0.004735571101641913
+        ],
+        "recall_image_macro": 0.912594440730635,
+        "recall_family_macro": 0.8891728243929077,
+        "recall_family_bootstrap_95_ci": [
+          0.8426039101318175,
+          0.9330760856046598
+        ],
+        "recall_delta_family_macro": -0.010982687428064224,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.016759560232472152,
+          -0.004735571101641913
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "od_level_3",
+        "condition_type": "od",
+        "level": 3,
+        "direction": "-1",
+        "images": 100,
+        "families": 10,
+        "dice_image_macro": 0.8388262793232889,
+        "dice_family_macro": 0.8224729209329282,
+        "dice_family_bootstrap_95_ci": [
+          0.7921500987836919,
+          0.85190147820677
+        ],
+        "dice_delta_family_macro": -0.013240110113375957,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.021441371712952774,
+          -0.0044070845987457365
+        ],
+        "iou_image_macro": 0.7303690417701507,
+        "iou_family_macro": 0.705866712829431,
+        "iou_family_bootstrap_95_ci": [
+          0.6644839783528602,
+          0.7468579632623021
+        ],
+        "iou_delta_family_macro": -0.013240110113375957,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.021441371712952774,
+          -0.0044070845987457365
+        ],
+        "precision_image_macro": 0.818116318371917,
+        "precision_family_macro": 0.8225442608829262,
+        "precision_family_bootstrap_95_ci": [
+          0.8018005371957635,
+          0.8433317661803811
+        ],
+        "precision_delta_family_macro": -0.013240110113375957,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.021441371712952774,
+          -0.0044070845987457365
+        ],
+        "recall_image_macro": 0.882123840211722,
+        "recall_family_macro": 0.8427341287258138,
+        "recall_family_bootstrap_95_ci": [
+          0.78139757414818,
+          0.9054910105408862
+        ],
+        "recall_delta_family_macro": -0.013240110113375957,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.021441371712952774,
+          -0.0044070845987457365
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "od_level_3_mean",
+        "condition_type": "od",
+        "level": 3,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9132252490978239,
+        "dice_family_macro": 0.9090281698729467,
+        "dice_family_bootstrap_95_ci": [
+          0.885307407610247,
+          0.9305486311742764
+        ],
+        "dice_delta_family_macro": -0.002894001120109161,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.0050489815773383925,
+          -0.0012339633515380355
+        ],
+        "iou_image_macro": 0.8450758347248469,
+        "iou_family_macro": 0.8378192228001392,
+        "iou_family_bootstrap_95_ci": [
+          0.8001368305839552,
+          0.8720498074660931
+        ],
+        "iou_delta_family_macro": -0.002894001120109161,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.0050489815773383925,
+          -0.0012339633515380355
+        ],
+        "precision_image_macro": 0.9277146617207128,
+        "precision_family_macro": 0.943131832017364,
+        "precision_family_bootstrap_95_ci": [
+          0.9226227161170987,
+          0.9607048469061018
+        ],
+        "precision_delta_family_macro": -0.002894001120109161,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.0050489815773383925,
+          -0.0012339633515380355
+        ],
+        "recall_image_macro": 0.912594440730635,
+        "recall_family_macro": 0.8891728243929077,
+        "recall_family_bootstrap_95_ci": [
+          0.8426039101318175,
+          0.9330760856046598
+        ],
+        "recall_delta_family_macro": -0.002894001120109161,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.0050489815773383925,
+          -0.0012339633515380355
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "od_level_3_mean",
+        "condition_type": "od",
+        "level": 3,
+        "direction": "mean",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8388262793232891,
+        "dice_family_macro": 0.8224729209329282,
+        "dice_family_bootstrap_95_ci": [
+          0.7921500987836919,
+          0.8519014782067698
+        ],
+        "dice_delta_family_macro": -0.00245081022756776,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.006291486861089728,
+          0.00044314871231349875
+        ],
+        "iou_image_macro": 0.7303690417701507,
+        "iou_family_macro": 0.705866712829431,
+        "iou_family_bootstrap_95_ci": [
+          0.6644839783528603,
+          0.7468579632623021
+        ],
+        "iou_delta_family_macro": -0.00245081022756776,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.006291486861089728,
+          0.00044314871231349875
+        ],
+        "precision_image_macro": 0.818116318371917,
+        "precision_family_macro": 0.8225442608829262,
+        "precision_family_bootstrap_95_ci": [
+          0.8018005371957635,
+          0.8433317661803811
+        ],
+        "precision_delta_family_macro": -0.00245081022756776,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.006291486861089728,
+          0.00044314871231349875
+        ],
+        "recall_image_macro": 0.8821238402117221,
+        "recall_family_macro": 0.8427341287258138,
+        "recall_family_bootstrap_95_ci": [
+          0.7813975741481798,
+          0.9054910105408862
+        ],
+        "recall_delta_family_macro": -0.00245081022756776,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.006291486861089728,
+          0.00044314871231349875
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "resolution_0.50x",
+        "condition_type": "resolution",
+        "level": 0.5,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8795352764324987,
+        "dice_family_macro": 0.8733167657568947,
+        "dice_family_bootstrap_95_ci": [
+          0.8510762496646046,
+          0.8942133425633402
+        ],
+        "dice_delta_family_macro": -0.038605405236161,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.043102624215571,
+          -0.03454883178855271
+        ],
+        "iou_image_macro": 0.7885179513940274,
+        "iou_family_macro": 0.778658295590954,
+        "iou_family_bootstrap_95_ci": [
+          0.745058877759219,
+          0.810545404935665
+        ],
+        "iou_delta_family_macro": -0.038605405236161,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.043102624215571,
+          -0.03454883178855271
+        ],
+        "precision_image_macro": 0.8841033438959388,
+        "precision_family_macro": 0.8975742583421692,
+        "precision_family_bootstrap_95_ci": [
+          0.8798219947008143,
+          0.9128810449087429
+        ],
+        "precision_delta_family_macro": -0.038605405236161,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.043102624215571,
+          -0.03454883178855271
+        ],
+        "recall_image_macro": 0.8868319586213463,
+        "recall_family_macro": 0.8606954142765293,
+        "recall_family_bootstrap_95_ci": [
+          0.8159315406962014,
+          0.9044824285851177
+        ],
+        "recall_delta_family_macro": -0.038605405236161,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.043102624215571,
+          -0.03454883178855271
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "resolution_0.50x",
+        "condition_type": "resolution",
+        "level": 0.5,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.828950654695608,
+        "dice_family_macro": 0.8135982857106555,
+        "dice_family_bootstrap_95_ci": [
+          0.7825057696101911,
+          0.8435088546710585
+        ],
+        "dice_delta_family_macro": -0.011325445449840339,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.013367388422636314,
+          -0.009306522106306517
+        ],
+        "iou_image_macro": 0.7147255800664347,
+        "iou_family_macro": 0.6921445738322073,
+        "iou_family_bootstrap_95_ci": [
+          0.6505021784448826,
+          0.7329418442814772
+        ],
+        "iou_delta_family_macro": -0.011325445449840339,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.013367388422636314,
+          -0.009306522106306517
+        ],
+        "precision_image_macro": 0.8148223191423721,
+        "precision_family_macro": 0.8216683742476247,
+        "precision_family_bootstrap_95_ci": [
+          0.8033295018624722,
+          0.8403190869487104
+        ],
+        "precision_delta_family_macro": -0.011325445449840339,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.013367388422636314,
+          -0.009306522106306517
+        ],
+        "recall_image_macro": 0.8640380995927388,
+        "recall_family_macro": 0.8244199624458002,
+        "recall_family_bootstrap_95_ci": [
+          0.7623676059944523,
+          0.8879251868157504
+        ],
+        "recall_delta_family_macro": -0.011325445449840339,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.013367388422636314,
+          -0.009306522106306517
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "resolution_0.75x",
+        "condition_type": "resolution",
+        "level": 0.75,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8944231084593156,
+        "dice_family_macro": 0.8895326732915126,
+        "dice_family_bootstrap_95_ci": [
+          0.8665391562360254,
+          0.9107556498830758
+        ],
+        "dice_delta_family_macro": -0.022389497701543245,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.024878082137205163,
+          -0.02002798282551996
+        ],
+        "iou_image_macro": 0.8128281576918586,
+        "iou_family_macro": 0.8048396232748706,
+        "iou_family_bootstrap_95_ci": [
+          0.7694506727307777,
+          0.8379331158030461
+        ],
+        "iou_delta_family_macro": -0.022389497701543245,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.024878082137205163,
+          -0.02002798282551996
+        ],
+        "precision_image_macro": 0.9058389112956496,
+        "precision_family_macro": 0.9199937031018411,
+        "precision_family_bootstrap_95_ci": [
+          0.9011553229729362,
+          0.9359549596625302
+        ],
+        "precision_delta_family_macro": -0.022389497701543245,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.024878082137205163,
+          -0.02002798282551996
+        ],
+        "recall_image_macro": 0.8951306327442115,
+        "recall_family_macro": 0.8712846291409951,
+        "recall_family_bootstrap_95_ci": [
+          0.8267562592513384,
+          0.9140936386783354
+        ],
+        "recall_delta_family_macro": -0.022389497701543245,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.024878082137205163,
+          -0.02002798282551996
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "resolution_0.75x",
+        "condition_type": "resolution",
+        "level": 0.75,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8344859865927385,
+        "dice_family_macro": 0.8192206389522717,
+        "dice_family_bootstrap_95_ci": [
+          0.7878354732248285,
+          0.849322517752723
+        ],
+        "dice_delta_family_macro": -0.005703092208224231,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.007530241854742135,
+          -0.0036456561926665266
+        ],
+        "iou_image_macro": 0.7231883703953499,
+        "iou_family_macro": 0.7004972700191315,
+        "iou_family_bootstrap_95_ci": [
+          0.6584534097603887,
+          0.7418548381506967
+        ],
+        "iou_delta_family_macro": -0.005703092208224231,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.007530241854742135,
+          -0.0036456561926665266
+        ],
+        "precision_image_macro": 0.8206173241873508,
+        "precision_family_macro": 0.8272960013483935,
+        "precision_family_bootstrap_95_ci": [
+          0.8082102682306173,
+          0.8465964131605297
+        ],
+        "precision_delta_family_macro": -0.005703092208224231,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.007530241854742135,
+          -0.0036456561926665266
+        ],
+        "recall_image_macro": 0.8688666358822953,
+        "recall_family_macro": 0.8296577636012812,
+        "recall_family_bootstrap_95_ci": [
+          0.7675345086070887,
+          0.8934584368998235
+        ],
+        "recall_delta_family_macro": -0.005703092208224231,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.007530241854742135,
+          -0.0036456561926665266
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "resolution_1.25x",
+        "condition_type": "resolution",
+        "level": 1.25,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.905206419114933,
+        "dice_family_macro": 0.9015431577371746,
+        "dice_family_bootstrap_95_ci": [
+          0.8772247950318232,
+          0.9237338240229219
+        ],
+        "dice_delta_family_macro": -0.01037901325588109,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.011477407389841068,
+          -0.009399278924547826
+        ],
+        "iou_image_macro": 0.8313047171386191,
+        "iou_family_macro": 0.8251172126280532,
+        "iou_family_bootstrap_95_ci": [
+          0.7868977274755778,
+          0.8603451849359228
+        ],
+        "iou_delta_family_macro": -0.01037901325588109,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.011477407389841068,
+          -0.009399278924547826
+        ],
+        "precision_image_macro": 0.9191761383416854,
+        "precision_family_macro": 0.935173689505697,
+        "precision_family_bootstrap_95_ci": [
+          0.9137008546917098,
+          0.9532250910175495
+        ],
+        "precision_delta_family_macro": -0.01037901325588109,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.011477407389841068,
+          -0.009399278924547826
+        ],
+        "recall_image_macro": 0.9049211470627045,
+        "recall_family_macro": 0.8816312466863879,
+        "recall_family_bootstrap_95_ci": [
+          0.833952775709387,
+          0.9264500982634466
+        ],
+        "recall_delta_family_macro": -0.01037901325588109,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.011477407389841068,
+          -0.009399278924547826
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "resolution_1.25x",
+        "condition_type": "resolution",
+        "level": 1.25,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8385259087488186,
+        "dice_family_macro": 0.8223033841805911,
+        "dice_family_bootstrap_95_ci": [
+          0.7903967956562624,
+          0.853118221316757
+        ],
+        "dice_delta_family_macro": -0.0026203469799049484,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.003463182900715686,
+          -0.0018682204428910085
+        ],
+        "iou_image_macro": 0.7295374643209773,
+        "iou_family_macro": 0.7053358761605044,
+        "iou_family_bootstrap_95_ci": [
+          0.6622489643223917,
+          0.7479854977844715
+        ],
+        "iou_delta_family_macro": -0.0026203469799049484,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.003463182900715686,
+          -0.0018682204428910085
+        ],
+        "precision_image_macro": 0.8218870023889121,
+        "precision_family_macro": 0.8270362595265812,
+        "precision_family_bootstrap_95_ci": [
+          0.8080232181912403,
+          0.8467278439135942
+        ],
+        "precision_delta_family_macro": -0.0026203469799049484,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.003463182900715686,
+          -0.0018682204428910085
+        ],
+        "recall_image_macro": 0.8755805126996158,
+        "recall_family_macro": 0.8357284303508798,
+        "recall_family_bootstrap_95_ci": [
+          0.7731752936057488,
+          0.9002042719874149
+        ],
+        "recall_delta_family_macro": -0.0026203469799049484,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.003463182900715686,
+          -0.0018682204428910085
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "resolution_1.50x",
+        "condition_type": "resolution",
+        "level": 1.5,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9073116184746953,
+        "dice_family_macro": 0.9037982544599454,
+        "dice_family_bootstrap_95_ci": [
+          0.8790344816406009,
+          0.9262785420806202
+        ],
+        "dice_delta_family_macro": -0.008123916533110363,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.009786637121412638,
+          -0.006519476942673398
+        ],
+        "iou_image_macro": 0.8351012661320594,
+        "iou_family_macro": 0.8291126793599333,
+        "iou_family_bootstrap_95_ci": [
+          0.7900150869026149,
+          0.8649313633189267
+        ],
+        "iou_delta_family_macro": -0.008123916533110363,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.009786637121412638,
+          -0.006519476942673398
+        ],
+        "precision_image_macro": 0.9201602992572719,
+        "precision_family_macro": 0.9367306976576689,
+        "precision_family_bootstrap_95_ci": [
+          0.9141007609699147,
+          0.9558046607716552
+        ],
+        "precision_delta_family_macro": -0.008123916533110363,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.009786637121412638,
+          -0.006519476942673398
+        ],
+        "recall_image_macro": 0.9087583495352789,
+        "recall_family_macro": 0.8851166270698771,
+        "recall_family_bootstrap_95_ci": [
+          0.8359934576434584,
+          0.9309189860862213
+        ],
+        "recall_delta_family_macro": -0.008123916533110363,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.009786637121412638,
+          -0.006519476942673398
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "resolution_1.50x",
+        "condition_type": "resolution",
+        "level": 1.5,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8399117320478762,
+        "dice_family_macro": 0.8236409014132257,
+        "dice_family_bootstrap_95_ci": [
+          0.7914653214878461,
+          0.8547357502416479
+        ],
+        "dice_delta_family_macro": -0.001282829747270252,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.001901778477288052,
+          -0.0007425858313355657
+        ],
+        "iou_image_macro": 0.7317568118566207,
+        "iou_family_macro": 0.707417026075136,
+        "iou_family_bootstrap_95_ci": [
+          0.6638582423944543,
+          0.7506121698822129
+        ],
+        "iou_delta_family_macro": -0.001282829747270252,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.001901778477288052,
+          -0.0007425858313355657
+        ],
+        "precision_image_macro": 0.8228798805678476,
+        "precision_family_macro": 0.8279248714554134,
+        "precision_family_bootstrap_95_ci": [
+          0.8089565448046988,
+          0.8476504788823281
+        ],
+        "precision_delta_family_macro": -0.001282829747270252,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.001901778477288052,
+          -0.0007425858313355657
+        ],
+        "recall_image_macro": 0.8773808655472861,
+        "recall_family_macro": 0.8375111342007754,
+        "recall_family_bootstrap_95_ci": [
+          0.7744838051418552,
+          0.9023804780987167
+        ],
+        "recall_delta_family_macro": -0.001282829747270252,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.001901778477288052,
+          -0.0007425858313355657
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "tile_256",
+        "condition_type": "tile_size",
+        "level": 256,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9168880285078764,
+        "dice_family_macro": 0.915662247514555,
+        "dice_family_bootstrap_95_ci": [
+          0.8875310027265336,
+          0.9394981241735886
+        ],
+        "dice_delta_family_macro": 0.00374007652149917,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.002624838689047803,
+          0.009683791535546729
+        ],
+        "iou_image_macro": 0.8516430754553561,
+        "iou_family_macro": 0.84918749513495,
+        "iou_family_bootstrap_95_ci": [
+          0.8047332152468406,
+          0.8878122211790153
+        ],
+        "iou_delta_family_macro": 0.00374007652149917,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.002624838689047803,
+          0.009683791535546729
+        ],
+        "precision_image_macro": 0.9305765662216936,
+        "precision_family_macro": 0.9456618862620706,
+        "precision_family_bootstrap_95_ci": [
+          0.9267827068359369,
+          0.9619690060661542
+        ],
+        "precision_delta_family_macro": 0.00374007652149917,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.002624838689047803,
+          0.009683791535546729
+        ],
+        "recall_image_macro": 0.9169987203800578,
+        "recall_family_macro": 0.8986931324493534,
+        "recall_family_bootstrap_95_ci": [
+          0.8492094210423027,
+          0.9431500401109453
+        ],
+        "recall_delta_family_macro": 0.00374007652149917,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.002624838689047803,
+          0.009683791535546729
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "tile_256",
+        "condition_type": "tile_size",
+        "level": 256,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8416795745082065,
+        "dice_family_macro": 0.8213227879508687,
+        "dice_family_bootstrap_95_ci": [
+          0.7902617536573688,
+          0.8538516052337013
+        ],
+        "dice_delta_family_macro": -0.003600943209627433,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.019880525149053387,
+          0.011176443861086904
+        ],
+        "iou_image_macro": 0.7356769390010618,
+        "iou_family_macro": 0.7048225522459225,
+        "iou_family_bootstrap_95_ci": [
+          0.6618585436884529,
+          0.7505950569086677
+        ],
+        "iou_delta_family_macro": -0.003600943209627433,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.019880525149053387,
+          0.011176443861086904
+        ],
+        "precision_image_macro": 0.8311361170583347,
+        "precision_family_macro": 0.8295250027080143,
+        "precision_family_bootstrap_95_ci": [
+          0.7912873946314672,
+          0.8592505097182874
+        ],
+        "precision_delta_family_macro": -0.003600943209627433,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.019880525149053387,
+          0.011176443861086904
+        ],
+        "recall_image_macro": 0.8765009625218221,
+        "recall_family_macro": 0.8373119558046342,
+        "recall_family_bootstrap_95_ci": [
+          0.7720159132325137,
+          0.9042147217987709
+        ],
+        "recall_delta_family_macro": -0.003600943209627433,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.019880525149053387,
+          0.011176443861086904
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "tile_384",
+        "condition_type": "tile_size",
+        "level": 384,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9176459175908422,
+        "dice_family_macro": 0.9148892466860856,
+        "dice_family_bootstrap_95_ci": [
+          0.8905656421009921,
+          0.937107988986643
+        ],
+        "dice_delta_family_macro": 0.002967075693029687,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.0016623076620688455,
+          0.004286094220246871
+        ],
+        "iou_image_macro": 0.852214262141551,
+        "iou_family_macro": 0.8473888129640905,
+        "iou_family_bootstrap_95_ci": [
+          0.808271969965373,
+          0.8835436144357947
+        ],
+        "iou_delta_family_macro": 0.002967075693029687,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.0016623076620688455,
+          0.004286094220246871
+        ],
+        "precision_image_macro": 0.9308610029342717,
+        "precision_family_macro": 0.9468476073082167,
+        "precision_family_bootstrap_95_ci": [
+          0.9262752860926519,
+          0.9640589132056151
+        ],
+        "precision_delta_family_macro": 0.002967075693029687,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.0016623076620688455,
+          0.004286094220246871
+        ],
+        "recall_image_macro": 0.9170430842771868,
+        "recall_family_macro": 0.8954184201724008,
+        "recall_family_bootstrap_95_ci": [
+          0.8488803530491059,
+          0.938995095238592
+        ],
+        "recall_delta_family_macro": 0.002967075693029687,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.0016623076620688455,
+          0.004286094220246871
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "tile_384",
+        "condition_type": "tile_size",
+        "level": 384,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8449760753340065,
+        "dice_family_macro": 0.825964713994245,
+        "dice_family_bootstrap_95_ci": [
+          0.7949336288554565,
+          0.8571189534712488
+        ],
+        "dice_delta_family_macro": 0.0010409828337490505,
+        "dice_delta_family_bootstrap_95_ci": [
+          -0.003830974330062778,
+          0.0053366543179499204
+        ],
+        "iou_image_macro": 0.7395893749923702,
+        "iou_family_macro": 0.7109102757094932,
+        "iou_family_bootstrap_95_ci": [
+          0.6679607269219047,
+          0.7547178363879276
+        ],
+        "iou_delta_family_macro": 0.0010409828337490505,
+        "iou_delta_family_bootstrap_95_ci": [
+          -0.003830974330062778,
+          0.0053366543179499204
+        ],
+        "precision_image_macro": 0.8305019097800366,
+        "precision_family_macro": 0.8329191684531072,
+        "precision_family_bootstrap_95_ci": [
+          0.8088601515405749,
+          0.8542386644704124
+        ],
+        "precision_delta_family_macro": 0.0010409828337490505,
+        "precision_delta_family_bootstrap_95_ci": [
+          -0.003830974330062778,
+          0.0053366543179499204
+        ],
+        "recall_image_macro": 0.8806475019692906,
+        "recall_family_macro": 0.8387736778421914,
+        "recall_family_bootstrap_95_ci": [
+          0.772808048509904,
+          0.9052627996325451
+        ],
+        "recall_delta_family_macro": 0.0010409828337490505,
+        "recall_delta_family_bootstrap_95_ci": [
+          -0.003830974330062778,
+          0.0053366543179499204
+        ]
+      },
+      {
+        "model": "frozen_unet",
+        "condition": "tile_512",
+        "condition_type": "tile_size",
+        "level": 512,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.9153306335833998,
+        "dice_family_macro": 0.9119221709930561,
+        "dice_family_bootstrap_95_ci": [
+          0.8875951361229354,
+          0.9341902189786933
+        ],
+        "dice_delta_family_macro": 0.0,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "iou_image_macro": 0.8484173067065782,
+        "iou_family_macro": 0.8425865364383514,
+        "iou_family_bootstrap_95_ci": [
+          0.803819560042506,
+          0.8783778452810466
+        ],
+        "iou_delta_family_macro": 0.0,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "precision_image_macro": 0.9298397785448145,
+        "precision_family_macro": 0.9459572199005368,
+        "precision_family_bootstrap_95_ci": [
+          0.9249455178217202,
+          0.9635214252062049
+        ],
+        "precision_delta_family_macro": 0.0,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_image_macro": 0.9138991282706682,
+        "recall_family_macro": 0.8911280987663487,
+        "recall_family_bootstrap_95_ci": [
+          0.8444968414758107,
+          0.9351190336255208
+        ],
+        "recall_delta_family_macro": 0.0,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "model": "color_threshold",
+        "condition": "tile_512",
+        "condition_type": "tile_size",
+        "level": 512,
+        "direction": "none",
+        "images": 50,
+        "families": 10,
+        "dice_image_macro": 0.8417142123880947,
+        "dice_family_macro": 0.824923731160496,
+        "dice_family_bootstrap_95_ci": [
+          0.7924400477282565,
+          0.8563880421099435
+        ],
+        "dice_delta_family_macro": 0.0,
+        "dice_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "iou_image_macro": 0.7346856588587296,
+        "iou_family_macro": 0.7094853976975414,
+        "iou_family_bootstrap_95_ci": [
+          0.6652932180574763,
+          0.753313315362408
+        ],
+        "iou_delta_family_macro": 0.0,
+        "iou_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "precision_image_macro": 0.8245420934120662,
+        "precision_family_macro": 0.8290850926004147,
+        "precision_family_bootstrap_95_ci": [
+          0.8102303013407081,
+          0.8486882250346878
+        ],
+        "precision_delta_family_macro": 0.0,
+        "precision_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_image_macro": 0.8793571862359024,
+        "recall_family_macro": 0.8389207108435063,
+        "recall_family_bootstrap_95_ci": [
+          0.7753407047630981,
+          0.9043592553734098
+        ],
+        "recall_delta_family_macro": 0.0,
+        "recall_delta_family_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "uncertainty_summary": {
+      "pixel_count": 13107200,
+      "mean_pixel_entropy": 0.09345778569579125,
+      "pixel_entropy_quantiles_50_95": [
+        0.006476011127233505,
+        0.5943822264671326
+      ],
+      "mean_pixel_probability_variance": 0.002727951523847878,
+      "pixel_variance_quantiles_50_95": [
+        2.1954471662866126e-07,
+        0.016782826092094052
+      ],
+      "brier_score": 0.04663174521178007,
+      "ece_10_bins": 0.025908610767219217,
+      "reliability_plot": "PHASEC_reliability_plot.svg",
+      "uncertainty_dice_family_spearman": {
+        "family_spearman": 0.1515151515151515,
+        "family_bootstrap_95_ci": [
+          -0.5471698113207548,
+          0.691358024691358
+        ],
+        "valid_bootstrap_replicates": 10000,
+        "families": 10
+      },
+      "image_level_spearman": 0.18809123649459786,
+      "ood_flag_count": 0,
+      "ood_test_images": 50,
+      "ensemble_dice_by_ood_flag": {
+        "flagged": {
+          "n_images": 0,
+          "mean_dice": null
+        },
+        "not_flagged": {
+          "n_images": 50,
+          "mean_dice": 0.912206643448136
+        }
+      },
+      "test_families_are_verified_patients": false,
+      "test_family_count": 10
+    },
+    "test_images": 50,
+    "test_families": 10
+  }
+}

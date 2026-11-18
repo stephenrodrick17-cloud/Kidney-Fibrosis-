@@ -1,0 +1,17 @@
+{
+  "annotator_filenames_use_opaque_ids_only": true,
+  "annotator_prediction_or_baseline_files": 0,
+  "annotator_visible_files": 22,
+  "post_annotation_rating_rows_blank": 20,
+  "private_key_separate_from_annotator_package": true,
+  "raw_blinded_tiles_pixel_hashes_verified": 20,
+  "raw_pngs_have_no_embedded_metadata": true,
+  "real_annotations_read": false,
+  "regions_per_colour_stratum": 5,
+  "seeded_selection_matches_key": true,
+  "selected_participant_ids": 14,
+  "selected_regions": 20,
+  "status": "verified",
+  "unblinded_packet_files": 62,
+  "unblinded_packet_is_separate": true
+}

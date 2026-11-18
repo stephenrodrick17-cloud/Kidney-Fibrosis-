@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-11-12T12:36:01+05:30",
+  "command": "python D:\\patent\\stage1_expression\\scripts\\run_stage1.py prepare",
+  "counts": {
+    "participants": 28,
+    "libraries": 29,
+    "spots": 25104,
+    "spots_key_unique": true
+  },
+  "fold_seed": 20261112,
+  "target_columns": [
+    "COL1A1",
+    "COL1A2",
+    "COL3A1",
+    "FN1",
+    "TGFB1",
+    "CCN2",
+    "ACTA2",
+    "MMP2",
+    "TIMP1",
+    "ECM_collagen",
+    "myofibroblast_pro-fibrotic",
+    "matrix_remodelling"
+  ],
+  "gene_normalization": "log1p(raw target counts / total spot UMI * 10000), sourced from qc_collagen",
+  "module_method": "simple mean of member-gene log1p(CP10K), sourced from qc_collagen"
+}

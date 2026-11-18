@@ -1,0 +1,10 @@
+path,size,file_type,modality,stain,participant_id,sample_slide_id,access_level
+D:\patent\1981e918-d8d5-4951-83d1-45a8fce9fc09_S-2010-012948_PAS_2of2.svs,87002493,svs,pathology_wsi,PAS stain,32-10296,S-2010-012948,open
+D:\patent\373e0b38-adc0-4a5a-b134-426552826be1_S-1910-000029_HE_2of2.svs,96446973,svs,pathology_wsi,H&E stain,29-10008,S-1910-000029,open
+D:\patent\38ad41e1-b8ec-4ca4-a9ee-f969cd4820ba_S-2310-016644_HE_1of2.svs,330948673,svs,pathology_wsi,H&E stain,936-10119,S-2310-016644,open
+D:\patent\571cd693-92b4-4a59-94af-444864967d2c_S-2407-010708_PAS_2of2.svs,691042334,svs,pathology_wsi,PAS stain,31-10943,S-2407-010708,open
+D:\patent\8dc85116-f6ac-4214-a4fa-fa64b5cba57a_S-1905-017582_HE_1of2.svs,119898061,svs,pathology_wsi,H&E stain,29-10007,S-1905-017582,open
+D:\patent\97fe61fb-b97a-44e3-b4a6-258990851278_S-2209-009414_TRI_1of2.svs,19880395,svs,pathology_wsi,TRI stain,34-10730,S-2209-009414,open
+D:\patent\c3e9684f-ed34-43c1-b501-84462a3edec5_S-2411-007558_HE_2of2.svs,359725014,svs,pathology_wsi,H&E stain,933-11196,S-2411-007558,open
+D:\patent\daa5909d-544b-4440-a899-5bfa6134ee22_S-2303-006476_PAS_2of2.svs,233219456,svs,pathology_wsi,PAS stain,935-10061,S-2303-006476,open
+D:\patent\atlas_repository_filelist-20261105.csv,2303231,csv,repository_filelist,unknown,n/a,,open

@@ -1,0 +1,38 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+
+# Incomplete and temporary downloads
+*.crdownload
+*.tmp
+
+# Large raw whole-slide microscopy images and raw archives (>100MB / raw datasets)
+*.svs
+*.tif
+*.tiff
+*.zip
+*.tar
+*.tar.gz
+*.gz
+
+# Raw data and scratch directories
+/data/
+/data_confirm/
+/working/
+/16410/
+/16420/
+/plan_a_plan_b/tiles/
+
+# Pretrained model checkpoints
+*.pth
+stage1_expression/model_cache/

@@ -1,0 +1,2 @@
+﻿analysis_label,asset_status,endpoint,n_paired_participants,paired_mean_difference,participant_bootstrap_ci95_low,participant_bootstrap_ci95_high,image_participant_macro_mean_spearman,required_image_macro_mean_spearman,exploratory_rule,interpretation
+"EXPLORATORY, NOT CONFIRMATORY",RESEARCH-ONLY,"best inner-selected image model minus best inner-selected baseline, region Spearman",40,-0.020747018650971342,-0.13005740517002704,0.08593268098987669,0.11537596666266152,0.3,not met,"EXPLORATORY only; not proof, success, or validation"

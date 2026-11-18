@@ -1,0 +1,25 @@
+﻿label,outcome,test,n_participants,effect_size,bootstrap_ci_95_low,bootstrap_ci_95_high,p_value,status,label_source_files,label_source_columns,outcome_source_file,outcome_source_column
+reference_vs_ckd,ECM_collagen_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(COL1A1,COL1A2,COL3A1,FN1)"
+reference_vs_ckd,myofibroblast_pro_fibrotic_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(ACTA2,TGFB1,CCN2,SERPINE1)"
+reference_vs_ckd,trichrome_collagen_proxy,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/participant_trichrome_collagen_proxy.csv,trichrome_collagen_proxy
+diagnosis,ECM_collagen_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(COL1A1,COL1A2,COL3A1,FN1)"
+diagnosis,myofibroblast_pro_fibrotic_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(ACTA2,TGFB1,CCN2,SERPINE1)"
+diagnosis,trichrome_collagen_proxy,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/participant_trichrome_collagen_proxy.csv,trichrome_collagen_proxy
+ifta_score,ECM_collagen_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(COL1A1,COL1A2,COL3A1,FN1)"
+ifta_score,myofibroblast_pro_fibrotic_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(ACTA2,TGFB1,CCN2,SERPINE1)"
+ifta_score,trichrome_collagen_proxy,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/participant_trichrome_collagen_proxy.csv,trichrome_collagen_proxy
+interstitial_fibrosis_score,ECM_collagen_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(COL1A1,COL1A2,COL3A1,FN1)"
+interstitial_fibrosis_score,myofibroblast_pro_fibrotic_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(ACTA2,TGFB1,CCN2,SERPINE1)"
+interstitial_fibrosis_score,trichrome_collagen_proxy,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/participant_trichrome_collagen_proxy.csv,trichrome_collagen_proxy
+tubular_atrophy,ECM_collagen_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(COL1A1,COL1A2,COL3A1,FN1)"
+tubular_atrophy,myofibroblast_pro_fibrotic_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(ACTA2,TGFB1,CCN2,SERPINE1)"
+tubular_atrophy,trichrome_collagen_proxy,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/participant_trichrome_collagen_proxy.csv,trichrome_collagen_proxy
+egfr,ECM_collagen_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(COL1A1,COL1A2,COL3A1,FN1)"
+egfr,myofibroblast_pro_fibrotic_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(ACTA2,TGFB1,CCN2,SERPINE1)"
+egfr,trichrome_collagen_proxy,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/participant_trichrome_collagen_proxy.csv,trichrome_collagen_proxy
+age,ECM_collagen_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(COL1A1,COL1A2,COL3A1,FN1)"
+age,myofibroblast_pro_fibrotic_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(ACTA2,TGFB1,CCN2,SERPINE1)"
+age,trichrome_collagen_proxy,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/participant_trichrome_collagen_proxy.csv,trichrome_collagen_proxy
+sex,ECM_collagen_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(COL1A1,COL1A2,COL3A1,FN1)"
+sex,myofibroblast_pro_fibrotic_pseudobulk_module,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/pseudobulk_log_cpm.csv,"mean(ACTA2,TGFB1,CCN2,SERPINE1)"
+sex,trichrome_collagen_proxy,,0,,,,,not run: fewer than 10 paired participants,,,qc_collagen/participant_trichrome_collagen_proxy.csv,trichrome_collagen_proxy

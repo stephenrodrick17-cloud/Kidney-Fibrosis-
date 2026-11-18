@@ -1,0 +1,19 @@
+{
+  "analysis_label": "EXPLORATORY, NOT CONFIRMATORY",
+  "asset_status": "RESEARCH-ONLY",
+  "failed_attempts": [
+    {
+      "command": "fit-outer --outer-fold 0",
+      "completed_main_fits": 6,
+      "completed_shuffle_fits": 4,
+      "selected_image_model": "image_mlp",
+      "selected_baseline_model": "depth_only",
+      "outer_output_saved": false,
+      "error": "IndexError from indexing evaluation-only shuffle predictions with full-dataset test indices; fixed by using evaluation-row order."
+    }
+  ],
+  "completed_fit_calls_from_failed_attempts": 10,
+  "planned_main_fit_count": 810,
+  "planned_shuffle_fit_max": 20,
+  "maximum_actual_fit_calls_after_retry": 840
+}

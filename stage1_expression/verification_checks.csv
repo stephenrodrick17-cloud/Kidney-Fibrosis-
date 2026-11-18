@@ -1,0 +1,7 @@
+﻿check,expected,observed,passed
+participants,28,28,True
+libraries,29,29,True
+spots,25104,25104,True
+unique_full_spot_keys,25104,25104,True
+participant_single_test_fold,28,28,True
+28-12265_two_libraries_one_fold,1,1,True

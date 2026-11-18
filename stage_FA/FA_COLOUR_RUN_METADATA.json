@@ -1,0 +1,17 @@
+{
+  "analysis_label": "EXPLORATORY, NOT CONFIRMATORY",
+  "mask_status": "UNVALIDATED MASKS",
+  "asset_status": "RESEARCH-ONLY",
+  "libraries": 41,
+  "included_spots": 34735,
+  "maximum_score_recheck_difference": 0.0,
+  "python": "3.13.1",
+  "numpy": "2.2.6",
+  "pillow": "11.1.0",
+  "pytorch": "2.7.1+cu118",
+  "command": "python -B D:\\patent\\stage_FA\\FA_EXTRACT_COLOUR.py",
+  "started_at_utc": "2026-11-17T09:44:16.586153+00:00",
+  "runtime_seconds": 55.759,
+  "outputs_bytes": 77725835,
+  "expression_files_read": false
+}

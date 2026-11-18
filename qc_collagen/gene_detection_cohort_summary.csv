@@ -1,0 +1,14 @@
+﻿gene,participants_total,participants_with_complete_matrix_coverage,participants_ge10pct_detection,participants_ge5pct_detection,cohort_mean_participant_detection_percent,usable_for_prediction_rule,rule,participants_ge10pct,participants_ge5pct
+COL1A1,28,28,27,27,40.92939562012973,True,>=10% spot detection in >=half of participants,27,27
+COL1A2,28,28,27,28,71.3625611753618,True,>=10% spot detection in >=half of participants,27,28
+COL3A1,28,28,27,27,54.09995804663123,True,>=10% spot detection in >=half of participants,27,27
+FN1,28,28,27,27,48.23488012496911,True,>=10% spot detection in >=half of participants,27,27
+TGFB1,28,28,26,27,25.15149050793229,True,>=10% spot detection in >=half of participants,26,27
+CCN2,28,28,27,27,72.95134457248436,True,>=10% spot detection in >=half of participants,27,27
+SERPINE1,28,28,6,13,7.031881103951368,False,>=10% spot detection in >=half of participants,6,13
+ACTA2,28,28,27,27,63.851933326988195,True,>=10% spot detection in >=half of participants,27,27
+MMP2,28,28,27,27,40.41408108166604,True,>=10% spot detection in >=half of participants,27,27
+MMP9,28,28,2,7,3.24680322385813,False,>=10% spot detection in >=half of participants,2,7
+TIMP1,28,28,27,27,63.296267579429674,True,>=10% spot detection in >=half of participants,27,27
+HAVCR1,28,28,0,0,0.4168598569757692,False,>=10% spot detection in >=half of participants,0,0
+LCN2,28,28,5,7,6.81485436648937,False,>=10% spot detection in >=half of participants,5,7

@@ -1,0 +1,4 @@
+analysis_label,mask_status,asset_status,participant_id,library_id,overlay_path,visual_review
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,164-22,lib_4a5b81744935a631,D:\patent\stage_FA\FA_OVERLAY_164-22_lib_4a5b81744935a631.png,PASS - visual spot/image alignment; masks remain unvalidated
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,27-10229,lib_fc0ebf7ec94ce50d,D:\patent\stage_FA\FA_OVERLAY_27-10229_lib_fc0ebf7ec94ce50d.png,PASS - visual spot/image alignment; masks remain unvalidated
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,28-12557,lib_ec3729efc32ffd32,D:\patent\stage_FA\FA_OVERLAY_28-12557_lib_ec3729efc32ffd32.png,PASS - visual spot/image alignment; masks remain unvalidated

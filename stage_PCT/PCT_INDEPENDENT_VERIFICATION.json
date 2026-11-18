@@ -1,0 +1,24 @@
+{
+  "method": "Independent arithmetic recomputation from PCT_PER_IMAGE.csv",
+  "n_images": 50,
+  "numbers": {
+    "U-Net": {
+      "mean_bias_recomputed": 0.22281563410672242,
+      "mean_absolute_error_recomputed": 4.154200249646001,
+      "root_mean_square_error_recomputed": 5.8362106511953185,
+      "whole_image_sensitivity_bias": 0.22283172607421875,
+      "whole_image_sensitivity_mae": 4.153007507324219,
+      "maximum_absolute_difference": 0.0,
+      "passes_tolerance_1e-12": true
+    },
+    "Colour rule": {
+      "mean_bias_recomputed": 3.6595462000324503,
+      "mean_absolute_error_recomputed": 7.15053888298538,
+      "root_mean_square_error_recomputed": 9.281113996471344,
+      "whole_image_sensitivity_bias": 3.6622314453125,
+      "whole_image_sensitivity_mae": 7.151519775390625,
+      "maximum_absolute_difference": 0.0,
+      "passes_tolerance_1e-12": true
+    }
+  }
+}

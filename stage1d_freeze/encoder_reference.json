@@ -1,0 +1,7 @@
+{
+  "checkpoint_path": "D:\\patent\\stage1_expression\\model_cache\\checkpoints\\resnet50-11ad3fa6.pth",
+  "size_bytes": 102540417,
+  "sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca",
+  "weights": "torchvision ResNet-50 IMAGENET1K_V2",
+  "role": "frozen encoder; Stage 1 spot embeddings already computed"
+}

@@ -1,0 +1,4 @@
+﻿module,participants_ge10pct_module_detection,participants_ge5pct_module_detection,usable_for_prediction_rule,module_detection_definition,score_method
+ECM_collagen,28,28,True,at least one module member gene detected in the spot; module score is mean member log1p(CP10K),simple mean; no control-gene matching
+myofibroblast_pro-fibrotic,27,28,True,at least one module member gene detected in the spot; module score is mean member log1p(CP10K),simple mean; no control-gene matching
+matrix_remodelling,27,28,True,at least one module member gene detected in the spot; module score is mean member log1p(CP10K),simple mean; no control-gene matching

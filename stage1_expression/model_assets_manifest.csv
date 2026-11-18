@@ -1,0 +1,2 @@
+﻿asset,url,license,cached_before_run,size_bytes,sha256,device,device_name,torch_version,torchvision_version,context_libraries_available,context_libraries_total
+torchvision ResNet-50 IMAGENET1K_V2,https://download.pytorch.org/models/resnet50-11ad3fa6.pth,torchvision code BSD-3-Clause; weight-specific and upstream ImageNet dataset terms not independently verified,False,102540417,11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca,cuda,NVIDIA GeForce RTX 3050 Laptop GPU,2.7.1+cu118,0.22.1+cu118,29,29

@@ -1,0 +1,83 @@
+{
+  "fit_timestamp": "2026-11-13T10:44:42+05:30",
+  "target_variant": "depth_residualized_neighbor_mean",
+  "fit_cohort": {
+    "participants": 28,
+    "libraries": 29,
+    "spots": 25104,
+    "finite_target_fit_rows": 25092,
+    "excluded_no_neighbor_rows": 12,
+    "key": [
+      "participant_id",
+      "library_id",
+      "barcode"
+    ]
+  },
+  "models": {
+    "depth_only_ridge": {
+      "input": "log1p(library_size_umi), from the per-spot total UMI field",
+      "feature_names": [
+        "log1p_total_spot_umi"
+      ],
+      "estimator": "sklearn.linear_model.Ridge",
+      "alpha": 1.0,
+      "alpha_selection": "fixed; no selection",
+      "participant_weighting": "1 / finite training rows per participant, normalized to mean 1",
+      "scaling": "weighted mean and population standard deviation; scales below 1e-12 or non-finite replaced by 1",
+      "seed": null
+    },
+    "color_only_ridge": {
+      "input": "Stage 1 color_statistics(rgb) features on each RGB spot tile",
+      "feature_function": "D:\\patent\\stage1_expression\\scripts\\run_stage1.py:color_statistics",
+      "feature_names": [
+        "rgb_mean_r",
+        "rgb_mean_g",
+        "rgb_mean_b",
+        "rgb_std_r",
+        "rgb_std_g",
+        "rgb_std_b",
+        "hsv_mean_h",
+        "hsv_mean_s",
+        "hsv_mean_v",
+        "hsv_std_h",
+        "hsv_std_s",
+        "hsv_std_v"
+      ],
+      "pixel_input": "PIL RGB conversion to uint8; raw RGB values and cv2.COLOR_RGB2HSV output; statistics over axes (0, 1)",
+      "statistics": "per-channel mean and population standard deviation; no additional normalization",
+      "estimator": "sklearn.linear_model.Ridge",
+      "alpha": 1.0,
+      "alpha_selection": "fixed; no selection",
+      "participant_weighting": "1 / finite training rows per participant, normalized to mean 1",
+      "scaling": "weighted mean and population standard deviation; scales below 1e-12 or non-finite replaced by 1",
+      "seed": null
+    }
+  },
+  "target_names": [
+    "ECM_collagen",
+    "myofibroblast_pro-fibrotic",
+    "matrix_remodelling",
+    "COL1A1",
+    "COL1A2",
+    "COL3A1",
+    "FN1",
+    "TGFB1",
+    "CCN2",
+    "ACTA2",
+    "MMP2",
+    "TIMP1"
+  ],
+  "target_scaling": "same weighted scaling as frozen MLP; verified within 1e-12",
+  "randomness": "Ridge fitting and preprocessing are deterministic; no RNG seed is used",
+  "source_sha256": {
+    "D:\\patent\\stage1c_confirm\\PREREG_CONFIRM.md": "23238d3727ab2a4102bfdc7a558df90100692d14bf8b014b05eef08253e0f729",
+    "D:\\patent\\stage1b_expression\\scripts\\run_stage1b.py": "2a92cc16250d963c30b71375d6ace22f4d54bda547433bd31621029ad81d89d0",
+    "D:\\patent\\stage1_expression\\scripts\\run_stage1.py": "fc4a8e1eeee18b79b029aa5ecf1fb97ccf4a99d4fbe11f16a28d2e766a9b8d4c",
+    "D:\\patent\\stage1_expression\\targets_by_spot.csv": "8dade8a328018e49c2c4bc6d5e63aed1347c18d03eba6ce295356add27fd2aa6",
+    "D:\\patent\\stage1_expression\\color_statistics.npz": "f0d5d4ecf14f646f8347ba2374bc645f22973d1e824038cac984e2d9736d6264",
+    "D:\\patent\\stage1d_freeze\\frozen_scalers.npz": "bdf441fb6d6640bfa419799d43ba50bd33965856770ec6e8a27e54daf6ce5409",
+    "D:\\patent\\stage1d_freeze\\residualization_parameters.csv": "d3be232fc951b36b33fccf68ecfe4c6d4e6d2914e4015208d58084ce2d9c5157"
+  },
+  "performance_evaluation_performed": false,
+  "extra_participant_data_opened_or_used": false
+}

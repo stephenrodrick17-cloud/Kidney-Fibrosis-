@@ -1,0 +1,7 @@
+analysis_label,check,expected,observed,passed
+"exploratory, post-hoc",participants,28,28,True
+"exploratory, post-hoc",libraries,29,29,True
+"exploratory, post-hoc",spots,25104,25104,True
+"exploratory, post-hoc",unique_full_keys,25104,25104,True
+"exploratory, post-hoc",single_test_fold_per_participant,28,28,True
+"exploratory, post-hoc",same_stage1_fold_assignments,1,1,True

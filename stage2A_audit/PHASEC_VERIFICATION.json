@@ -1,0 +1,25 @@
+{
+  "status": "verified",
+  "recomputation_method": "Independent second pass from saved checkpoint(s), official test images/masks, and fixed colour rule.",
+  "archive_sha256": "f796f0fa585701d66bd8f6b0ed096bb30f4376eff3359cb32ccbf1fd64d08a4e",
+  "frozen_checkpoint_sha256": "674b0045ab8c5857fa056dc85d691f7e1c30a86479ffe7ba0be933351b2fbcbb",
+  "ensemble_checkpoint_sha256": [
+    "df33949e87dc8665adef0718df03db1aead62512922063691771e0ce7f441e4b",
+    "0b54a0d6e77c2bb9b8aa9bc616cc761fd27556ce3a42c8086d5bfba9d62a1b38"
+  ],
+  "test_pairs": 50,
+  "test_filename_families": 10,
+  "filename_families_are_verified_patient_or_slide_ids": false,
+  "recomputed_values": {
+    "frozen_unet_image_macro_dice": 0.9153306335833998,
+    "color_threshold_family_macro_dice": 0.824923731160496,
+    "ensemble_brier_score": 0.04663174521178007
+  },
+  "absolute_difference_from_reported": {
+    "frozen_unet_image_macro_dice": 0.0,
+    "color_threshold_family_macro_dice": 0.0,
+    "ensemble_brier_score": 0.0
+  },
+  "tolerance": 1e-08,
+  "pixel_count_for_brier": 13107200
+}

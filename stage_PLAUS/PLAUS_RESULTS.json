@@ -1,0 +1,101 @@
+{
+  "label": "EXPLORATORY, NOT CONFIRMATORY. UNVALIDATED MASKS.",
+  "checkpoint_sha256": "674b0045ab8c5857fa056dc85d691f7e1c30a86479ffe7ba0be933351b2fbcbb",
+  "n_participants_in_primary": 40,
+  "n_full_matrix_participants": 28,
+  "collagen_module": {
+    "mean_effect": 0.12493395564397017,
+    "ci95_low": 0.08135907215889013,
+    "ci95_high": 0.17081526870180228
+  },
+  "negative_controls": {
+    "n_available": 20,
+    "95th_percentile": 0.28874069019738285,
+    "collagen_rank_fraction": 0.45,
+    "collagen_above_95th_percentile": false
+  },
+  "expected_direction": {
+    "n_available": 16,
+    "sign_agreement_fraction": 1.0,
+    "binomial_test_alternative_greater_than_half_p": 1.52587890625e-05
+  },
+  "mask_sensitivity": {
+    "available_direction_fraction": 1.0,
+    "n_available_cells": 1
+  },
+  "stain_quartiles": [
+    {
+      "quartile": 1,
+      "n_participants": 10,
+      "too_small_to_judge": false,
+      "mean_collagen_effect": 0.16645912429822513,
+      "ci95_low": 0.0740459767587291,
+      "ci95_high": 0.25370911255041284,
+      "direction": "higher"
+    },
+    {
+      "quartile": 2,
+      "n_participants": 10,
+      "too_small_to_judge": false,
+      "mean_collagen_effect": 0.17358239959622057,
+      "ci95_low": 0.08969943537325704,
+      "ci95_high": 0.25792424745516584,
+      "direction": "higher"
+    },
+    {
+      "quartile": 3,
+      "n_participants": 10,
+      "too_small_to_judge": false,
+      "mean_collagen_effect": 0.17461623744011273,
+      "ci95_low": 0.09694794482748226,
+      "ci95_high": 0.2539030918000078,
+      "direction": "higher"
+    },
+    {
+      "quartile": 4,
+      "n_participants": 10,
+      "too_small_to_judge": false,
+      "mean_collagen_effect": -0.014921938758677802,
+      "ci95_low": -0.04812645870272567,
+      "ci95_high": 0.010397079427450506,
+      "direction": "lower"
+    }
+  ],
+  "leave_one_out": {
+    "range_low": 0.11808473063769895,
+    "range_high": 0.13154714672070875,
+    "keeps_direction": true
+  },
+  "library_exclusion": {
+    "25th_percentile_library_size": 2521.0,
+    "mean_collagen_effect": 0.14697198424220903
+  },
+  "spatial_permutation": {
+    "status": "NOT AVAILABLE",
+    "reason": "saved spot table lacks array-coordinate blocks for the 40-participant combined run"
+  },
+  "tissue_edge_exclusion": {
+    "status": "NOT AVAILABLE",
+    "reason": "saved spot table lacks a complete tissue-edge distance field"
+  },
+  "interpretation": {
+    "overall": "CONCERN",
+    "failed_rules": [
+      "1: collagen module not above 95th percentile of negative-control effects",
+      "4: leave-one-out, spatial permutation or library-exclusion robustness failed"
+    ],
+    "rule_status": {
+      "1_negative_control": false,
+      "2_expected_direction": true,
+      "3_sensitivity_and_stain": true,
+      "4_robustness": false
+    }
+  },
+  "environment": {
+    "python": "3.13.1",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "h5py": "3.16.0",
+    "matplotlib": "3.10.8"
+  }
+}

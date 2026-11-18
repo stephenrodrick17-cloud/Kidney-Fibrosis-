@@ -1,0 +1,29 @@
+{
+  "checkpoint_sha256": "674b0045ab8c5857fa056dc85d691f7e1c30a86479ffe7ba0be933351b2fbcbb",
+  "colour_threshold": 2,
+  "device": "cuda",
+  "glomeruli_vessels_pen_marks": "not assessable: no exact slide-matched spatially aligned annotations were identified before inference",
+  "maximum_regions_per_slide": 3,
+  "model_was_retrained_or_tuned": false,
+  "objective_failure_flag_counts": {
+    "extreme_predicted_area": 27,
+    "highly_saturated_predicted_pixels": 1,
+    "low_focus_heuristic": 25,
+    "prediction_outside_tissue": 0,
+    "very_pale_predicted_pixels": 0
+  },
+  "participants": 25,
+  "predicted_area_difference_unit": "absolute percentage-point difference in predicted area fraction of tissue",
+  "probability_threshold": 0.5,
+  "reference_based_metrics": "not computed; no independent aligned reference",
+  "regions": 40,
+  "regions_per_colour_stratum": {
+    "1": 10,
+    "2": 10,
+    "3": 10,
+    "4": 10
+  },
+  "regions_selected_using_model_outputs": false,
+  "slides": 26,
+  "status": "completed_research_only_external_sanity_check"
+}

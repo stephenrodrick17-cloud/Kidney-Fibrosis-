@@ -1,0 +1,3 @@
+analysis_label,mask_status,asset_status,mask,library_level_color_group_eta_squared,largest_gene_participant_spearman_rho_squared,gene_with_largest_squared_signal,colour_group_explains_more_than_any_gene_signal,interpretation
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,unet,0.07565946536930516,0.03311990256574525,MMP2,True,image-colour proxy only; stain groups are not verified
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,colour,0.38397479077138064,0.08776267296516235,TIMP1,True,image-colour proxy only; stain groups are not verified

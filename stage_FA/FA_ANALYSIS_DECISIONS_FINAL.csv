@@ -1,0 +1,2 @@
+analysis_label,mask_status,asset_status,item,value,plain_language_note
+"EXPLORATORY, NOT CONFIRMATORY",UNVALIDATED MASKS,RESEARCH-ONLY,mask direction agreement,True,The U-Net and colour-mask mean effects agree in direction.

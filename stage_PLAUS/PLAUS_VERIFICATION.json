@@ -1,0 +1,25 @@
+{
+  "method": "Independent recomputation from saved PLAUS tables and Stage FA participant effects",
+  "three_headline_numbers": {
+    "collagen_module_mean_effect": 0.12493395564397017,
+    "negative_control_95th_percentile": 0.28874069019738285,
+    "expected_direction_sign_agreement_fraction": 1.0
+  },
+  "absolute_difference_from_result": {
+    "collagen_module_mean_effect": 0.0,
+    "negative_control_95th_percentile": 0.0,
+    "expected_direction_sign_agreement_fraction": 0.0
+  },
+  "maximum_absolute_difference": 0.0,
+  "tolerance": 1e-12,
+  "passed": true,
+  "checkpoint_sha256": "674b0045ab8c5857fa056dc85d691f7e1c30a86479ffe7ba0be933351b2fbcbb",
+  "seed": 20261118,
+  "bootstrap_resamples": 10000,
+  "command": "python -B D:\\patent\\stage_PLAUS\\PLAUS_RUN_CHECKS.py",
+  "independent_command": "python -B D:\\patent\\stage_PLAUS\\PLAUS_VERIFY_INDEPENDENT.py",
+  "environment": {
+    "python": "3.13.1",
+    "numpy": "2.2.6"
+  }
+}

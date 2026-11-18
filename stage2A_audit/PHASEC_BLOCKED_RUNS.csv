@@ -1,0 +1,2 @@
+run,seed,status,projected_seconds,limit_seconds,reason
+DeepLabV3-ResNet50,20261116,BLOCKED_BEFORE_TRAINING,8070.787259065246,7200,Preflight estimate exceeds the registered 2-hour cap; no run launched.

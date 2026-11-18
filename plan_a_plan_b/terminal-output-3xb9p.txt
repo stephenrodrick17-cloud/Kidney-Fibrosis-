@@ -1,0 +1,175 @@
+Open-only planned set: 101 files, 9.19 GB estimated across 28 participants; 119.17 GB free.
+
+=== 27-10157 (0.228 GB) ===
+  verified locally; skip download: 90242f36-6827-4a88-a900-bd61ce830d70_S-2105-008148_TRI_1of2.svs
+  verified locally; skip download: 3030e655-b245-45bf-be72-d943e20b7892_expression_matrix.zip
+  verified locally; skip download: 09e0bce7-3cd1-4fcd-87e4-d3422552a69a_spatial_V13L17-316_XY02_25-0224.tar.gz
+
+=== 27-10201 (0.125 GB) ===
+  verified locally; skip download: c4dab7c4-9211-4c47-8255-3478c230b899_expression_matrix.zip
+  verified locally; skip download: b1b95de3-69a4-4998-a056-7e67777db4ec_spatial_V13U21-399_XY04_24-0214.tar.gz
+  verified locally; skip download: 31194b20-508e-4f88-abb2-8432fc8ad870_S-2305-006601_TRI_2of2.svs
+
+=== 27-10206 (0.081 GB) ===
+  verified locally; skip download: 5f69b6ac-9636-4a43-9783-b75ef56531c3_S-2305-006649_TRI_1of2.svs
+  verified locally; skip download: 4dae9802-8f6e-44ae-af4a-623001bf51d7_spatial_V13U21-400_XY01_24-0215.tar.gz
+  verified locally; skip download: f9b3e745-bbc3-40d7-acff-4c6768747a76_expression_matrix.zip
+
+=== 27-10207 (0.372 GB) ===
+  verified locally; skip download: de356d00-4eed-4a4f-963e-8b5df3db1ed8_spatial_V13U21-399_XY03_24-0213.tar.gz
+  segmentation contents already extracted: D:\patent\data\27-10207\masks\seg_extract
+  verified locally; skip download: d15c3e5a-a100-43c9-9d55-ac51e7ecae44_S-2305-006550_Seg_Masks_Features.zip
+  verified locally; skip download: S-2305-006554_TRI_2of2.svs
+  verified locally; skip download: expression_matrix.zip
+
+=== 27-10228 (0.075 GB) ===
+  verified locally; skip download: d3e3ba11-479a-4d58-bdcd-a628939a42f3_spatial_V13L17-318_XY02_25-0235.tar.gz
+  verified locally; skip download: d369cf7f-0bd6-4f4b-9ba0-e79b80f6d27f_S-2306-012928_TRI_2of2.svs
+  verified locally; skip download: e442d899-1976-4334-9173-65258a3bb142_expression_matrix.zip
+
+=== 27-10262 (0.228 GB) ===
+  verified locally; skip download: 192fe652-4de7-4494-bd22-695b6ba29257_expression_matrix.zip
+  verified locally; skip download: 9a71d04d-0af9-46c2-bd87-eee1124a3d82_spatial_V13L17-318_XY01_25-0233.tar.gz
+  segmentation contents already extracted: D:\patent\data\27-10262\masks\3b292f1c-0101-469b-88f5-242186b2d879_S-2212-003365_Seg_Masks_Features_extracted
+  verified locally; skip download: 3b292f1c-0101-469b-88f5-242186b2d879_S-2212-003365_Seg_Masks_Features.zip
+  verified locally; skip download: 39d186f8-82e5-4256-a9a7-12378237e1ec_S-2212-003370_TRI_1of2.svs
+
+=== 27-10371 (0.116 GB) ===
+  verified locally; skip download: e12c71b1-bced-4ffd-9fd3-6956ae05937b_expression_matrix.zip
+  verified locally; skip download: 58bb2efe-bdfb-4544-aac2-4440a9fb6a31_spatial_V13U21-357_XY04_25-0240.tar.gz
+  verified locally; skip download: e5b859cd-4e8e-48c6-87fd-92482a605c65_S-2311-013369_TRI_1of2.svs
+
+=== 28-12265 (1.247 GB) ===
+  segmentation contents already extracted: D:\patent\data\28-12265\masks\162b560a-34af-47a5-95f7-ec1b9045620a_S-2102-006552_Seg_Masks_Features_v2_extracted
+  verified locally; skip download: 162b560a-34af-47a5-95f7-ec1b9045620a_S-2102-006552_Seg_Masks_Features_v2.zip
+  verified locally; skip download: cf0c92b2-2808-403a-8612-e59d5d195913_space_ranger_outs_28-12265-C.zip
+  verified locally; skip download: 0a3cacc3-0527-43c3-bb57-e8b42024c599_S-2102-006556_TRI_1of2.svs
+  segmentation contents already extracted: D:\patent\data\28-12265\masks\162b560a-34af-47a5-95f7-ec1b9045620a_S-2102-006552_Seg_Masks_Features_v2_extracted
+  verified locally; skip download: 05d3010e-d057-43e4-88ca-77a51cf698f5_S-2102-006551_Seg_Masks_Features_v2.zip
+  verified locally; skip download: 01e4bee9-72ce-4538-a086-3adc593e2181_space_ranger_outs_28-12265-M.zip
+  verified locally; skip download: c5d3a1db-489a-4ca3-b897-7929a657c732_expression_matrix.zip
+
+=== 28-12557 (0.118 GB) ===
+  verified locally; skip download: c93051fe-e81b-4fec-b327-e421dde273d0_spatial_V14B09-279_XY02_25-0275.tar.gz
+  verified locally; skip download: e8246ba9-6f85-4729-ad3e-d315d4c5c05b_S-2109-007005_TRI_1of2.svs
+  verified locally; skip download: 33fae877-82b1-4cb3-ad6f-a91b2079f2e0_expression_matrix.zip
+
+=== 28-12626 (0.045 GB) ===
+  verified locally; skip download: 12822e74-2d44-4378-bca4-6b1cd266ea12_spatial_V13L19-321_XY04_25_0248.tar.gz
+  verified locally; skip download: ffaa2a5b-3364-47f3-b805-551729879023_expression_matrix.zip
+  verified locally; skip download: bcea82a1-a58a-4503-b51f-7e68ca4879db_S-2307-011591_TRI_1of2B.svs
+
+=== 29-10394 (0.348 GB) ===
+  verified locally; skip download: 8133f419-4d62-464a-afb5-5eb29734e1a7_S-2102-006650_TRI_2of2.svs
+  segmentation contents already extracted: D:\patent\data\29-10394\masks\16116fe6-c5e9-4ead-a19f-d5068e17aac3_S-2102-006646_Seg_Masks_Features_v2_extracted
+  verified locally; skip download: 16116fe6-c5e9-4ead-a19f-d5068e17aac3_S-2102-006646_Seg_Masks_Features_v2.zip
+  verified locally; skip download: 844f0146-4b43-41d5-94f6-ed78a26288b6_spatial_V14Y20-296_XY04_24-0182_fl.tar.gz
+  verified locally; skip download: 2e805f68-7562-4a97-aebe-be61c22fbba9_expression_matrix.zip
+
+=== 29-10400 (0.431 GB) ===
+  verified locally; skip download: 177cb301-4b17-469c-9ed6-4239853b060d_expression_matrix.zip
+  verified locally; skip download: 18aeed72-a1d7-49ae-8b98-de7fa7282616_spatial_V14S09-326_XY02_24-0191.tar.gz
+  verified locally; skip download: 94bb7fdb-650c-4003-8dd2-f3985c2f2a63_S-2002-007558_TRI_2of2.svs
+  verified locally; skip download: e73b0691-0a9e-4858-b910-1c450d7b9956_S-2002-007559_TRI_1of2.svs
+
+=== 29-10422 (0.332 GB) ===
+  verified locally; skip download: 9c8bd648-43f0-4b0d-94c7-be03ead43386_spatial_V12U21-007_XY03_22-0093.zip
+  verified locally; skip download: 47d67899-8e0d-426e-9235-09816e2ea23b_S-2107-015180_TRI_2of2.svs
+  verified locally; skip download: 22d3d7bd-2add-43a0-86fb-5bc97448f995_expression_matrix.zip
+  segmentation contents already extracted: D:\patent\data\29-10422\masks\1a28ca01-db66-4aa2-a513-0777a6497529_S-2107-015176_Seg_Masks_Features_extracted
+  verified locally; skip download: 1a28ca01-db66-4aa2-a513-0777a6497529_S-2107-015176_Seg_Masks_Features.zip
+
+=== 29-10439 (0.282 GB) ===
+  verified locally; skip download: a606c5e0-26b2-4f68-959e-31604f995428_expression_matrix.zip
+  verified locally; skip download: e6c67e3b-7e36-451a-afc5-df103ec90e05_spatial_V13U21-356_XY02_25-0232.tar.gz
+  segmentation contents already extracted: D:\patent\data\29-10439\masks\1e903e9a-229a-44d5-9a37-46b7f5daf737_S-2206-007950_Seg_Masks_Features_extracted
+  verified locally; skip download: 1e903e9a-229a-44d5-9a37-46b7f5daf737_S-2206-007950_Seg_Masks_Features.zip
+  verified locally; skip download: 3b191a40-b129-4668-9b3d-157a5d7dd005_S-2206-007954_TRI_2of2.svs
+
+=== 30-10125 (0.364 GB) ===
+  verified locally; skip download: 74f87672-fd20-4365-83af-11b8bfd97e09_S-2002-007746_TRI_2of2.svs
+  verified locally; skip download: 6c2cd617-523d-4f66-8847-456ac9950140_expression_matrix.zip
+  verified locally; skip download: a858efbd-c119-40bf-9080-17227e2564ce_space_ranger_outs_30-10125.zip
+
+=== 30-11084 (0.351 GB) ===
+  verified locally; skip download: 19c86560-b1ec-42f3-b42e-57104ab8a02e_S-2006-001759_TRI_1of2.svs
+  verified locally; skip download: 64fcd97b-e404-4cc3-bfed-b07074110871_expression_matrix.zip
+  verified locally; skip download: 599babf2-a4a0-4d53-9cb8-26563ed35dce_spatial_V12U06-350_XY03_22-0097.zip
+
+=== 30-11141 (0.346 GB) ===
+  segmentation contents already extracted: D:\patent\data\30-11141\masks\b5320372-edcd-48cd-91ac-87b28f3fdabb_S-2307-002338_Seg_Masks_Features_extracted
+  verified locally; skip download: b5320372-edcd-48cd-91ac-87b28f3fdabb_S-2307-002338_Seg_Masks_Features.zip
+  verified locally; skip download: dd1c792c-6d6f-49cf-927e-7abd0be7d6e4_spatial_V14Y20-298_XY03_24-0196_fl.tar.gz
+  verified locally; skip download: 36171840-db11-4ce4-8d8d-d861c542b550_S-2307-002343_TRI_1of2.svs
+  verified locally; skip download: b3351edc-00f7-45d4-ab54-e1f3f1b693e4_S-2307-002342_TRI_2of2.svs
+  verified locally; skip download: 7a1b4fb4-6830-4fe2-a5dd-90802b3e0fd7_expression_matrix.zip
+
+=== 30-11192 (0.735 GB) ===
+  verified locally; skip download: 8f443d76-6a7a-416d-b569-f4c4ab965245_S-2405-000802_TRI_1of2.svs
+  verified locally; skip download: 89e7d079-5ae8-4d2b-9e68-732ff17e178e_expression_matrix.zip
+  verified locally; skip download: a82ba5f8-c176-4d59-b482-27f99b150229_spatial_V13L17-315_XY02_24-0220.tar.gz
+  verified locally; skip download: 287d6060-10e4-4065-ad00-67d77b607b55_S-2405-000801_TRI_2of2.svs
+
+=== 30-11197 (0.694 GB) ===
+  verified locally; skip download: 0eae1d14-4abb-4d7b-a699-2abfd5d9d884_expression_matrix.zip
+  verified locally; skip download: 28655ea1-2b13-4d92-a81c-01fe5ab0d02c_S-2312-004255_TRI_1of2.svs
+  verified locally; skip download: e36089fa-b099-42fa-a244-7e233ed67215_S-2312-004254_TRI_2of2.svs
+  verified locally; skip download: 9dc4310b-3af4-4821-bc28-dc75a679766f_spatial_V13U21-356_XY01_25-0242.tar.gz
+
+=== 31-10013 (0.580 GB) ===
+  verified locally; skip download: 2a64182a-7d14-4e67-86e8-4d136e1d04a7_expression_matrix.zip
+  verified locally; skip download: 760e7379-a792-4438-bf24-bd9008737778_S-1910-000140_TRI_2of2.svs
+  segmentation contents already extracted: D:\patent\data\31-10013\masks\f16e0e61-3f3e-46a1-924a-34d89aa338c3_S-1910-000136_Seg_Masks_Features_v2_extracted
+  verified locally; skip download: f16e0e61-3f3e-46a1-924a-34d89aa338c3_S-1910-000136_Seg_Masks_Features_v2.zip
+  verified locally; skip download: f1209deb-bffd-4de5-842f-c52630d0df28_spatial_V13F08-020_XY01_23-0118.tar.gz
+
+=== 31-10078 (0.247 GB) ===
+  verified locally; skip download: abd5770d-321f-4c53-bb8f-292c77eecb6c_S-2001-005361_TRI_1of2.svs
+  verified locally; skip download: 2c35be57-2ef5-4765-9495-7914fa69538a_expression_matrix.zip
+  verified locally; skip download: 3a707eda-85f6-43a6-abd9-ea724c7d01e4_spatial_V14Y20-295_XY02_24-0172_fl.tar.gz
+  segmentation contents already extracted: D:\patent\data\31-10078\masks\ac901f10-3f86-4e74-835c-ba9f2b987b81_S-2001-005357_Seg_Masks_Features_v2_extracted
+  verified locally; skip download: ac901f10-3f86-4e74-835c-ba9f2b987b81_S-2001-005357_Seg_Masks_Features_v2.zip
+
+=== 31-10340 (0.159 GB) ===
+  verified locally; skip download: 2b769de2-86ec-4900-aad4-c47714290187_expression_matrix.zip
+  verified locally; skip download: aba131ac-bb16-4485-8d97-c2f8811a68ce_spatial_V14B09-280_XY03_25-0280.tar.gz
+  segmentation contents already extracted: D:\patent\data\31-10340\masks\ec930805-e81e-4207-aac6-1e985a727c90_S-2108-000595_Seg_Masks_Features_extracted
+  verified locally; skip download: ec930805-e81e-4207-aac6-1e985a727c90_S-2108-000595_Seg_Masks_Features.zip
+  verified locally; skip download: 314fd18b-0e4e-40fe-81ee-c547502ef632_S-2108-000599_TRI_2of2.svs
+
+=== 32-10205 (0.135 GB) ===
+  verified locally; skip download: 66c7e80b-5722-40ca-b2b2-9d6ae2393cdb_expression_matrix.zip
+  verified locally; skip download: 09d79760-32e4-4cd6-8915-040e007f103a_S-2006-001852_TRI_2of2.svs
+  verified locally; skip download: 876dab9e-d4a0-4855-bd03-32587ca842a2_spatial_V12N14-057_XY02_23-0116.zip
+
+=== 33-10005 (0.142 GB) ===
+  verified locally; skip download: c75c3d98-199c-45de-8fe3-227c11b926b9_S-1908-009834_TRI_2of2.svs
+  segmentation contents already extracted: D:\patent\data\33-10005\masks\758e8236-2da3-4859-baa2-16b2fa6c2c2b_S-1908-009831_Seg_Masks_Features_v2_extracted
+  verified locally; skip download: 758e8236-2da3-4859-baa2-16b2fa6c2c2b_S-1908-009831_Seg_Masks_Features_v2.zip
+  verified locally; skip download: e33dc3ae-a248-403e-95f4-7f6f2c693787_spatial_V12N14-057_XY01_20-0042.zip
+  verified locally; skip download: 49dd9202-3366-4246-8fd7-57c80fbdba38_expression_matrix.zip
+
+=== 34-11066 (0.267 GB) ===
+  verified locally; skip download: 3915d4a1-fa62-4c27-9fdf-d98ba83e18fa_S-2309-028495_TRI_2of2.svs.part
+  verified locally; skip download: 7f161f11-572d-43d1-b14d-385ed61b1ade_expression_matrix.zip
+  verified locally; skip download: 8a3946a0-e4c5-4e7c-af90-0bbf48477748_spatial_V13U21-400_XY03_24-0217.tar.gz
+
+=== 934-10003 (0.410 GB) ===
+  verified locally; skip download: 6111fe1d-1810-4f7c-a99a-fcc46b4cc3a9_S-2301-008575_TRI_1of2.svs
+  verified locally; skip download: 51af2b1e-5d6d-47fd-a9b4-badcf9e1ca13_expression_matrix.zip
+  verified locally; skip download: 8a037b45-48cc-41fa-b63e-1ed37d7bfc67_spatial_V13L19-376_XY02_25-0262.tar.gz
+
+=== 934-10007 (0.367 GB) ===
+  verified locally; skip download: f2412692-66fc-467f-aeaa-c66d9d1ec6db_expression_matrix.zip
+  verified locally; skip download: a27a63ff-1274-442a-8a9e-3dd8d6e8482e_spatial_V13L19-330_XY02_25_0258.tar.gz
+  verified locally; skip download: 2781db46-1a7a-4c03-851a-3b5588ba6a79_S-2303-008740_TRI_2of2.svs
+
+=== 936-10217 (0.366 GB) ===
+  verified locally; skip download: f8fba4af-23b9-46a2-8dc7-b77ed858dd9d_S-2310-016569_TRI_1of2.svs
+  verified locally; skip download: d80557cf-c33f-4a83-b718-37c36564081e_spatial_V13U21-357_XY03_25-0239.tar.gz
+  extracted ZIP -> D:\patent\data\936-10217\visium\a106b8c8-f0b1-4015-bd4e-8f6e996d8aab_expression_matrix_extracted
+  downloaded a106b8c8-f0b1-4015-bd4e-8f6e996d8aab_expression_matrix.zip: 7094760 bytes SHA256=0c492c12a9e2fb59c940bd7a9a34b7dadf514b6a28967bbd27bbbf9f87c1bfea
+
+=== Acquisition summary ===
+No download or extraction failures.
+Manifest: D:\patent\data_manifest.csv
